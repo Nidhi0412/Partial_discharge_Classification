@@ -1,0 +1,11 @@
+Per-fold results:
+  fold  accuracy  precision  recall       f1
+fold_2  0.971875   0.974843 0.96875 0.971787
+fold_3  0.965625   0.951515 0.98125 0.966154
+fold_4  0.975000   0.987179 0.96250 0.974684
+fold_5  0.968750   0.993421 0.94375 0.967949
+
+Summary (mean ± std):
+      accuracy  precision    recall        f1
+mean  0.970313   0.976740  0.964063  0.970143
+std   0.004034   0.018503  0.015625  0.003832

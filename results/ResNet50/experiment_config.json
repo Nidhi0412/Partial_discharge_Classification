@@ -1,0 +1,29 @@
+{
+    "experiment_name": "CV_Aug_20250529_210046",
+    "timestamp": "20250529_210046",
+    "parameters": {
+        "img_size": [
+            224,
+            224
+        ],
+        "batch_size": 16,
+        "epochs": 40,
+        "learning_rate": 5e-05,
+        "early_stopping_patience": 10,
+        "lr_reduce_patience": 5,
+        "n_splits": 5,
+        "dropout_rate": 0.5,
+        "l2_reg": 0.01,
+        "fine_tuning": true,
+        "activation": "sigmoid",
+        "loss": "binary_crossentropy"
+    },
+    "dataset_info": {
+        "num_classes": 2,
+        "class_names": [
+            "Nomex",
+            "Teflon"
+        ],
+        "is_binary": true
+    }
+}

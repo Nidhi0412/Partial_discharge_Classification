@@ -1,0 +1,6 @@
+=== Dataset Size Report ===
+Training set:   1024 images
+Validation set: 256 images
+Test set:       320 images
+Number of classes: 2
+

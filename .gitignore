@@ -1,0 +1,19 @@
+# Environment and cache
+.env
+__pycache__/
+*.pyc
+venv/
+env/
+
+# Large files — do not add to repo (keep repo minimal)
+*.h5
+*.keras
+*.pth
+*.pt
+*.tiff
+training_history.json
+
+# Data (use Zenodo/figshare for full dataset)
+**/Classifications_data/
+**/Data for Classification/
+**/Scalograms/

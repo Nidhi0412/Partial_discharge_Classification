@@ -1,0 +1,20 @@
+=== Grad-CAM Analysis Summary ===
+
+Model: fold_4
+Total samples analyzed: 10
+Nomex samples: 5
+Teflon samples: 5
+
+Mean prediction confidence:
+Nomex: 0.07%
+Teflon: 80.02%
+
+Mean heatmap intensity:
+Nomex: 0.1025
+Teflon: 0.0893
+
+=== Figure Captions ===
+
+Fig. 1. Individual Grad-CAM visualizations showing the model's attention patterns for sample images from each class. Each row shows the original image, the Grad-CAM heatmap, and the overlay of the heatmap on the original image.
+
+Fig. 2. Mean Grad-CAM heatmaps for Nomex and Teflon classes, showing the average attention patterns across all samples in each class. The intensity of the heatmap indicates the importance of different regions in the model's decision-making process.
