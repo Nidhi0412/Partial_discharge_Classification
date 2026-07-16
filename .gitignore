@@ -17,3 +17,7 @@ training_history.json
 **/Classifications_data/
 **/Data for Classification/
 **/Scalograms/
+VGG16_insulation/
+ResNet50_insulation/
+*.zip
+**/Classifications_data-20260715T120415Z-1-001.zip
