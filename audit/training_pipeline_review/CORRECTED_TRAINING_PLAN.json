@@ -1,0 +1,100 @@
+{
+  "created_utc": "2026-11-04T07:17:23.650270+00:00",
+  "settings": {
+    "epochs": 50,
+    "batch_size": 2,
+    "image_size": 224,
+    "learning_rate": 1e-05,
+    "dropout": 0.5,
+    "l2": 0.01,
+    "patience": 10,
+    "seed": 42,
+    "weights": "imagenet",
+    "cpu_threads": 4,
+    "data_threads": 1,
+    "prefetch_batches": 1,
+    "min_free_ram_gb": 1.5,
+    "min_free_disk_gb": 5.0,
+    "augment": true,
+    "fine_tuning": true,
+    "training_profile": "historical",
+    "augmentation_profile": "scalogram-image",
+    "resize_interpolation": "nearest",
+    "augmentation_samples_per_class": 5,
+    "legacy_h5_export": true,
+    "lr_reduce_factor": 0.1,
+    "lr_min": 1e-07,
+    "row_mask_fraction": 0.15,
+    "column_mask_fraction": 0.15,
+    "image_shift_fraction": 0.03,
+    "image_stretch_fraction": 0.0,
+    "pixel_noise_std": 0.05
+  },
+  "augmentation_parameters": {
+    "historical": null,
+    "specialized": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "operation_order": [
+      "horizontal_image_shift",
+      "row_band_mask",
+      "column_band_mask",
+      "scaled_pixel_noise"
+    ],
+    "interpretation": "Composed PNG perturbations. No physical MHz, phase or waveform-noise claims."
+  },
+  "splits": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\splits\\run01\\splits.csv",
+  "jobs": [
+    {
+      "name": "vgg16_cv",
+      "command": "cv",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\vgg16_cv"
+    },
+    {
+      "name": "resnet50_cv",
+      "command": "cv",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv"
+    },
+    {
+      "name": "vgg16_final-fit",
+      "command": "final-fit",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\vgg16_final"
+    },
+    {
+      "name": "resnet50_final-fit",
+      "command": "final-fit",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_final"
+    },
+    {
+      "name": "vgg16_evaluate",
+      "command": "evaluate",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\vgg16_final"
+    },
+    {
+      "name": "resnet50_evaluate",
+      "command": "evaluate",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_final"
+    }
+  ],
+  "policy": "Fixed settings; all development CV precedes final fits; holdout evaluated once per model.",
+  "source_hashes": {
+    "training_pipeline.py": "8d368cbd1326ccee6258c100da2fbb4a3e6e2cbf5678ad100390a5b3f68908dd",
+    "training_safety.py": "67ebd5ad81b60f0de29340220a68764376afba0cb765115b4e6ecbf7467cf045",
+    "dataset_manifest.py": "34806516ff5738f15ef7ce184a98fce29c355a36b41b10e6f54b58c682105da6",
+    "train_overnight.py": "8241cd428d9b82b1212a3ad20d681c0da40ddeb0e0838681d559b5fa7bfe9749",
+    "prepare_imagenet_weights.py": "11bf604d5b1f36166f760d72df0febf8004c68320adf7f9db51a5e2601a4d184",
+    "legacy_augmentation.py": "3e8fa89e83b4efb0003e0f0e723116dffe721ca9252cf1bcf19e726e96857a1d",
+    "scalogram_augmentation.py": "39682324ab253c9f88287c85a01c2de80d3d8a0b754ec9dfc32b9d0da0501a51",
+    "training_artifacts.py": "ec0c4c3e90d34227c2cbe8df7e5db526e21db9b12b9c078e9c32284d1a4689e0"
+  }
+}

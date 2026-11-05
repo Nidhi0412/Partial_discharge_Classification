@@ -1,0 +1,52 @@
+[
+  {
+    "name": "scalogram",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "conv2d",
+    "trainable": true,
+    "weights": 2
+  },
+  {
+    "name": "max_pooling2d",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "conv2d_1",
+    "trainable": true,
+    "weights": 2
+  },
+  {
+    "name": "max_pooling2d_1",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "conv2d_2",
+    "trainable": true,
+    "weights": 2
+  },
+  {
+    "name": "max_pooling2d_2",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "global_average_pooling2d",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "dropout",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "p_teflon",
+    "trainable": true,
+    "weights": 2
+  }
+]

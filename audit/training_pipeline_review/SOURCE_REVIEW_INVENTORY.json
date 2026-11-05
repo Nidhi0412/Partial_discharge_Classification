@@ -1,0 +1,1292 @@
+[
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\crossval_aggregate_evaluation.py",
+    "sha256": "6368a93c7c402306beffa0e4e918efa435651eef41d1e64dc6217ea7e96de60b",
+    "lines": 108,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "get_test_generator",
+        "line": 20,
+        "end_line": 29
+      },
+      {
+        "name": "evaluate_fold",
+        "line": 32,
+        "end_line": 69
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import json"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 5,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 6,
+        "source": "import seaborn as sns"
+      },
+      {
+        "line": 7,
+        "source": "from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, precision_score, recall_score, f1_score"
+      },
+      {
+        "line": 8,
+        "source": "from keras.models import load_model"
+      },
+      {
+        "line": 10,
+        "source": "from tensorflow.keras.preprocessing.image import ImageDataGenerator"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\eval_roc_auc.py",
+    "sha256": "c021a02d990476a273e55cd19bddeaa84ee36aeee301519d026e48eb52d6eff3",
+    "lines": 316,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "save_plot",
+        "line": 45,
+        "end_line": 48
+      },
+      {
+        "name": "build_vgg16_architecture",
+        "line": 50,
+        "end_line": 57
+      },
+      {
+        "name": "build_resnet50_architecture",
+        "line": 59,
+        "end_line": 66
+      },
+      {
+        "name": "get_test_generator",
+        "line": 68,
+        "end_line": 77
+      },
+      {
+        "name": "evaluate_fold",
+        "line": 79,
+        "end_line": 165
+      },
+      {
+        "name": "plot_combined_roc",
+        "line": 167,
+        "end_line": 187
+      },
+      {
+        "name": "generate_report",
+        "line": 189,
+        "end_line": 225
+      },
+      {
+        "name": "run_evaluation",
+        "line": 227,
+        "end_line": 313
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import json"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 5,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 6,
+        "source": "import seaborn as sns"
+      },
+      {
+        "line": 7,
+        "source": "from sklearn.metrics import roc_curve, auc, classification_report, accuracy_score, precision_score, recall_score, f1_score"
+      },
+      {
+        "line": 8,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 9,
+        "source": "from tensorflow.keras.models import load_model, Model"
+      },
+      {
+        "line": 10,
+        "source": "from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout"
+      },
+      {
+        "line": 11,
+        "source": "from tensorflow.keras.applications import VGG16, ResNet50"
+      },
+      {
+        "line": 12,
+        "source": "from tensorflow.keras.preprocessing.image import ImageDataGenerator"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\evaluation.py",
+    "sha256": "774e3e0386595b3e42928d813b07ad4480c4311c094fa35fb90fb2f5d5321616",
+    "lines": 410,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "load_best_model",
+        "line": 24,
+        "end_line": 30
+      },
+      {
+        "name": "inspect_fine_tuning",
+        "line": 33,
+        "end_line": 62
+      },
+      {
+        "name": "get_test_generator",
+        "line": 65,
+        "end_line": 78
+      },
+      {
+        "name": "evaluate_model",
+        "line": 81,
+        "end_line": 145
+      },
+      {
+        "name": "plot_learning_curves",
+        "line": 148,
+        "end_line": 296
+      },
+      {
+        "name": "print_dataset_sizes",
+        "line": 299,
+        "end_line": 349
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import json"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 5,
+        "source": "import seaborn as sns"
+      },
+      {
+        "line": 6,
+        "source": "from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, precision_score, recall_score, f1_score"
+      },
+      {
+        "line": 7,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 8,
+        "source": "from keras.models import load_model"
+      },
+      {
+        "line": 9,
+        "source": "from tensorflow.keras.preprocessing.image import ImageDataGenerator"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\generate_clean_scalograms.py",
+    "sha256": "b38634d38cc879de3d47ab77103701fe9398214d118fff9489d1d1b4fdb08918",
+    "lines": 196,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "load_signal",
+        "line": 20,
+        "end_line": 47
+      },
+      {
+        "name": "save_clean_scalogram",
+        "line": 49,
+        "end_line": 66
+      },
+      {
+        "name": "process_signal",
+        "line": 68,
+        "end_line": 94
+      },
+      {
+        "name": "save_coefficients",
+        "line": 96,
+        "end_line": 110
+      },
+      {
+        "name": "process_dataset",
+        "line": 112,
+        "end_line": 173
+      },
+      {
+        "name": "main",
+        "line": 175,
+        "end_line": 193
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 3,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 4,
+        "source": "import pywt"
+      },
+      {
+        "line": 5,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 6,
+        "source": "from tqdm import tqdm"
+      },
+      {
+        "line": 7,
+        "source": "import logging"
+      },
+      {
+        "line": 8,
+        "source": "import traceback"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\generate_scalograms.py",
+    "sha256": "074ca868a830cf6c1444b8e201b8de423930b726cdc01f3182c10b86e632c233",
+    "lines": 258,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "load_signal",
+        "line": 11,
+        "end_line": 54
+      },
+      {
+        "name": "generate_scalogram",
+        "line": 56,
+        "end_line": 92
+      },
+      {
+        "name": "process_folder",
+        "line": 94,
+        "end_line": 115
+      },
+      {
+        "name": "check_data_points",
+        "line": 117,
+        "end_line": 154
+      },
+      {
+        "name": "save_all_detail_coeffs_and_scalograms",
+        "line": 156,
+        "end_line": 189
+      },
+      {
+        "name": "main",
+        "line": 191,
+        "end_line": 255
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 3,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 4,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 5,
+        "source": "from scipy import signal"
+      },
+      {
+        "line": 6,
+        "source": "import pywt"
+      },
+      {
+        "line": 7,
+        "source": "import traceback"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\generate_vgg_gradcam_for_dashboard.py",
+    "sha256": "c96879437b287f08b8bfa4fcc509b005f2ba1177326ae007b31e9e9fcfaef69a",
+    "lines": 126,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "GradCAM",
+        "line": 11,
+        "end_line": 56
+      },
+      {
+        "name": "preprocess_image",
+        "line": 58,
+        "end_line": 63
+      },
+      {
+        "name": "build_vgg16_architecture",
+        "line": 68,
+        "end_line": 75
+      },
+      {
+        "name": "main",
+        "line": 77,
+        "end_line": 123
+      }
+    ],
+    "imports": [
+      {
+        "line": 2,
+        "source": "import os"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 5,
+        "source": "from tensorflow.keras.models import Model, load_model"
+      },
+      {
+        "line": 6,
+        "source": "from tensorflow.keras.preprocessing.image import load_img, img_to_array"
+      },
+      {
+        "line": 7,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 8,
+        "source": "from matplotlib import cm"
+      },
+      {
+        "line": 9,
+        "source": "import scipy.ndimage"
+      },
+      {
+        "line": 65,
+        "source": "from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout"
+      },
+      {
+        "line": 66,
+        "source": "from tensorflow.keras.applications import VGG16 as VGG16_Base"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\gradcam_visualization.py",
+    "sha256": "9c69bb6048f782bbf3b7567d9cd22be9e57d0c09f9705e1af532dd88485916fb",
+    "lines": 322,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "GradCAM",
+        "line": 13,
+        "end_line": 71
+      },
+      {
+        "name": "preprocess_image",
+        "line": 73,
+        "end_line": 81
+      },
+      {
+        "name": "get_best_fold",
+        "line": 83,
+        "end_line": 109
+      },
+      {
+        "name": "visualize_gradcam",
+        "line": 111,
+        "end_line": 291
+      },
+      {
+        "name": "main",
+        "line": 293,
+        "end_line": 319
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import json"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 5,
+        "source": "from tensorflow.keras.models import Model"
+      },
+      {
+        "line": 6,
+        "source": "from tensorflow.keras.preprocessing.image import load_img, img_to_array"
+      },
+      {
+        "line": 7,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 8,
+        "source": "import cv2"
+      },
+      {
+        "line": 9,
+        "source": "from tensorflow.keras.applications.resnet50 import preprocess_input"
+      },
+      {
+        "line": 10,
+        "source": "import glob"
+      },
+      {
+        "line": 11,
+        "source": "import pandas as pd"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\main.py",
+    "sha256": "ca2e4805e88cfa4d8ca3e8b1511fb3021dba6bf37948972191eb2ed0d97c726b",
+    "lines": 86,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "setup_directories",
+        "line": 18,
+        "end_line": 23
+      },
+      {
+        "name": "split_dataset",
+        "line": 25,
+        "end_line": 47
+      },
+      {
+        "name": "main",
+        "line": 49,
+        "end_line": 83
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import shutil"
+      },
+      {
+        "line": 3,
+        "source": "from sklearn.model_selection import train_test_split"
+      },
+      {
+        "line": 4,
+        "source": "from preprocessing import process_dataset"
+      },
+      {
+        "line": 5,
+        "source": "from My_Project.model_training_resnet50 import (create_vgg16_model, create_resnet50_model,\n                          train_model, evaluate_model, plot_confusion_matrix)"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\main_clean_scalograms.py",
+    "sha256": "385cdbf6960752ecd4f731cf6e3ec2d75a69aefda4c266b7cc8b74e0ad64e973",
+    "lines": 86,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "setup_directories",
+        "line": 18,
+        "end_line": 23
+      },
+      {
+        "name": "split_dataset",
+        "line": 25,
+        "end_line": 47
+      },
+      {
+        "name": "main",
+        "line": 49,
+        "end_line": 83
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import shutil"
+      },
+      {
+        "line": 3,
+        "source": "from sklearn.model_selection import train_test_split"
+      },
+      {
+        "line": 4,
+        "source": "from preprocessing_clean import process_dataset_clean"
+      },
+      {
+        "line": 5,
+        "source": "from My_Project.model_training_resnet50 import (create_vgg16_model, create_resnet50_model,\n                          train_model, evaluate_model, plot_confusion_matrix)"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\make_foldwise_roc.py",
+    "sha256": "9bf27773fdb2f2be08ad9181b557ef5a4b37bcb0b000d4b8e49096bf3ca7c799",
+    "lines": 295,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "load_fold_data",
+        "line": 23,
+        "end_line": 56
+      },
+      {
+        "name": "generate_plot",
+        "line": 58,
+        "end_line": 155
+      },
+      {
+        "name": "main",
+        "line": 157,
+        "end_line": 198
+      },
+      {
+        "name": "generate_comparison_plot",
+        "line": 200,
+        "end_line": 240
+      },
+      {
+        "name": "generate_all_folds_comparison",
+        "line": 242,
+        "end_line": 292
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import argparse"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 5,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 6,
+        "source": "from sklearn.metrics import roc_curve, auc"
+      },
+      {
+        "line": 7,
+        "source": "import shutil"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\model_training.py",
+    "sha256": "905e98bb86208d6ca8db459563e4687e38ba2f77dba44544f44c3f620c10df23",
+    "lines": 1524,
+    "syntax": "FAIL",
+    "error_line": 675,
+    "error": "expected an indented block after 'if' statement on line 673",
+    "textual_definitions": [
+      {
+        "name": "normalize_image",
+        "line": 21
+      },
+      {
+        "name": "get_dataset_info",
+        "line": 25
+      },
+      {
+        "name": "get_model_params",
+        "line": 51
+      },
+      {
+        "name": "get_data_augmentation",
+        "line": 84
+      },
+      {
+        "name": "augment_dataset",
+        "line": 265
+      },
+      {
+        "name": "ScalogramDataGenerator",
+        "line": 299
+      },
+      {
+        "name": "get_data_generator",
+        "line": 401
+      },
+      {
+        "name": "verify_saved_samples",
+        "line": 421
+      },
+      {
+        "name": "save_augmented_samples",
+        "line": 464
+      },
+      {
+        "name": "create_vgg16_model",
+        "line": 633
+      },
+      {
+        "name": "create_resnet50_model",
+        "line": 666
+      },
+      {
+        "name": "get_callbacks",
+        "line": 763
+      },
+      {
+        "name": "get_data_generator",
+        "line": 819
+      },
+      {
+        "name": "load_dataset",
+        "line": 845
+      },
+      {
+        "name": "train_model_with_cross_validation",
+        "line": 927
+      },
+      {
+        "name": "create_dataset_from_paths",
+        "line": 1070
+      },
+      {
+        "name": "train_model",
+        "line": 1088
+      },
+      {
+        "name": "evaluate_model",
+        "line": 1131
+      },
+      {
+        "name": "plot_training_history",
+        "line": 1217
+      },
+      {
+        "name": "compare_models",
+        "line": 1249
+      },
+      {
+        "name": "train_model_parallel",
+        "line": 1282
+      },
+      {
+        "name": "main",
+        "line": 1352
+      }
+    ]
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\model_training_vgg16.py",
+    "sha256": "8cba76aabb49b58b0349f3f8da55c9ff2b21c4fc1d954bb06c05de9d0b982bfd",
+    "lines": 1495,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "normalize_image",
+        "line": 21,
+        "end_line": 23
+      },
+      {
+        "name": "get_dataset_info",
+        "line": 25,
+        "end_line": 49
+      },
+      {
+        "name": "get_model_params",
+        "line": 51,
+        "end_line": 82
+      },
+      {
+        "name": "get_data_augmentation",
+        "line": 84,
+        "end_line": 263
+      },
+      {
+        "name": "augment_dataset",
+        "line": 265,
+        "end_line": 297
+      },
+      {
+        "name": "ScalogramDataGenerator",
+        "line": 299,
+        "end_line": 399
+      },
+      {
+        "name": "get_data_generator",
+        "line": 401,
+        "end_line": 419
+      },
+      {
+        "name": "verify_saved_samples",
+        "line": 421,
+        "end_line": 462
+      },
+      {
+        "name": "save_augmented_samples",
+        "line": 464,
+        "end_line": 631
+      },
+      {
+        "name": "create_vgg16_model",
+        "line": 633,
+        "end_line": 659
+      },
+      {
+        "name": "create_resnet50_model",
+        "line": 661,
+        "end_line": 756
+      },
+      {
+        "name": "get_callbacks",
+        "line": 758,
+        "end_line": 812
+      },
+      {
+        "name": "get_data_generator",
+        "line": 814,
+        "end_line": 838
+      },
+      {
+        "name": "load_dataset",
+        "line": 840,
+        "end_line": 920
+      },
+      {
+        "name": "train_model_with_cross_validation",
+        "line": 922,
+        "end_line": 1105
+      },
+      {
+        "name": "create_dataset_from_paths",
+        "line": 1107,
+        "end_line": 1122
+      },
+      {
+        "name": "train_model",
+        "line": 1124,
+        "end_line": 1164
+      },
+      {
+        "name": "evaluate_model",
+        "line": 1166,
+        "end_line": 1250
+      },
+      {
+        "name": "plot_training_history",
+        "line": 1252,
+        "end_line": 1282
+      },
+      {
+        "name": "compare_models",
+        "line": 1284,
+        "end_line": 1315
+      },
+      {
+        "name": "train_model_parallel",
+        "line": 1317,
+        "end_line": 1384
+      },
+      {
+        "name": "main",
+        "line": 1386,
+        "end_line": 1490
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "from keras.applications import VGG16, ResNet50"
+      },
+      {
+        "line": 2,
+        "source": "from keras.models import Model"
+      },
+      {
+        "line": 3,
+        "source": "from keras.layers import Dense, GlobalAveragePooling2D, Dropout"
+      },
+      {
+        "line": 4,
+        "source": "from keras.optimizers import Adam"
+      },
+      {
+        "line": 5,
+        "source": "from keras.utils import image_dataset_from_directory"
+      },
+      {
+        "line": 6,
+        "source": "from keras.preprocessing import image"
+      },
+      {
+        "line": 7,
+        "source": "from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau, CSVLogger"
+      },
+      {
+        "line": 8,
+        "source": "from sklearn.metrics import confusion_matrix, classification_report"
+      },
+      {
+        "line": 9,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 10,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 11,
+        "source": "import seaborn as sns"
+      },
+      {
+        "line": 12,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 13,
+        "source": "from datetime import datetime"
+      },
+      {
+        "line": 14,
+        "source": "import os"
+      },
+      {
+        "line": 15,
+        "source": "import argparse"
+      },
+      {
+        "line": 16,
+        "source": "import multiprocessing as mp"
+      },
+      {
+        "line": 17,
+        "source": "from functools import partial"
+      },
+      {
+        "line": 18,
+        "source": "import json"
+      },
+      {
+        "line": 19,
+        "source": "from sklearn.model_selection import KFold, StratifiedKFold"
+      }
+    ],
+    "duplicate_top_level_definitions": {
+      "get_data_generator": [
+        401,
+        814
+      ]
+    }
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\run_gradcam.py",
+    "sha256": "62e87b3a6a10c360a9462537b4815895587bd4b401327657d1d77fc7802193d5",
+    "lines": 365,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "create_vgg16_model",
+        "line": 16,
+        "end_line": 22
+      },
+      {
+        "name": "create_resnet50_model",
+        "line": 24,
+        "end_line": 30
+      },
+      {
+        "name": "find_last_conv_layer",
+        "line": 32,
+        "end_line": 40
+      },
+      {
+        "name": "make_gradcam_heatmap",
+        "line": 42,
+        "end_line": 76
+      },
+      {
+        "name": "overlay_heatmap_with_peak",
+        "line": 78,
+        "end_line": 135
+      },
+      {
+        "name": "preprocess_image",
+        "line": 137,
+        "end_line": 142
+      },
+      {
+        "name": "calculate_metrics",
+        "line": 147,
+        "end_line": 176
+      },
+      {
+        "name": "save_combined",
+        "line": 178,
+        "end_line": 226
+      },
+      {
+        "name": "main",
+        "line": 228,
+        "end_line": 362
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import argparse"
+      },
+      {
+        "line": 3,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 4,
+        "source": "import tensorflow as tf"
+      },
+      {
+        "line": 5,
+        "source": "from tensorflow.keras.applications.vgg16 import VGG16"
+      },
+      {
+        "line": 6,
+        "source": "from tensorflow.keras.applications.resnet50 import ResNet50"
+      },
+      {
+        "line": 7,
+        "source": "from tensorflow.keras.layers import GlobalAveragePooling2D, Dropout, Dense"
+      },
+      {
+        "line": 8,
+        "source": "from tensorflow.keras.models import load_model, Model"
+      },
+      {
+        "line": 9,
+        "source": "from tensorflow.keras.preprocessing.image import load_img, img_to_array"
+      },
+      {
+        "line": 10,
+        "source": "import matplotlib.cm as cm"
+      },
+      {
+        "line": 11,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 12,
+        "source": "from PIL import Image, ImageDraw, ImageFont"
+      },
+      {
+        "line": 13,
+        "source": "from glob import glob"
+      },
+      {
+        "line": 14,
+        "source": "from datetime import datetime"
+      },
+      {
+        "line": 144,
+        "source": "import csv"
+      },
+      {
+        "line": 145,
+        "source": "from scipy import ndimage"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\run_parallel_training.py",
+    "sha256": "35c26d80bc187e067d555dbe84f9297ef50e2006d4d24dcb10b709659e26e55f",
+    "lines": 184,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "check_system_resources",
+        "line": 7,
+        "end_line": 25
+      },
+      {
+        "name": "get_training_config",
+        "line": 27,
+        "end_line": 68
+      },
+      {
+        "name": "main",
+        "line": 70,
+        "end_line": 180
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import sys"
+      },
+      {
+        "line": 3,
+        "source": "import psutil"
+      },
+      {
+        "line": 4,
+        "source": "import argparse"
+      },
+      {
+        "line": 5,
+        "source": "from datetime import datetime"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\run_parallel_training_vgg16.py",
+    "sha256": "4502d98012986e5470d8688415d0dc3bdb07ffbcb5faea800d894ac61780d7c9",
+    "lines": 159,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "check_system_resources",
+        "line": 8,
+        "end_line": 26
+      },
+      {
+        "name": "get_training_config",
+        "line": 28,
+        "end_line": 64
+      },
+      {
+        "name": "main",
+        "line": 66,
+        "end_line": 155
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import sys"
+      },
+      {
+        "line": 3,
+        "source": "import psutil"
+      },
+      {
+        "line": 4,
+        "source": "import argparse"
+      },
+      {
+        "line": 5,
+        "source": "from datetime import datetime"
+      },
+      {
+        "line": 6,
+        "source": "import tensorflow as tf"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\scalogram_utils.py",
+    "sha256": "248d19121fda24f0170cfe1d92d63c2e72eb96abc925df59d59b7ac50e37c1a0",
+    "lines": 86,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "ScalogramProcessor",
+        "line": 8,
+        "end_line": 86
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import numpy as np"
+      },
+      {
+        "line": 2,
+        "source": "import pandas as pd"
+      },
+      {
+        "line": 3,
+        "source": "import pywt"
+      },
+      {
+        "line": 4,
+        "source": "import matplotlib.pyplot as plt"
+      },
+      {
+        "line": 5,
+        "source": "from io import BytesIO"
+      },
+      {
+        "line": 6,
+        "source": "from PIL import Image"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\split_dataset.py",
+    "sha256": "917f468e54c9357d82dd452f0fac32c36667cca927ff9300df002624b591b0b7",
+    "lines": 98,
+    "syntax": "PASS",
+    "definitions": [
+      {
+        "name": "create_directory_structure",
+        "line": 6,
+        "end_line": 15
+      },
+      {
+        "name": "split_dataset",
+        "line": 17,
+        "end_line": 69
+      },
+      {
+        "name": "process_all_datasets",
+        "line": 71,
+        "end_line": 89
+      },
+      {
+        "name": "main",
+        "line": 91,
+        "end_line": 95
+      }
+    ],
+    "imports": [
+      {
+        "line": 1,
+        "source": "import os"
+      },
+      {
+        "line": 2,
+        "source": "import shutil"
+      },
+      {
+        "line": 3,
+        "source": "import random"
+      },
+      {
+        "line": 4,
+        "source": "from pathlib import Path"
+      }
+    ],
+    "duplicate_top_level_definitions": {}
+  },
+  {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\requirements.txt",
+    "sha256": "b8d3b6de7ab8302239d370768db75b3d9af0eadeffe1ac5d99d44315fac19621",
+    "content": "tensorflow>=2.15.0\nkeras>=2.15.0\nnumpy>=1.24.0\npandas>=2.0.0\nmatplotlib>=3.7.0\nseaborn>=0.12.0\nscikit-learn>=1.3.0\npillow>=10.0.0\n"
+  }
+]

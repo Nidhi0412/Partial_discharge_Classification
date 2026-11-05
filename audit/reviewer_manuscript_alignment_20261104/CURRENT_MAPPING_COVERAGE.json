@@ -1,0 +1,15 @@
+{
+  "images": 1600,
+  "materials": {
+    "Nomex": 800,
+    "Teflon": 800
+  },
+  "nonempty_fields": {
+    "recording_id": 1600,
+    "electrode": 0,
+    "session_id": 0,
+    "source_csv_path": 0,
+    "wavelet": 0,
+    "true_dwt_level": 0
+  }
+}

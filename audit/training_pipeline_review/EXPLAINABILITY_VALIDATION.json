@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-03",
+  "tests_discovered": 41,
+  "tests_passed": 40,
+  "tests_skipped": 1,
+  "skip_reason": "Repeated backbone fitting smoke test is opt-in; it already passed separately",
+  "new_explainability_tests_passed": 15,
+  "actual_synthetic_tensorflow_gradients": true,
+  "synthetic_stability_and_masking_inference": true,
+  "research_images_analyzed": 0,
+  "research_training_run": false,
+  "analysis_specification": "config/explainability_plan.json",
+  "plan_status": "PROPOSED_DEFAULTS_REQUIRE_FREEZE_BEFORE_FINAL_MAP_INSPECTION",
+  "syntax": "PASS",
+  "git_diff_check": "PASS",
+  "sources": {
+    "code\\explain_pipeline.py": "95dfff2a2453d33fa8dec0b84eb44f2cc1b4d3c8a47b6abc2e4d6844a35fb9c3",
+    "code\\explain_statistics.py": "280cc2f0779c8f96007eba3b0d06e60374a97391da8e11be319b161ebbcd3a0e",
+    "config\\explainability_plan.json": "792ddebd876a3d5dc42038c16ecc6fc347205d18785611e5f34f32a8865c9677"
+  }
+}

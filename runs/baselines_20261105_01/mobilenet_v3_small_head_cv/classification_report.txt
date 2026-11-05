@@ -1,0 +1,4 @@
+Development out-of-fold validation
+Class	Precision	Recall	F1	Support
+Nomex	0.951713	0.954688	0.953198	640
+Teflon	0.954545	0.951562	0.953052	640

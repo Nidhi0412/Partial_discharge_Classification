@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "error_type": "ResourceLimitError",
+  "message": "Available RAM 1.48 GiB is below reserve 1.50 GiB. Close other applications, then resume."
+}

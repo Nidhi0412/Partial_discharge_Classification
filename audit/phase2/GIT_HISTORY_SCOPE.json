@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "D:\\Nidhiiiiii\\Electrode_PD_Classification\\Electrode_PD_Classification",
+    "returncode": 0,
+    "log": "d53c30d7940f46be881f5c5022db95d57a86c075 2026-02-27T17:44:19+05:30 Electrode-based PD classification and pattern recognition (VGG16)\n",
+    "error": ""
+  },
+  {
+    "repository": "D:\\Nidhiiiiii\\Multi-class-Machine-gnotics-codes\\Multi-class-Machine-gnotics-codes\\streamlit_cloud",
+    "returncode": 0,
+    "log": "190d776ebd4576177453478d71e2774b4b63ae71 2026-07-23T10:44:27+05:30 Merge remote README and keep Streamlit Cloud deploy docs\n3d198bc985121a523fd125b7113d799076ad9d41 2026-07-23T07:42:26+05:30 Initial commit\n4c7f86bb3c0e08ee2ce824ed13b4aeef8a9de039 2026-07-22T15:29:47+05:30 Add Paper-1 Streamlit demo for Community Cloud deploy\n",
+    "error": ""
+  },
+  {
+    "repository": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal",
+    "returncode": 0,
+    "log": "c3582c989520d169c58d68beab2ff88ee4f59f9f 2026-07-16T10:52:22+05:30 Add Streamlit UI for insulation classification inference.\n13ea2d0f589e8f8735afc954bba66e2e081d3d76 2026-02-27T16:32:30+05:30 Insulation classification: code, VGG16/ResNet50 results, README\n",
+    "error": ""
+  }
+]

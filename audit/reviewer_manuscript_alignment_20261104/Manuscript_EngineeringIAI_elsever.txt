@@ -1,0 +1,360 @@
+[P0001.L001] Original Article
+[P0003.L001] Wavelet Transform-Based Feature Extraction and VGG16 Convolutional Neural Network for Ultra-High-Frequency Partial Discharge Classification
+[P0005.L001] Abstract
+[P0006.L001] This paper presents a unique approach that combines wavelet transforms (WTs) and convolutional neural networks (CNNs) for the classification of partial discharge (PD) signals in electrical power systems. Ultra-high-frequency (UHF) sensors record the PD phenomenon in two different materials: Nomex and Teflon. The signals obtained using UHF sensors are decomposed into five levels using Daubechies (db1-db4) mother wavelet. The most informative, detailed coefficients are extracted as a PD feature and converted into a scalogram based on Shannon entropy analysis and higher-energy criteria. The pre-processed, data-augmented image set of obtained scalograms is provided to a pre-trained VGG16 CNN, which classifies the PD signal into two classes. Finally, to evaluate the Performance of the proposed transfer learning technique, the CNN-VGG16 approach is compared with the CNN-ResNet50 technique. Pre-trained CNNs were used as fixed feature extractors and fine-tuned for PD classification. The Performance was computed using a k-fold cross-validation method to ensure generalisation and reduce overfitting. Metrics such as per-fold precision, recall, and F1-score are used for evaluation. The VGG16 model achieves the highest average classification accuracy of 98.20% ± 0.25%, while ResNet50 achieves 97.03% ± 0.64%. To ensure the reliability of the models, ROC-AUC analyses have been computed, and 95% confidence intervals have confirmed the statistical reliability of the reported Performance. The overall metrics show that transfer learning of deep neural networks effectively works for Wavelet-scalogram-based PD classification.
+[P0007.L001] Keywords: Convolutional Neural Networks (CNNs), Deep Learning (DL), Partial Discharge (PD), Shannon Entropy, VGG16, Wavelet decomposition, ResNet50
+[P0009.L001] 1. Introduction 
+[P0010.L001] The key component of a reliable system is a healthy insulating structure in electrical assets. Most electrical equipment malfunctions are frequently caused by insulation degradation. Under normal circumstances, a uniform electric field is sustained between electrodes in intact insulation. However, the presence of defects such as impurities, cavities, air inclusions, or electrical treeing disrupts the uniformity of the electric field, which leads to degradation. The onset of partial discharge depends on the nature and extent of the defects. It occurs at specific voltage levels before the complete breakdown of the insulating system. During partial discharge, the local electric field intensity increases, allowing charge carriers to traverse the insulation. Prolonged activity of partial discharge in any insulation system may degrade insulation, eventually leading to failure of the entire electrical system.
+[P0011.L001] There are several factors, including dielectric properties, thickness, and loading conditions, that influence the ageing of insulation systems in electrical equipment, which leads to Partial Discharge. In transformers, thermal ageing of oil-impregnated paper as insulation is a significant factor. In generators and motors, insulation ageing is caused by a combination of electrical, thermal, and mechanical stresses. In switchgear, the ageing of essential components such as bushings, cable terminations, current transformers (CTs), and potential transformers (PTs) reduces their lifespan. In general, the life span and reliability of any electrical insulation system are determined by the interaction of thermal, electrical, environmental, and mechanical (TEAM) stresses (Sumereder & Muhr, 2005; Senn et al., 2008).
+[P0012.L001] Partial discharge (PD) is defined by the International Electrotechnical Commission (IEC) as a slight electrical discharge that does not entirely pass through the insulation between conductors and may occur near or away from a conductor (Hassan et al., 2020; International Electrotechnical Commission, 2015). In simple terms, PD is a small spark that occurs within the insulation system. It usually appears as short pulses of current or voltage. The occurrence of PD depends on factors such as environmental conditions, the properties of the insulating material, and the applied voltage (Ua). The leading causes of partial discharge include (Hussain et al., 2013)
+[P0013.L001] Imperfections and surface contaminants in solid insulation.
+[P0014.L001] Voids formed within the solid insulation during the manufacturing process.
+[P0015.L001] Cracks in the solid insulation caused by aging, mechanical stress, or external forces.
+[P0016.L001] To better understand PD, it is important to study the electrical processes that cause it and the fundamental mathematical principles that explain its different forms. PD is usually divided into three main types: surface discharge, internal discharge, and corona discharge. The basic concepts related to these types have been discussed by Morshuis (2005) and Van Brunt (1994). The PD can be characterized by various parameters that provide helpful information on the severity of discharge and the level of insulation failure. The parameters are:
+[P0017.L001] Inception voltage (Ui)
+[P0018.L001] Apparent charge (qa)
+[P0019.L001] Cumulative energy (CE)
+[P0020.L001] Average discharge current (Iavg_disc)
+[P0021.L001] Power dissipation (Pd)
+[P0022.L001] Quadratic rate (D)
+[P0023.L001] The above parameters are crucial for assessing the health of insulation and identifying the potential risk of failures in high-voltage system (International Electrotechnical Commission, 2015). These characteristics, contributes to fast and improved diagnostics and condition monitoring.
+[P0024.L001] Furthermore, the PD can be analyzed with some other phenomenon which includes, change in temperature, vibrations, light emission, decomposition of gas, and electromagnetic radiations. These phenomena require specialized sensors and measuring techniques wherein the data recorded using electrical method is the most effective measurement technique having higher accuracy (Bargigia et al., 1992; Ibrahim, 2017; Ji et al., 2016; Ji et al., 2017; Reid & Judd, 2012; Wang et al., 2016). In addition, to electrical method, some other techniques like thermal imaging, acoustic sensing, optical sensing, and gas analysis helps in determining the PD characteristics and its location. Using multiple detection approach condition monitoring can be achieved enhancing the reliability and accuracy of detection.
+[P0025.L001] There are two different methods for the measurement of PD, conventional and non-conventional techniques (Sikorski, 2019). The conventional methods are used primarily in offline applications which includes laboratory testing and periodic onsite inspection. Whereas, the non-conventional method is suitable for online and continuous monitoring having less complexity and is cost effective solution. As per IEC 60270 standard, the non-conventional PD measurement can detect various physical parameters like apparent charge, electromagnetic waves, acoustic emissions, and optical signals even though they originate from same PD source. This enables real-time monitoring of PD, enabling early detection of insulation failure and thus improving reliability.
+[P0026.L001] At present, the commonly used methods for PD detection are ultra-high frequency (UHF) methods, ultrasonic detection, pulse current measurement, infrared analysis, and decomposition product analysis of SF₆. Among them, the UHF method has been widely used due to its high sensitivity, strong anti-interference performance, and suitability for real-time online monitoring. In research, pattern recognition algorithms play an important role in precise PD detection (Umamaheswari & Sarathi, 2011). A lot of research work has been done, and great progress has been made in PD pattern recognition. A major drawback of feature extraction is that it is performed manually by experts, which takes longer. In contrast, deep learning algorithms automatically extract features, making them more efficient than traditional machine learning algorithms. For instance, the authors of (Yang et al., 2020) have proposed a residual network architecture that automatically extracts features from phase-resolved partial discharge spectrograms, achieving a classification accuracy of 96%.
+[P0027.L001] In this paper (Fangcheng et al., 2015), PCA was employed to handle the dimensionality of the phase-resolved partial discharge spectrogram data. A multiclass relevance vector machine was then used for classification, achieving an accuracy of 85%. In (Hui et al., 2018), a deep convolutional neural network was utilized to detect patterns in phase-resolved pulse sequence spectra. The authors claimed that the classification accuracy was improved compared to support vector machines and back-propagation neural networks. Most previous work has focused on defect detection and classification using PD datasets, such as PRPD and PRPS spectra, resulting in significant improvements in classification accuracy.
+[P0028.L001] Wavelet-based scalogram representations are widely used for image-based partial discharge (PD) classification because they effectively capture the time–frequency characteristics of UHF signals. Much research has been conducted on PD pattern recognition and classification using these features. (Barrios et al. ,2021) demonstrated PD pattern identification using CWT-based scalograms and a convolutional autoencoder under noisy conditions.
+[P0029.L001] At the same time, (Sahoo and Karmakar, 2024) reported improved CNN performance for XLPE cable insulation using wavelet scalogram features. Hybrid frameworks combining CNN-based feature extraction with conventional classifiers have also shown strong performance; while (Fei et al., 2024) found that a simple CNN with a quadratic SVM performed well, and (Duan et al., 2019) showed that CNN-derived features coupled with machine learning classifiers can perform well alongside traditional approaches.
+[P0030.L001] Due to limited data availability in real-time cases, to overcome the situation of a small dataset, transfer learning has been adopted in PD diagnostics, including transformer-based models (Guo et al., 2024), pre-trained VGG networks using wavelet-based time–frequency representations (Zhao et al., 2022), and domain-generalised neural networks for UHF PD classification in HVDC GIS systems (Seitz et al., 2024).
+[P0031.L001] Most recent studies show that it is insufficient to evaluate PD classifiers in safety-critical applications by relying solely on accuracy as a measure of model significance. Threshold-independent metrics such as Receiver Operating Characteristic (ROC) analysis and Area Under the Curve (AUC) provide a more reliable assessment of discrimination capability and generalisation performance (Sahoo and Karmakar, 2024; Seitz et al., 2024). 
+[P0032.L001] Most of the existing literature explored PD classification which are based on the source of PDs using several electrode configurations. While prior research has primarily taken a broad approach to PD defect classification, this study focuses on classifying specific insulating materials, namely Teflon and Nomex paper, using UHF PD signals. The proposed method integrates wavelet transform for feature extraction with a CNN-VGG16 model using pre-trained CNN algorithms, resulting in improved accuracy and robustness in PD detection. The main contributions of the paper are as follows:
+[P0033.L001] Development of a hybrid approach integrating wavelet transform-based feature extraction with deep learning (CNN-VGG16), achieving superior classification accuracy for PD signals in high-voltage insulation systems.
+[P0034.L001] Optimization of transfer learning techniques by fine-tunning pre-trained CNN models, adjusting key hyper parameters (learning rate, batch size, dropout rate), and enhancing model adaptability, leading to VGG16 achieving 98.20% accuracy.
+[P0035.L001] Experimental validation using UHF sensors on Nomex and Teflon insulation, demonstrating the real-world effectiveness of the proposed methodology for reliable PD classification in high-voltage applications.
+[P0036.L001] The remaining part of the paper is organized as follows:  the Section 2 elaborates on the materials used in the experiment and provides an explanation of the experimental setup for further analysis. Section 3 focuses on the signal-processing technique using the wavelet transform. Section 4 discusses on the pretrained CNN models used for the classification of PD signals. In Section 5, the classification results are discussed, and Section 6 presents the overall conclusion of the research work. Additionally, we perform a ROC-AUC test to assess how well both models distinguish between the classes across all thresholds, and a 95% confidence interval test to assess the consistency of the models.
+[P0037.L001] 2. Data Acquisition of Partial Discharge
+[P0038.L001] Most researchers found that UHF sensors are highly effective at detecting PD in high-voltage equipment. Due to their high sensitivity, noise immunity, and real-time monitoring capabilities, they offer many advantages over acoustic detection. Unlike acoustic detection, which detects sound waves produced by the PD process, UHF sensors measure high-frequency electromagnetic waves in the 300 MHz to 3 GHz frequency band. One of the main advantages of UHF detection is the higher signal-to-noise ratio (SNR), since electromagnetic waves are less attenuated in high-voltage insulation compared to acoustic waves, which can be heavily damped by transformer oil or solid dielectrics. In addition, UHFs are not susceptible to external noise, such as mechanical vibrations and other interference, which acoustic PD detection interfaces are more often exposed to measurements (Álvarez et al., 2015; Geng et al., 2011; Liu et al., 2015; Schichler et al., 2016; Xu et al., 2015). 
+[P0039.L001] Moreover, UHF sensors are not susceptible to signal reflections or attenuation, thus providing superior localisation quality. This feature makes UHFs effective for detecting the location of insulation failure, enabling faster identification of transient PD activities. Therefore, in this paper UHF sensors are used for PD detection which are highly sensitive to transient PDs and are not affected by electromagnetic interfaces. This paper, mainly focuses on two different insulation materials which are Nomex and Teflon as shown in Table I. 
+[P0040.L001] Nomex paper is an insulating material which is composed of aramid fibres having exceptional dielectric strength, thermal conductivity, and mechanical strength. This material is mainly used in transformers and is exposed to degradation due to moisture absorption. Whereas, Teflon is a chemically inert fluoropolymer having stable dielectric properties at wide range of temperatures.  Due to its reliability, it is widely used in high performance electrical insulation application like tapes and coatings for critical equipment. 
+[P0041.L001] TABLE I: Details of insulating material
+[P0042.L001] Electrodes
+[P0043.L001] Material Type
+[P0044.L001] Nominal thickness
+[P0045.L001] Dielectric strength
+[P0046.L001] (kV/mm)
+[P0047.L001] Terminology used in study
+[P0048.L001] Pointed
+[P0049.L001] Nomex Paper
+[P0050.L001] 2 mm
+[P0051.L001] 300-500 kV/mm
+[P0052.L001] Nomex-pointed (NP),
+[P0053.L001] Nomex-Flat (NF)
+[P0055.L001] Flat
+[P0056.L001] Teflon (PTFE)
+[P0057.L001] 2 mm
+[P0058.L001] 20 – 80 kV/mm
+[P0059.L001] Teflon-pointed (TP),
+[P0060.L001] Teflon-Flat (TF)
+[P0063.L001] A micro strip patch UHF sensor, designed for invasive applications in electrical systems, was employed to detect partial discharge activity. The data collection setup 
+[P0065.L001] Fig.1 schematic diagram of PD UHF signals capturing system
+[P0066.L001] consisted of a high-voltage source, an artificial PD generation cell, electrodes, insulating materials, a UHF sensor, and a mixed-signal oscilloscope (MSO), as illustrated schematically in Figure 1.  Figure 2 illustrates the experimental laboratory setup, which consists of a 30 cm × 30 cm × 30 cm PD cell designed to generate PD pulses using various electrode-insulation configurations. The high-voltage side employs both Pointed-type and flat-type electrodes, while a disc-type electrode on the ground side ensures the required voltage levels.
+[P0067.L001] In this work, Nomex and Teflon are the insulation materials. When various voltage levels are applied, PD occurs within the insulation and radiates EM waves within the PD cell. UHF sensors are placed at equal distances from the PD cell to detect the EM waves. A mixed-signal oscilloscope (MSO) continuously monitors signals at various voltage levels. The captured data is then stored in CSV format for analysis. A total of 400 test cases (Nomex pointed: 100; Nomex flat: 100; Teflon pointed: 100; Teflon flat: 100) were used to evaluate the accuracy of the proposed algorithm. Initially, for each of the four configurations: Nomex-Pointed (NP), Nomex-Flat (NF), Teflon-Pointed (TP), and Teflon-Flat (TF), 100 signals are acquired. The limited dataset size can lead to overfitting in the PD Classification task. Therefore, it is generated by decomposing the original signal with multiple mother wavelets (db1-db4), resulting in four scalogram images per original signal. A total of 1600 samples (Nomex-Pointed: 400, Nomex-Flat: 400, Teflon-Pointed: 400, Teflon-Flat: 400) have been used to analyse the accuracy of the applied algorithm and classification models. Where NP and NF data are used for class “Nomex” and TP and TF data are used for class “Teflon” in the classification approach. The data was aggregated by insulation material to enable the model to learn material-type pattern recognition, independent of electrode geometry.
+[P0068.L001] 3. Signal Processing Using Wavelet Decomposition
+[P0069.L001] Existing studies have primarily focused on converting UHF signals into PRPD patterns for CNN-based models. However, this approach is challenging due to the inherent noise and non-stationary nature of UHF signals, making accurate classification and feature extraction more complex (Barkat & Al-Marzouqi, 2010; Ganeshan et al., 2017; Stone, 2010). Thus, in this paper wavelet decomposition technique is used for extracting the useful information sustained inside the UHF signal acquired during PD. 
+[P0072.L001] Fig. 2. Experimental setup for data acquisition of UHF PD Signals.
+[P0073.L001] Wavelet decomposition is an effective technique for analyzing signals in both the time and frequency domains, making it particularly suitable for non-stationary UHF PD signals. These signals are inherently impulsive and exhibit high-frequency components over short durations. The lower-frequency components present in captured PD signals are often attributed to noise. Wavelet decomposition generates two sets of coefficients: low-frequency components, referred to as approximation coefficients, and high-frequency components, known as detail coefficients. Since detail coefficients capture the transient characteristics of the signal, they are particularly useful for PD analysis as feature. The UHF PD signal x(t) can be mathematically decomposed into wavelet coefficients as equation (1),
+[P0074.L001] xt=j=1Jkcj,kψj,kt+kaj,k∅j,k(t)
+[P0075.L001] (1)
+[P0076.L001] Where, cj,k represents detailed coefficients (high-frequency components),aj,k are the approximation coefficients (low-frequency components), ψj,k is the wavelet function (in this work Daubechies (db2) wavelet is used), ∅j,k is the Scaling function, j is the decomposition level, and k represents the translation index. 
+[P0077.L001] 3.1 Shannon Entropy Analysis for Mother Wavelet Selection 
+[P0078.L001] Selecting an appropriate mother wavelet based on the characteristics of the signal is one of the most critical and challenging aspects of wavelet decomposition. This selection can be systematically approached by computing Shannon entropy (H) using equation (2) for each class of PD signals, allowing for an optimal wavelet choice that preserves the most relevant signal features while minimizing noise and redundancy. 
+[P0079.L001] H= -jpjlogpj
+[P0080.L001]         (2)
+[P0081.L001] Where, pj= EjΣjEj is the proportion of total energy at level j and Ej  is the energy of coefficients at level j. To determine the most suitable mother wavelet for UHF PD signal analysis, H is computed for different wavelets, such as Daubechies (db) and Symlets (sym). The Daubechies (db) has chosen as mother wavelet because it is having the highest entropy, and selected for further analysis as it consists the most significant information of the PD and have minimum loss. we want to enhance data diversity and improve model generalization, scalograms were also generated using Daubechies db1 to db4 which were effectively increasing variability in the dataset for training. Thus, the Shannon entropy-based mother wavelet selection is best for the detection and classification of high frequency PD signals. After choosing the appropriate mother wavelet, it is necessary to select at which level of decomposition is possible for collected PD signals and identify the level with a highly relevant PD feature so we can use it for further scalogram generation tasks.
+[P0083.L001] 3.2 Optimal Decomposition Level Choice by Class of Energy Concentration:
+[P0084.L001] Moreover, the level of decomposition also plays a vital role that is selected using from the frequency range of interest and is computed using equation (3). Since, PDs exhibit rapid and transient behavior of short duration, the selection of optimal decomposition level is a critical parameter. The maximum decomposition level of a signal of length N is given by equation (3) where, J is the highest decomposition level. 
+[P0085.L001] J=log2(N)  
+[P0086.L001] (3)
+[P0087.L001] Each decomposition level in wavelet analysis effectively halves the frequency band, following the Nyquist criterion. For a signal sampled at a frequency fs​, the frequency range at the jth decomposition level can be expressed as equation (4).
+[P0088.L001] fj=fs2j+1   , fs2j
+[P0089.L001]    (4)
+[P0090.L001] Where, fj​ represents the frequency range at level j. This advanced decomposition allows for the isolation of different frequency components, enabling the extraction of transient features relevant to PD analysis. In this paper, the UHF signals are decomposed into five levels using (db1-db4) mother wavelets while the sampling frequency is 2500 MHz. The detail coefficients with the highest energy concentration (Figure 3) are used to generate 2D scalograms that capture time–frequency characteristics of the PD signals. 
+[P0091.L001] For the determination of the most informative decomposition level for a partial discharge (PD) class at each configuration, we compared the mean energy distribution over detail coefficients (DC1 to DC5) for four wavelet bases (db1 to db4). 
+[P0092.L001] Fig. 3. The process of converting UHF PD time domain signals to scalograms.
+[P0093.L001] Mean energy levels for 100 signals were computed for each class and decomposition level as shown in Figure 5. Shows highest energy at particular decomposed level.
+[P0094.L001] Fig. 4. Detail coefficient of different levels contains Nomex flat, Nomex pointed, Teflon flat, and Teflon pointed
+[P0095.L001] As can be seen from Figure 5, the Nomex-based PD classes (NN and NF) have the highest energy concentration at DC1 and DC4, respectively. Likewise, the Teflon-based classes (TF and TN) experienced the highest energy at DC5 and DC4, respectively. 
+[P0097.L001] Fig. 5. Mean Energy distribution of Detail coefficients (DC1-DC5) of for all Category
+[P0099.L001] Based on this observation, for each insulation material class (Nomex and Teflon), we selected four mother wavelets (db1 to db4) and selected maximum energy concentrated appropriate detailed coefficients corresponding to each configuration which results in generation of eight scalograms per original signal (2 coefficients × 4 wavelets) for each class. With 100 original signals per configuration, 800 scalograms were generated per class, leading to 1600 scalograms overall for the binary classification task.
+[P0100.L001] Now, selected detailed coefficients component have been served as separate time domain signal and computing scalograms from them are shown in Figure 6., Those scalograms are obtained using the Continuous Wavelet Transform (CWT), defined by: Where, W (a, b) is the wavelet coefficients at scale a and translation b,
+[P0101.L001] S(t,s)=Wa,b^2
+[P0102.L001] (5)
+[P0103.L001] The scalograms of decomposed detail levels for each configuration mentioned above for both classes used as test samples in this paper are shown in Figure 6. Each scalogram is obtained from the detail coefficient specific to class by Continuous Wavelet Transform (CWT) with color representing wavelet energy. The observable differences in energy distribution between classes indicate the distinctive discharge patterns of various insulation–electrode configurations and demonstrate the usefulness of scalogram-based features for PD signal classification capability of the proposed algorithm. 
+[P0104.L001] Moreover, acquiring large-scale PD classification datasets presents significant experimental challenges, often leading to lower accuracies when using traditional machine learning models. Consequently, image-based PD classification combined with transfer learning offers a more robust alternative for effective UHF PD classification, particularly when working with limited datasets. We choose VGG16 and RESNET50 as our pretrained model for PD insulation-based classification. 
+[P0110.L001] 4. PD classification using CNN-VGG16
+[P0111.L001] The concept of deep learning having the idea of residual connection in deep learning models is presented in (Roy et al., 2023), the approach presented a residual connection ResNet50 along with deep neural networks.
+[P0112.L001] Fig. 6. Scalogram for detail coefficient of level 1 contains Nomex flat, Nomex pointed, Teflon flat, and Teflon pointed
+[P0113.L001] In this paper, the UHF sensor data is converted into image format and CNN is used for classification as shown in Figure 7. The different layers of CNN used are as follows:
+[P0114.L001] Fig. 7. Scalogram-Based UHF PD Signal Classification Using VGG16 and ResNet50 Models.
+[P0116.L001] The computed scalograms also needed some image pre-processing as cropping the axis and label data as shown in Figure 7., and normalized all images at same level for better pattern recognition and feature extraction. Some more data augmentation has been performed which is explained in result and discussion section.
+[P0117.L001] Convolution Layer: 
+[P0118.L001] This layer consists of various filtering process also known as kernels and is the most important layer of the CNN model. The process of convolution is done and the kernels slides over the input images. The main objective using this process is to find distinct features of the image at different locations like center, corners, edges etc. this produces a set of features which are mapped with the condition by multiplying every point I (a, b) with the kernel K (x, y) and are combined. Mathematically, Equation (6) can represent this operation.
+[P0119.L001] (I×K)(x×y)=a,bIa,bK(x+a, y+b)
+[P0120.L001] (6)
+[P0121.L001] Rectified Linear Activation Unit (RELU): 
+[P0122.L001] The complex relation in the input data is determined by adding the nonlinearity. This is done when the mapped features are exposed to the nonlinear activation function (RLAU) which is given by equation (7), where, z is the input function.
+[P0123.L001] RELU(z)=max(0,z)
+[P0124.L001] (7)
+[P0125.L001] Pooling function: 
+[P0126.L001] In this layer of the CNN model, the unwanted feature maps are eliminated while retaining the useful information of the image. This reduces the dimensions of the feature map and thereby reducing the complexity and computational time. The size of the feature maps can be reduced by adding multiplicative (hqm) and additive (wqm) bias terms which are given by equation (8) where, down is the pooling function. This operation in CNN also reduces the danger of a most common issue of machine learning that is overfitting. The overfitting is the condition where the machine learning gives outstanding performance during training but faces issues during testing process using another set of data.  
+[P0127.L001] dqm=φ(hqmdowndqm-1+wqm)
+[P0128.L001] (8)
+[P0129.L001] Connected Layer: 
+[P0130.L001] Usually during the process in CNN modelling, the data sets are shaped in a 1-dimensional vector format, after all the essential features are been extracted known as flattening. The training can be performed by two different ways i.e. training from the scratch and modification in the pre-trained model. In from scratch training, the model is trained without any previous knowledge about the condition it is being trained. This takes various iterations to train each layer of the CNN model. Whereas, the pre-trained models use the prior knowledge and where the operation layer is kept intact while the other layers are fine-tuned. The fine-tuned layers are then connected at the end replacing the existing layers. 
+[P0131.L001] In this paper, two different pre-trained CNN models ResNet50 and VGG16 are used for classification. The VGG16 deep learning architecture have 16 layers, out of which 13 are the convolution layers, three are the fully connected layers which are being filtered by 3 x 3 filters. the Keras implementation includes additional layers such as activation, pooling, and dropout, resulting in a total of 22 layers. The feature extractor is used to extract general feature representations from images that contain better accuracy with small datasets. Whereas, ResNet50 deep CNN architecture proposed to solve the problem of vanishing gradients using residual learning blocks. It comprises 50 layers with identity shortcuts layers but is represented as 178 layers in the model summary due to its modular structure and intermediate layers which allow the network to skip the connections; thus, it could train intense networks without performance loss. It is effective for transfer learning due to its ability to catch complex features while being efficient. That can further be fine-tuned for the specific task, such as PD classification, by re-architecting the fully connected layers to fit the target dataset for both pre-trained models.
+[P0132.L001] In this study, 5-fold cross-validation was also selected to ensure balanced evaluation while training on k-1 folds and testing on the reaming fold repeated for k times to avoid bias during training and testing. The final performance is averaged across all iterations. Each fold from 5-fold maintained a balanced class between Nomex and Teflon of PD scalograms. The results of Fold 1 were not available due to some technical issues; therefore, only Folds 2 to 5 were included in the final analysis. However, the remaining folds still provide a reliable evaluation of model performance; the absence of one-fold may slightly influence the accuracy of overall performance metrics. Cross-validation splitting was performed at the original signal level to prevent data leakage, ensuring that scalograms derived from the same raw signal did not appear in both training and testing folds.
+[P0133.L001] To better understand the quality of these two models beyond accuracy, we calculated ROC curves and obtained AUCs for each cross-validation fold. The plot of the ROC curve shows sensitivity (true positive rate) on the Y-axis and the false positive rate (1-specificity) on the X-axis at each possible threshold, providing a performance measure independent of the chosen threshold. In addition to sharing the average results, we also calculated the 95% confidence intervals for accuracy and ROC-AUC on each of the five folds. Confidence intervals provide a statistical measure of performance stability and help evaluate the generalisation ability of machine learning models under limited data conditions.The confidence interval (CI) for each metric was calculated using the formula:
+[P0134.L001] 	                                                CI = x±tα2⋅\sn                                                       (9)
+[P0135.L001] 	Where x is the sample mean, s is the sample standard deviation, n=4(folds), and  tα2 is the t-critical value corresponding to the 95% confidence level for n−1 degrees of freedom.
+[P0137.L001] 	5. Results and Discussion
+[P0138.L001] In this study, the dataset consists of a total of 1600 signals evenly distributed across two classes: Nomex-Pointed (NP), Nomex-Flat (NF) as “Nomex class”, Teflon-Pointed (TP), and Teflon-Flat (TF) as “Teflon class”, with 800 signals per class. An 80-20% train-test split was applied with validation set, which resulted in 1280 signals for training, validation set is 256 and 320 signals for testing combining of both classes. The classification is done using two deep learning model viz. ResNet50 and VGG16. As CNN require image-based inputs, scalograms obtained from the detailed coefficients of wavelet decompositions is fed as input where dataset size remained consistent across both approaches, ensuring comparability of results with balanced data. 
+[P0139.L001] As this study uses the existing machine learning method thus, it requires accuracy improvement which is achieved by applying optimization and hyperparameter tuning. As a part of feature extraction, the models were adapted by freezing their base layers and then fine-tuning the last few layers for compatibility with suggested PD classification. The experimental setups used to train and evaluate two pre-trained convolutional neural network (CNN) models for binary classification of insulation types, “Nomex vs. Teflon.” The first experiment, used the ResNet50 architecture. And the second, employed the VGG16 model, which was initialized with ImageNet weights in this training and then fine-tuned to the target dataset. The input data is the scalogram images obtained by image and signal preprocessing, resized to 224 × 224 pixels for transfer learning with binary labels corresponding to the insulation class. The binary classification used a sigmoid activation function and binary cross-entropy as the loss function. To improve generalization and reduce overfitting, both experiments included: 
+[P0140.L001] - Dropout (rate = 0.5)
+[P0141.L001] - L2 regularization (λ = 0.01)
+[P0142.L001] - Data augmentation with intensity of 0.15 as moderate intensity
+[P0143.L001] -Specialized augmentation techniques aligned with time-frequency representations.
+[P0144.L001]  Training was performed using a batch size of 16, and early stopping for 10 epochs was utilized to stop training as soon as performance stopped improving. The learning rate was also regulated using a learning rate reduction strategy with patience of 5 epochs. A cross-validation method with 4-fold was used in both environments for robustness. The training also approaches the utilisation of fine-tuning in both experiments, the VGG16 model and RESNET50, where the pre-trained layers are modified to suit the targeted classification properties of dataset. 
+[P0145.L001] To promote the generalization capacity of our models and make them less sensitive to real-world variations, we created a two-stage data augmentation pipeline for scalogram images from partial discharge (PD) signals. In the initial phase, we used usual image-level augmentations—like random horizontal flip, minor rotation (in ±10° range), minor zooming, and controlled illumination and contrast modification. These reproduced minor variations in signal capture conditions without upsetting the inherent structure of the scalogram. The second phase concerned augmentations based on spectrogram and audio learning methods. We added frequency masking to randomly mask out certain frequency bands and time masking to mask parts of the time axis for a short period, sample is shown in Figure 8. 
+[P0146.L001] Fig. 8 Augmented scalogram image as frequency and time masking
+[P0147.L001] These reduce the tendency of the model to concentrate on a broader context instead of fitting to local frequency or timing part of signal. In certain instances, we also tried phase-aware shifts, using small circular shifts along the time axis to mimic the timing variability of PD events. All the augmentations were uniformly applied to both the VGG16 and ResNet50 models. The strategy to use more variability across both the time and frequency domains is utilized to learn more generalizable features for each model, resulting in improved classification performance.
+[P0148.L001] Feature extraction mainly captures general patterns such as edges, shapes, and textures of images by freezing all convolutional layers. It needs to train only for the new classifier while fine-tuning works on deeper layers to understand specific patterns from new data without training it from scratch using pre-trained model weights. To adapt pre-trained CNNs for classifying partial discharge (PD) scalogram images, we fine-tuned only the top layers of ResNet50 and VGG16. We used deeper layers to recognize specific Partial Discharge-like features. In RESNET50, from conv5_block2_2_relu to the final dense layer, 19 out of 178 layers were trained and used in fine-tuning with the Adam optimizer using a learning rate 5e-5. For VGG16, 8 out of 22 layers were fine-tuned from block 5_conv1 onward, using a slightly higher learning rate of 1e-4 due to its simpler architecture. We applied early stopping and checkpoints to ensure training stability for both models. This approach helped to avoid overfitting and maintain generalization with learning class-specific patterns from smaller PD scalograms. Model performance was evaluated on the test set, and the selected hyperparameters produced high classification accuracy across both classes.
+[P0149.L001] This section initially discusses the overall classification reports to establish a model-level comparison of ResNet50 and VGG16, represented in Table II. Thereafter, class-wise performance is evaluated through the confusion matrices shown in Table III, followed by the learning curves in Figure 9, to assess training consistency and overfitting tendencies. A comparative plot of F1-scores for both models is also included to better understand the results which is shown in Figure 10.
+[P0150.L001] The comparative evaluation of both models is listed in Table II. The Fold wise cross-validation scores, including precision, recall, and F1-score, are shown in the table. Both ResNet50 and VGG16 achieved high classification performance; however, VGG16 demonstrated slightly higher mean values with lower variability across folds.
+[P0151.L001] Table II.  Fold-wise Classification result for VGG16 and RESNET50 models
+[P0153.L001] Folds
+[P0154.L001] Precision
+[P0155.L001] (ResNet50 | VGG16)
+[P0156.L001] Recall
+[P0157.L001] (ResNet50 | VGG16)
+[P0158.L001] F1-score
+[P0159.L001] (ResNet50 | VGG16)
+[P0160.L001] fold_2
+[P0161.L001] 0.9748 | 0.9849
+[P0162.L001] 0.9688 | 0.9844
+[P0163.L001] 0.9718 | 0.9843
+[P0164.L001] fold_3
+[P0165.L001] 0.9515 | 0.9819
+[P0166.L001] 0.9812 | 0.9812
+[P0167.L001] 0.9662 | 0.9812
+[P0168.L001] fold_4
+[P0169.L001] 0.9872 | 0.9820
+[P0170.L001] 0.9625 | 0.9813
+[P0171.L001] 0.9747 | 0.9813
+[P0172.L001] fold_5
+[P0173.L001] 0.9934 | 0.9819
+[P0174.L001] 0.9437 | 0.9811
+[P0175.L001] 0.9679 | 0.9811
+[P0176.L001] Mean
+[P0177.L001] 0.9767 | 0.9827
+[P0178.L001] 0.9641 | 0.9820
+[P0179.L001] 0.9701 | 0.9820
+[P0180.L001] Std
+[P0181.L001] 0.0185 | 0.0014
+[P0182.L001] 0.0156 | 0.0016
+[P0183.L001] 0.0038 | 0.0016
+[P0185.L001] Table III. Fold-wise Confusion Matrix for VGG16 and RESNET50 models
+[P0187.L001] Model
+[P0188.L001] Fold
+[P0189.L001] Nomex 
+[P0190.L001] Nomex
+[P0191.L001] Teflon
+[P0192.L001] Teflon
+[P0193.L001] Accuracy
+[P0196.L001] (True P)
+[P0197.L001] (False N)
+[P0198.L001] (False P)
+[P0199.L001] (True P)
+[P0201.L001] VGG16
+[P0202.L001] Fold_2
+[P0203.L001] 160
+[P0204.L001] 0
+[P0205.L001] 5
+[P0206.L001] 155
+[P0207.L001] 0.984375
+[P0208.L001] VGG16
+[P0209.L001] Fold_3
+[P0210.L001] 160
+[P0211.L001] 0
+[P0212.L001] 6
+[P0213.L001] 154
+[P0214.L001] 0.98125
+[P0215.L001] VGG16
+[P0216.L001] Fold_4
+[P0217.L001] 159
+[P0218.L001] 1
+[P0219.L001] 5
+[P0220.L001] 155
+[P0221.L001] 0.98125
+[P0222.L001] VGG16
+[P0223.L001] Fold_5
+[P0224.L001] 160
+[P0225.L001] 0
+[P0226.L001] 6
+[P0227.L001] 154
+[P0228.L001] 0.98143
+[P0229.L001] ResNet50
+[P0230.L001] Fold_2
+[P0231.L001] 156
+[P0232.L001] 4
+[P0233.L001] 5
+[P0234.L001] 155
+[P0235.L001] 0.971875
+[P0236.L001] ResNet50
+[P0237.L001] Fold_3
+[P0238.L001] 152
+[P0239.L001] 8
+[P0240.L001] 3
+[P0241.L001] 157
+[P0242.L001] 0.965625
+[P0243.L001] ResNet50
+[P0244.L001] Fold_4
+[P0245.L001] 158
+[P0246.L001] 2
+[P0247.L001] 6
+[P0248.L001] 154
+[P0249.L001] 0.975
+[P0250.L001] ResNet50
+[P0251.L001] Fold_5
+[P0252.L001] 159
+[P0253.L001] 1
+[P0254.L001] 9
+[P0255.L001] 151
+[P0256.L001] 0.96875
+[P0258.L001] The performance of the models in terms of their classes can be presented by confusion matrices. Average accuracy values by confusion matrices of models providing information on the approach that can classify signals as PD between binary classes of Nomex and Teflon as shown in Table III.  RESNET50 achieved average accuracy of 97.27%, effectively distinguishing most PD types with minimal misclassifications. The RESNET50 model showed very few false positives in the NOMEX class. At the same time, it was misclassified in the TEFLON category, where a few samples were incorrectly labelled as TEFLON. VGG16 improved classification accuracy, reaching 98.20%, with near-perfect performance across both classes. In this model, the NOMEX and TEFLON classes were classified accurately with no false positives or negatives. At the same time, NOMEX had only minor misclassification issues, with a small number of samples incorrectly predicted as other types.
+[P0260.L001] Fig. 9. learning Curves contains RESNET50 accuracy & loss curve and VGG16 accuracy & loss curve.
+[P0261.L001] A mathematical computation shows that the wavelet coefficients of each category are the most relevant feature for the PD classification. A deep learning technique based on CNN shows that classification tasks with smaller dataset involving UHF PD signals can still presents strong results when using transfer learning. CNN models, particularly VGG16 and ResNet50, effectively extracted high-order features from scalogram images generated using wavelet coefficients.
+[P0262.L001] Figure 9., presents training and validation accuracy and loss curves for VGG16 and ResNet50 models on the cross-validation folds. One of the observations is that VGG16 converges smoothly and uniformly on all folds. The accuracy improves progressively, and the loss reduces progressively with hardly any fluctuations. This indicates that VGG16 learns stable features early and generalizes well to the validation set. Conversely, more instability is observed in the learning process of RESNET50, particularly at initial epochs. 
+[P0263.L001] Validation accuracy curves change significantly, and loss occasionally shoots sharply upward before achieving stability. Such fluctuations are more evident in folds 3 to 5, possibly due to ResNet50's deeper structure, which is sometimes less easy to optimize, especially with limited data sets. Figure10. visually compares fold-wise F1-scores which shows the performances of both models, while Table IV and Table V summarizes their classifying metrics. 
+[P0265.L001] Fig 10. Graphical representation of comparison F1-score performance of both models.
+[P0267.L001] Both models showed strong performance. Table V shows Comparison of Classification Metrics for VGG16 and ResNet50. The outcome reported that VGG16 consistently having good scores then ResNet50 across all folds, with mean F1-score of 0.9820 (±0.0016) compared to ResNet50’s 0.9701 (±0.0038). The performance gap, combined with lower variability of VGG16, shows superior generalization on the binary PD classification task.
+[P0268.L001] The stated results align with the trends seen in the learning curves (Figure 9), where VGG16 showed smoother convergence and more stable validation performance. These results confirm the effectiveness of fine-tuned pre-trained CNNs, particularly VGG16, in extracting reliable features from scalogram images.
+[P0271.L001] TABLE IV. Overall Classification Report for RESNET50
+[P0272.L001] Folds
+[P0273.L001] Accuracy
+[P0274.L001] Precision
+[P0275.L001] Recall
+[P0276.L001] F1-score
+[P0277.L001] fold_2
+[P0278.L001] 0.9718
+[P0279.L001] 0.97484
+[P0280.L001] 0.96875
+[P0281.L001] 0.971787
+[P0282.L001] fold_3
+[P0283.L001] 0.9656
+[P0284.L001] 0.95151
+[P0285.L001] 0.98125
+[P0286.L001] 0.966154
+[P0287.L001] fold_4
+[P0288.L001] 0.9754
+[P0289.L001] 0.98717
+[P0290.L001] 0.96252
+[P0291.L001] 0.974684
+[P0292.L001] fold_5
+[P0293.L001] 0.9687
+[P0294.L001] 0.99342
+[P0295.L001] 0.94375
+[P0296.L001] 0.967949
+[P0297.L001] mean
+[P0298.L001] 0.9703
+[P0299.L001] 0.97674
+[P0300.L001] 0.96406
+[P0301.L001] 0.970143
+[P0302.L001] std
+[P0303.L001] 0.0040
+[P0304.L001] 0.01850
+[P0305.L001] 0.01562
+[P0306.L001] 0.003832
+[P0310.L001] TABLE V. Overall Classification Report for VGG16
+[P0311.L001] Folds
+[P0312.L001] Accuracy
+[P0313.L001] Precision
+[P0314.L001] Recall
+[P0315.L001] F1-score
+[P0316.L001] fold_2
+[P0317.L001] 0.9844
+[P0318.L001] 0.98485
+[P0319.L001] 0.9844
+[P0320.L001] 0.98435
+[P0321.L001] fold_3
+[P0322.L001] 0.9812
+[P0323.L001] 0.98195
+[P0324.L001] 0.98125
+[P0325.L001] 0.98125
+[P0326.L001] fold_4
+[P0327.L001] 0.9812
+[P0328.L001] 0.98205
+[P0329.L001] 0.9813
+[P0330.L001] 0.9813
+[P0331.L001] fold_5
+[P0332.L001] 0.9814
+[P0333.L001] 0.98195
+[P0334.L001] 0.98115
+[P0335.L001] 0.9811
+[P0336.L001] mean
+[P0337.L001] 0.98205
+[P0338.L001] 0.9827
+[P0339.L001] 0.982025
+[P0340.L001] 0.982
+[P0341.L001] std
+[P0342.L001] 0.00157
+[P0343.L001] 0.001434
+[P0344.L001] 0.001585
+[P0345.L001] 0.001569
+[P0348.L001] 5.3 Receiver Operating Characteristic (ROC) and Area Under Curve (AUC) Analysis
+[P0349.L001] To comprehensively evaluate the discriminative capability of both models beyond accuracy metrics, we computed the Receiver Operating Characteristic (ROC) curves and Area Under the Curve (AUC) for each fold of cross-validation. The ROC curve plots the true positive rate (sensitivity) against the false positive rate (1-specificity) across all possible classification thresholds, providing a threshold-independent performance measure.
+[P0351.L001] Fig 11.  Fold-wise Roc-AUC curve for vgg16 and Resnet-50
+[P0352.L001] Figure 11. shows the fold-wise ROC curves for the both models. The VGG-16 model demonstrates exceptional discrimination capability across all folds with the Mean AUC score is 0.9981 ± 0.0006, indicate that VGG16 can effectively distinguish between Nomex and Teflon insulation materials across varying threshold values. An AUC of 0.9981 suggests that the model has a 99.81% probability of correctly ranking a randomly chosen positive sample higher than a randomly chosen negative sample. 
+[P0353.L001] While ResNet50 also achieves a good AUC score (0.9966 ± 0.0003), VGG16 demonstrates marginally superior discrimination capability with 0.15% higher mean AUC. The low standard deviation (0.0003), indicates highly consistent performance across different data splits, suggesting strong generalization capability and suggests that its deeper convolutional architecture with smaller receptive fields may be better suited for capturing the fine-grained time-frequency patterns in wavelet scalograms. Basically, the results of ROC analysis confirms that the wavelet-scalogram + CNN approach provides robust and reliable classification regardless of the specific CNN architecture.
+[P0354.L001] 5.4 Statistical Confidence Analysis
+[P0355.L001] To assess the statistical reliability of our classification models, 95% confidence intervals were computed for accuracy and ROC-AUC based on 4-fold cross-validation results. As shown in Figure 12, VGG16 achieved a classification accuracy of 98.20% ± 0.25% and an AUC of 0.9981 ± 0.0010, while ResNet50 recorded 97.03% ± 0.64% accuracy and 0.9966 ± 0.0005 AUC. The narrower confidence bands of VGG16 further confirm its more stable generalization performance and support the trends observed in fold-wise metrics.
+[P0356.L001] Fig.12. The 95% confidence intervals for classification accuracy and ROC-AUC of VGG16 and ResNet50, based on 4-fold cross-validation. (Error bars represent performance variability).
+[P0357.L001] The results show consistent performance across multiple folds, indicating that the model's behaviour is stable and not accidental. The CNN-based classification model, VGG16, shows strong performance, as it has learned features from PD scalograms such as transient bursts, frequency ridges, and localized energy blobs, indicating that it has truly learned class distinctions. By obtaining a ROC-AUC score, we can assess how well healthy classes separate, regardless of the threshold, by ranking true classes higher than false classes. At the same time, a 95% confidence interval can indicate that performance will remain the same after repeated experiments, suggesting that our model is reliable. The standard deviation across metrics is relatively stable, suggesting the model is not sensitive to dataset splits and generalises well to unseen data. Transfer learning, pre-trained weights, Fine-tuning, and Data augmentation enable our model to successfully learn meaningful time-frequency features without overfitting, despite the limited dataset size. Overall, the CNN models (especially VGG16) are reliable, stable, and statistically validated for PD-scalogram-based classification.
+[P0359.L001] 6. Conclusions
+[P0360.L001] This paper presents pattern recognition and classification of UHF partial discharge signals using a wavelet-based scalogram, a prominent feature of UHF PD signals in high-voltage insulation systems. This study used a dataset of PD signals from two different insulating materials, acquired with a UHF sensor, as classification targets. Because PD signals are impulsive and transient, the selected detail coefficients were converted into scalogram images and supplied as inputs to convolutional neural network (CNN) models. The two image-based pretrained models for transfer learning were used for classification: VGG16 and ResNet50. Here, both models demonstrated strong, consistent performance across k-fold cross-validation. Compared to the results of the mean accuracies, the CNN-VGG16 model performed well, achieving 98.20% ± 0.25%, and the CNN- ResNet50 model achieved 97.03% ± 0.64%. These results show that models are stable and reliable for the proposed framework across 4-fold cross-validation. In addition, to demonstrate the models' generalisation capabilities, fine-tuning of the higher layers of pre-trained networks with data augmentation during training was applied, which has also reduced overfitting, particularly under limited-sample conditions. High mean precision, recall, and F1-score values further indicate excellent class separability and robust discrimination capability. The results show that reliable PD classification can be achieved even with a relatively small number of samples per class, indicating strong generalisation.
+[P0361.L001] Furthermore, receiver operating characteristic (ROC) analysis shows high discriminative capability, with area under the curve (AUC) values exceeding 0.98 for both models across all PD classes. In addition, 95% confidence intervals (CIs) for classification accuracy and AUC metrics are narrow, confirming the statistical stability and reliability of the proposed framework, which results in overall enhancing the accuracy and robustness of UHF-based PD diagnostics, and its usefulness as a practical solution for real-time insulation condition monitoring and fault identification in power systems.
+[P0363.L001] Declarations
+[P0364.L001] All authors declare that they have no conflicts of interest.
+[P0366.L001] Reference
+[P0367.L001] Bargigia, W., Koltunowicz, W., & Pigini, A. (1992). Detection of parallel discharges in gas insulated substations. IEEE Transactions on Power Delivery, 7(3), 1239–1249.
+[P0368.L001] Van Brunt, R. J. (1994). Physics and chemistry of partial discharge and corona: Recent advances and future challenges. IEEE Transactions on Dielectrics and Electrical Insulation, 1(5), 761–784.
+[P0369.L001] Morshuis, P. H. F. (2005). Degradation of solid dielectrics due to internal partial discharge: Some thoughts on progress made and where to go now. IEEE Transactions on Dielectrics and Electrical Insulation, 12(5), 905–913.
+[P0370.L001] Sumereder, C., & Muhr, M. (2005). Estimation of residual lifetime—Theory and practical problems. In Proceedings of the 8th Höfler’s Days (pp. 1–6).
+[P0371.L001] Senn, F., Muhr, M., Ladstätter, W., & Grubelnik, W. (2008). Complexity of determining factors for the thermal evaluation of high voltage insulation systems on the example of rotating machines. In Proceedings of DISEE (pp. 1–4).
+[P0372.L001] Barkat, B., & Al-Marzouqi, H. (2010). A correlation-based approach to interference suppression from phase resolved partial discharge patterns. In Proceedings of the 10th IEEE International Conference on Solid Dielectrics (pp. 1–4).
+[P0373.L001] Stone, G. C. (2010). Relevance of phase resolved PD analysis to insulation diagnosis in industrial equipment. In Proceedings of the 10th IEEE International Conference on Solid Dielectrics (pp. 1–5).
+[P0374.L001] Geng, B., Li, C., Qi, B., Yu, L., & Gao, J. (2011). The comparison of sensitivity between the UHF and ultrasonic methods for partial discharge detecting in GIS. In Annual Report Conference on Electrical Insulation and Dielectric Phenomena (pp. 468–471).
+[P0375.L001] Umamaheswari, R., & Sarathi, R. (2011). Identification of partial discharges in gas-insulated switchgear by ultra-high-frequency technique and classification by adopting multi-class support vector machines. Electric Power Components and Systems, 39(14), 1577–1595.
+[P0376.L001] Reid, J., & Judd, M. D. (2012). Ultra-wide bandwidth measurement of partial discharge current pulses in SF₆. Journal of Physics D: Applied Physics, 45(16), 165203.
+[P0377.L001] Hussain, G. A., Kumpulainen, L., Kluss, J. V., Lehtonen, M., & Kay, J. A. (2013). The smart solution for the prediction of slowly developing electrical faults in MV switchgear using partial discharge measurements. IEEE Transactions on Power Delivery, 28(4), 2309–2316.
+[P0378.L001] International Electrotechnical Commission. (2015). High-voltage test techniques: Partial discharge measurements (IEC 60270). Geneva, Switzerland.
+[P0379.L001] Álvarez, F., Garnacho, F., Ortego, J., & Sánchez-Urán, M. (2015). Application of HFCT and UHF sensors in on-line partial discharge measurements for insulation diagnosis of high voltage equipment. Sensors, 15(4), 7360–7387.
+[P0380.L001] Fangcheng, L., et al. (2015). GIS partial discharge pattern recognition based on principal component analysis and multiclass relevance vector machine. Transactions of China Electrotechnical Society, 30(6), 225–231.
+[P0381.L001] Liu, J., Zhang, G., Dong, J., & Wang, J. (2015). Study on miniaturized UHF antennas for partial discharge detection in high-voltage electrical equipment. Sensors, 15(11), 29434–29451.
+[P0382.L001] Xu, Y., Liu, W., & Gao, W. (2015). Investigation of disc-type sensors using the UHF method to detect partial discharge in GIS. IEEE Transactions on Dielectrics and Electrical Insulation, 22(5), 3019–3027.
+[P0383.L001] Ji, H., Li, C., Pang, Z., Ma, G., Cui, X., Zeng, Z., & Rong, Z. (2016). Moving behaviours and harmfulness analysis of multiple linear metal particles in GIS. IEEE Transactions on Dielectrics and Electrical Insulation, 23(6), 3355–3363.
+[P0384.L001] Wang, C., Liu, B., Xu, H., Jin, J., & Ma, H. (2016). Novel method for partial discharge detection in gas insulated substation. In Proceedings of China International Conference on Electricity Distribution (CICED) (pp. 1–4)
+[P0385.L001] Schichler, U., et al. (2016). UHF partial discharge detection system for GIS: Application guide for sensitivity verification. In Proceedings of VDE High Voltage Technology, ETG-Symposium (pp. 1–9).
+[P0386.L001] Ganeshan, S., Murugesan, J., Cavallini, A., Negri, F., et al (2017). Identification of partial discharges in power transformers: An approach driven by practical experience. IEEE Electrical Insulation Magazine, 33(5), 23–31
+[P0387.L001] Ibrahim, V. M. (2017). Status review on gas insulated switchgear partial discharge diagnostic technique for preventive maintenance. Indonesian Journal of Electrical Engineering and Computer Science, 7(1), 9–17.
+[P0388.L001] Ji, H., Li, C., Pang, Z., Ma, G., Cui, X., Zhao, W., & Wang, J. (2017). Influence of tip corona of free particle on PD patterns in GIS. IEEE Transactions on Dielectrics and Electrical Insulation, 24(1), 259–267.
+[P0389.L001] Hui, S., Dai, J., Sheng, G., & Jiang, X. (2018). GIS partial discharge pattern recognition via deep convolutional neural network under complex data source. IEEE Transactions on Dielectrics and Electrical Insulation, 25(2), 678–685.
+[P0390.L001] Duan, L., Hu, J., Zhao, G., Chen, K., He, J., & Wang, S. X. (2019). Identification of partial discharge defects based on deep learning method. IEEE Transactions on Power Delivery, 34(4), 1557–1568.
+[P0391.L001] Sikorski, W. (2019). Development of acoustic emission sensor optimized for partial discharge monitoring in power transformers. Sensors, 19(8), 1865.
+[P0392.L001] Hassan, W., Hussain, G. A., Mahmood, F., Amin, S., & Lehtonen, M. (2020). Effects of environmental factors on partial discharge activity and estimation of insulation lifetime in electrical machines. IEEE Access, 8, 108491–108502.
+[P0393.L001] Yang, J.-G., et al. (2020). Feature extraction method of PRPD data based on deep learning. Electrical Measurement & Instrumentation, 57(3), 99–104.
+[P0394.L001] Barrios, S., Buldain, D., Comech, M. P., & Gilbert, I. (2021). Partial discharge identification in MV switchgear using scalogram representations and convolutional autoencoder. IEEE Transactions on Power Delivery, 36(6), 3448–3455.
+[P0395.L001] Zhao, Z., Ji, J., Shi, T., Wang, W., Zheng, Y., & Guo, Y. (2022). Partial discharge detection and classification using low-noise UHF sensing frontend and wavelet scattering feature extraction network. IEEE Transactions on Microwave Theory and Techniques.
+[P0396.L001] Roy, S., et al. (2023). Remote condition monitoring of HVDC cable insulation using deep learning-aided space charge classification. IEEE Transactions on Dielectrics and Electrical Insulation, 30(1), 377–384.
+[P0397.L001] Fei, Z., Li, Y., & Yang, S. (2024). Partial discharge pattern recognition based on an ensembled simple convolutional neural network and a quadratic support vector machine. Energies, 17(11), 2443.
+[P0398.L001] Guo, J., Zhao, S., Huang, B., Wang, H., He, Y., Zhang, C., & Shao, T. (2024). Identification of partial discharge based on composite optical detection and transformer-based deep learning model. IEEE Transactions on Plasma Science.
+[P0399.L001] Sahoo, R., & Karmakar, S. (2024). Effectiveness of wavelet scalogram on partial discharge pattern classification of XLPE cable insulation. IEEE Transactions on Instrumentation and Measurement.
+[P0400.L001] Seitz, S., Götz, T., Lindenberg, C., Tetzlaff, R., & Schlegel, S. (2024). Towards generalizable classification of partial discharges in gas-insulated HVDC systems using neural networks: Protrusions and particles. IEEE Transactions on Power Delivery, 39, 1491–1499.

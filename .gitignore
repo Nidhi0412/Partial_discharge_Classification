@@ -17,3 +17,19 @@ training_history.json
 **/Classifications_data/
 **/Data for Classification/
 **/Scalograms/
+
+# Local project interpreter and virtual environment
+.venv/
+.python-runtime/
+
+# Local dataset copy and runtime-only state
+Insulation_classifier/
+runtime_cache/
+*.lock
+
+# Large generated training traces (compact summaries remain versioned)
+**/augmentation_ledger/generated_inputs_*.jsonl
+**/events.out.tfevents.*
+**/augmented_samples/
+**/augmentation_preview_*.png
+runs/_smoke*/

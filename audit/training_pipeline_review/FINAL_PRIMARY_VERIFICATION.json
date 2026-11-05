@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-11-04T07:17:23.725967+00:00",
+  "settings": {
+    "epochs": 50,
+    "batch_size": 2,
+    "image_size": 224,
+    "learning_rate": 1e-05,
+    "dropout": 0.5,
+    "l2": 0.01,
+    "patience": 10,
+    "seed": 42,
+    "weights": "imagenet",
+    "cpu_threads": 4,
+    "data_threads": 1,
+    "prefetch_batches": 1,
+    "min_free_ram_gb": 1.5,
+    "min_free_disk_gb": 5.0,
+    "augment": true,
+    "fine_tuning": true,
+    "training_profile": "historical",
+    "augmentation_profile": "scalogram-image",
+    "resize_interpolation": "nearest",
+    "augmentation_samples_per_class": 5,
+    "legacy_h5_export": true,
+    "lr_reduce_factor": 0.1,
+    "lr_min": 1e-07,
+    "row_mask_fraction": 0.15,
+    "column_mask_fraction": 0.15,
+    "image_shift_fraction": 0.03,
+    "image_stretch_fraction": 0.0,
+    "pixel_noise_std": 0.05
+  },
+  "augmentation_order": [
+    "horizontal_image_shift",
+    "row_band_mask",
+    "column_band_mask",
+    "scaled_pixel_noise"
+  ],
+  "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5",
+  "checks": [
+    {
+      "model": "vgg16",
+      "status": "PASS",
+      "actual_imagenet_finetuning": true,
+      "exact_primary_profile": true,
+      "recovery_optimizer_steps": [
+        1,
+        2
+      ],
+      "all_generated_parents_training_only": true,
+      "outputs_verified": [
+        "best.keras",
+        "model.keras",
+        "model.h5",
+        "best_weights.h5",
+        "training_history.json",
+        "training_log.csv",
+        "training_history.png",
+        "roc.png",
+        "confusion_matrix.png",
+        "classification_report.json",
+        "augmentation_preview_Nomex.png",
+        "augmentation_preview_Teflon.png"
+      ],
+      "result_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\audit\\training_pipeline_review\\capacity_checks\\vgg16_primary_imagenet_20261104_r2\\check_result.json"
+    },
+    {
+      "model": "resnet50",
+      "status": "PASS",
+      "actual_imagenet_finetuning": true,
+      "exact_primary_profile": true,
+      "recovery_optimizer_steps": [
+        1,
+        2
+      ],
+      "all_generated_parents_training_only": true,
+      "outputs_verified": [
+        "best.keras",
+        "model.keras",
+        "model.h5",
+        "best_weights.h5",
+        "training_history.json",
+        "training_log.csv",
+        "training_history.png",
+        "roc.png",
+        "confusion_matrix.png",
+        "classification_report.json",
+        "augmentation_preview_Nomex.png",
+        "augmentation_preview_Teflon.png"
+      ],
+      "result_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\audit\\training_pipeline_review\\capacity_checks\\resnet50_primary_imagenet_20261104\\check_result.json"
+    }
+  ],
+  "unit_tests": {
+    "total": 67,
+    "passed": 66,
+    "skipped": 1
+  },
+  "source_hashes": {
+    "training_pipeline.py": "8d368cbd1326ccee6258c100da2fbb4a3e6e2cbf5678ad100390a5b3f68908dd",
+    "training_safety.py": "67ebd5ad81b60f0de29340220a68764376afba0cb765115b4e6ecbf7467cf045",
+    "dataset_manifest.py": "34806516ff5738f15ef7ce184a98fce29c355a36b41b10e6f54b58c682105da6",
+    "train_overnight.py": "8241cd428d9b82b1212a3ad20d681c0da40ddeb0e0838681d559b5fa7bfe9749",
+    "prepare_imagenet_weights.py": "11bf604d5b1f36166f760d72df0febf8004c68320adf7f9db51a5e2601a4d184",
+    "legacy_augmentation.py": "3e8fa89e83b4efb0003e0f0e723116dffe721ca9252cf1bcf19e726e96857a1d",
+    "scalogram_augmentation.py": "39682324ab253c9f88287c85a01c2de80d3d8a0b754ec9dfc32b9d0da0501a51",
+    "training_artifacts.py": "ec0c4c3e90d34227c2cbe8df7e5db526e21db9b12b9c078e9c32284d1a4689e0"
+  },
+  "research_training_started": false
+}

@@ -1,0 +1,35 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793696953.587597   24236 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793696956.031826   24236 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+WARNING:tensorflow:From D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+I0000 00:00:1793696958.023447   24236 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/40
+512/512 - 159s - 311ms/step - accuracy: 0.8516 - loss: 0.3611 - val_accuracy: 0.9883 - val_loss: 0.1214
+Epoch 2/40
+512/512 - 153s - 300ms/step - accuracy: 0.9639 - loss: 0.1169 - val_accuracy: 1.0000 - val_loss: 0.0533
+Epoch 3/40
+512/512 - 157s - 307ms/step - accuracy: 0.9863 - loss: 0.0669 - val_accuracy: 0.9922 - val_loss: 0.0521
+Epoch 4/40
+512/512 - 163s - 318ms/step - accuracy: 0.9854 - loss: 0.0552 - val_accuracy: 1.0000 - val_loss: 0.0262
+Epoch 5/40
+Traceback (most recent call last):
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_pipeline.py", line 470, in <module>
+    main()
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_pipeline.py", line 466, in main
+    run_training(args)
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_pipeline.py", line 327, in run_training
+    best, checkpoint = train_one(model_type,train,val,per_config,dest)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_pipeline.py", line 250, in train_one
+    model.fit(train, validation_data=validation, epochs=config['epochs'],
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_safety.py", line 115, in on_test_batch_begin
+    check_resources(config, out)
+  File "D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\code\training_safety.py", line 53, in check_resources
+    raise ResourceLimitError(f'Available RAM {available:.2f} GiB is below reserve '
+training_safety.ResourceLimitError: Available RAM 1.49 GiB is below reserve 1.50 GiB. Close other applications, then resume.

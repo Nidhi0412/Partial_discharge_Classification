@@ -1,0 +1,30 @@
+{
+  "completed_epochs": 2,
+  "best_loss": 0.7141431570053101,
+  "best_file": "epoch_0002.keras",
+  "wait": 0,
+  "lr_wait": 1,
+  "history": {
+    "accuracy": [
+      0.0,
+      0.0
+    ],
+    "loss": [
+      0.7245446443557739,
+      0.7222673892974854
+    ],
+    "val_accuracy": [
+      0.5,
+      0.5
+    ],
+    "val_loss": [
+      0.7142019271850586,
+      0.7141431570053101
+    ]
+  },
+  "finished": true,
+  "lr_best": 0.7142019271850586,
+  "best_accuracy": 0.5,
+  "best_accuracy_file": "epoch_0001.keras",
+  "latest_file": "epoch_0002.keras"
+}

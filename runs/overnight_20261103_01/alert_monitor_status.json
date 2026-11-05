@@ -1,0 +1,6 @@
+{
+  "status": "STOPPED_BY_USER",
+  "checked_utc": "2026-11-04T05:42:53.302301+00:00",
+  "attention": null,
+  "reason": "Training stopped for augmentation correction"
+}

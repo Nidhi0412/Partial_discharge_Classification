@@ -1,0 +1,71 @@
+{
+  "image": {
+    "samples": 256,
+    "confusion_matrix": [
+      [
+        109,
+        19
+      ],
+      [
+        41,
+        87
+      ]
+    ],
+    "accuracy": 0.765625,
+    "auc": 0.85211181640625,
+    "specificity": 0.8515625,
+    "positive_class": "Teflon",
+    "per_class": {
+      "Nomex": {
+        "precision": 0.7266666666666667,
+        "recall": 0.8515625,
+        "f1": 0.7841726618705036
+      },
+      "Teflon": {
+        "precision": 0.8207547169811321,
+        "recall": 0.6796875,
+        "f1": 0.7435897435897436
+      }
+    },
+    "macro": {
+      "precision": 0.7737106918238994,
+      "recall": 0.765625,
+      "f1": 0.7638812027301236
+    }
+  },
+  "recording": {
+    "samples": 256,
+    "confusion_matrix": [
+      [
+        109,
+        19
+      ],
+      [
+        41,
+        87
+      ]
+    ],
+    "accuracy": 0.765625,
+    "auc": 0.85211181640625,
+    "specificity": 0.8515625,
+    "positive_class": "Teflon",
+    "per_class": {
+      "Nomex": {
+        "precision": 0.7266666666666667,
+        "recall": 0.8515625,
+        "f1": 0.7841726618705036
+      },
+      "Teflon": {
+        "precision": 0.8207547169811321,
+        "recall": 0.6796875,
+        "f1": 0.7435897435897436
+      }
+    },
+    "macro": {
+      "precision": 0.7737106918238994,
+      "recall": 0.765625,
+      "f1": 0.7638812027301236
+    }
+  },
+  "aggregation": "Mean p_teflon across all images of each original recording; threshold >= 0.5"
+}

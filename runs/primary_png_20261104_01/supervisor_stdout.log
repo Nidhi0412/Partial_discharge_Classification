@@ -1,0 +1,7 @@
+VERIFIED: vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+VERIFIED: resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+2026-11-04T08:40:23.447033+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_1_1793781623.log
+2026-11-04T09:19:13.777055+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_2_1793783953.log
+2026-11-04T09:26:24.522432+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_3_1793784384.log
+2026-11-04T09:34:01.353552+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_4_1793784841.log
+2026-11-04T09:41:27.002711+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_5_1793785287.log

@@ -1,0 +1,5 @@
+{
+  "error_type": "TBNotInstalledError",
+  "message": "TensorBoard is not installed, missing implementation for tf.summary.scalar",
+  "recovery": "Resume from last committed epoch; unfinished epoch is repeated."
+}

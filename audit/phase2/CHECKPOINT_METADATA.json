@@ -1,0 +1,650 @@
+[
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_2/model.h5",
+    "checkpoint_sha256": "49bc2a59f60098cabfcd6d0f874fc2261e013eee9aa3d961364c289663b35d8d",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_2_model_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense_1",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 1.0000000116860974e-07,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_3/best_weights.h5",
+    "checkpoint_sha256": "ba4b9a89536bca54dd047bb767939b90e445443f1f5693f6e735d58cf19482eb",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_3_best_weights_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 9.999999747378752e-06,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_3/model.h5",
+    "checkpoint_sha256": "6826fcf24a8cb5ff4c02b8840c73a2648b576a644265af4821264881184e50b5",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_3_model_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 9.999999747378752e-06,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_2/best_weights.h5",
+    "checkpoint_sha256": "e64d5a118071c77f2cd472b5bbff6c16e71e87607da1f9bf1770eb41a0f9a224",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_2_best_weights_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense_1",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 9.999999747378752e-06,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_4/model.h5",
+    "checkpoint_sha256": "16ac1d143d363276e47e653ae7045bf8aa5875b3e98b61d21e339ca9c3aa7b16",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_4_model_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 1.0000000116860974e-07,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_5/model.h5",
+    "checkpoint_sha256": "8d7a130d194e262227f8f4f57387ad917ac56598fcbf13088f320fb47a8cc869",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_5_model_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 1.0000000116860974e-07,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_4/best_weights.h5",
+    "checkpoint_sha256": "430b7dc4f7f3a8196dbf1ce5c6c7d9bdbd7657cf14bc7f273109d9bd0f66fc13",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_4_best_weights_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 9.999999747378752e-06,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  },
+  {
+    "archive": "D:\\Nidhiiiiii\\Paper_04_Saurabh_wavelet\\Paper_04_Saurabh_wavelet\\with new results\\Insulation_classifier_VGG16_CV_Aug_20250604_205456-20250614T122102Z-1-001.zip",
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_5/best_weights.h5",
+    "checkpoint_sha256": "8b30a736b6332ed6bf525d3f1b7346189b945d016dda6ef5555bdcf9ca10fefd",
+    "model_config_json_start_byte": 2136,
+    "config_snapshot": "checkpoint_fold_5_best_weights_model_config.json",
+    "backbone": "VGG16",
+    "status": "CONFIRMED",
+    "layer_count": 22,
+    "conv2d_count": 13,
+    "pool_count": 5,
+    "trainable_convolutions": [
+      "block5_conv1",
+      "block5_conv2",
+      "block5_conv3"
+    ],
+    "output_config": {
+      "name": "dense",
+      "trainable": true,
+      "dtype": {
+        "module": "keras",
+        "class_name": "DTypePolicy",
+        "config": {
+          "name": "float32"
+        },
+        "registered_name": null
+      },
+      "units": 1,
+      "activation": "sigmoid",
+      "use_bias": true,
+      "kernel_initializer": {
+        "module": "keras.initializers",
+        "class_name": "GlorotUniform",
+        "config": {
+          "seed": null
+        },
+        "registered_name": null
+      },
+      "bias_initializer": {
+        "module": "keras.initializers",
+        "class_name": "Zeros",
+        "config": {},
+        "registered_name": null
+      },
+      "kernel_regularizer": null,
+      "bias_regularizer": null,
+      "kernel_constraint": null,
+      "bias_constraint": null
+    },
+    "training_config": {
+      "loss": "binary_crossentropy",
+      "loss_weights": null,
+      "metrics": [
+        "accuracy"
+      ],
+      "weighted_metrics": null,
+      "run_eagerly": false,
+      "steps_per_execution": 1,
+      "jit_compile": false,
+      "optimizer_config": {
+        "class_name": "Adam",
+        "config": {
+          "name": "adam",
+          "learning_rate": 9.999999974752427e-07,
+          "weight_decay": null,
+          "clipnorm": null,
+          "global_clipnorm": null,
+          "clipvalue": null,
+          "use_ema": false,
+          "ema_momentum": 0.99,
+          "ema_overwrite_frequency": null,
+          "loss_scale_factor": null,
+          "gradient_accumulation_steps": null,
+          "beta_1": 0.9,
+          "beta_2": 0.999,
+          "epsilon": 1e-07,
+          "amsgrad": false
+        }
+      }
+    }
+  }
+]

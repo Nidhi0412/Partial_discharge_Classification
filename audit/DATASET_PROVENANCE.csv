@@ -1,0 +1,2 @@
+original_recording_id,material,electrode_configuration,acquisition_conditions,wavelet,true_dwt_level,output_filename,partition,provenance_status,evidence
+,,,,,,,,UNAVAILABLE_NO_SAMPLE_RECORDS,"No raw recordings, classified scalograms, or recording-to-image mapping in supplied minimal repository; this is a missing-evidence marker, not a sample"

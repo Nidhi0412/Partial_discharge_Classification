@@ -1,0 +1,129 @@
+model,metric,manuscript_or_repository_value,saved_value,independently_recalculated_value,verification_status,reason
+VGG16,fold_2_accuracy,,,0.984375,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_precision,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_recall,,,0.96875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_specificity,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_f1,,,0.9841269841269841,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_macro_precision,,,0.9848484848484849,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_macro_recall,,,0.984375,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_2_macro_f1,,,0.9843711843711844,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_accuracy,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_precision,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_recall,,,0.9625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_specificity,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_f1,,,0.9808917197452229,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_macro_precision,,,0.9819277108433735,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_macro_recall,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_3_macro_f1,,,0.9812434058848813,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_accuracy,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_precision,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_recall,,,0.9625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_specificity,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_f1,,,0.9808917197452229,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_macro_precision,,,0.9819277108433735,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_macro_recall,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_4_macro_f1,,,0.9812434058848813,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_accuracy,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_precision,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_recall,,,0.9625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_specificity,,,1.0,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_f1,,,0.9808917197452229,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_macro_precision,,,0.9819277108433735,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_macro_recall,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,fold_5_macro_f1,,,0.9812434058848813,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,mean_accuracy,0.982,,0.9820312499999999,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_accuracy,,,0.0015625000000000222,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_precision,,,1.0,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_precision,,,0.0,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_recall,,,0.9640625,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_recall,,,0.003124999999999989,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_specificity,,,1.0,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_specificity,,,0.0,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_f1,,,0.9817005358406632,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_f1,,,0.001617632190880569,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_macro_precision,,,0.9826579043446513,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_macro_precision,,,0.0014603870025556853,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_macro_recall,,,0.9820312499999999,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_macro_recall,,,0.0015625000000000222,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,mean_macro_f1,,,0.9820253505064571,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+VGG16,sample_sd_macro_f1,,,0.0015638892431515394,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,fold_2_accuracy,,,0.971875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_precision,,,0.9748427672955975,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_recall,,,0.96875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_specificity,,,0.975,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_f1,,,0.9717868338557993,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_macro_precision,,,0.9718934333372398,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_macro_recall,,,0.971875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_2_macro_f1,,,0.9718747253391147,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_accuracy,,,0.965625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_precision,,,0.9515151515151515,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_recall,,,0.98125,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_specificity,,,0.95,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_f1,,,0.9661538461538461,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_macro_precision,,,0.966080156402737,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_macro_recall,,,0.965625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_3_macro_f1,,,0.9656166056166056,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_accuracy,,,0.975,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_precision,,,0.9871794871794872,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_recall,,,0.9625,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_specificity,,,0.9875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_f1,,,0.9746835443037974,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_macro_precision,,,0.9752970606629143,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_macro_recall,,,0.9750000000000001,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_4_macro_f1,,,0.974996093139553,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_accuracy,,,0.96875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_precision,,,0.993421052631579,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_recall,,,0.94375,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_specificity,,,0.99375,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_f1,,,0.967948717948718,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_macro_precision,,,0.9699248120300752,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_macro_recall,,,0.96875,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,fold_5_macro_f1,,,0.9687304565353345,CONDITIONAL_REPORT_CONSISTENCY_ONLY,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,mean_accuracy,0.9703,,0.9703125,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_accuracy,,,0.004034357652299407,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_precision,,,0.9767396146554538,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_precision,,,0.018503449064903556,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_recall,,,0.9640625,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_recall,,,0.015624999999999993,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_specificity,,,0.9765625,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_specificity,,,0.019348099605215358,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_f1,,,0.9701432355655402,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_f1,,,0.0038317513066097996,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_macro_precision,,,0.9707988656082416,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_macro_precision,,,0.0038497629142093684,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_macro_recall,,,0.9703125,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_macro_recall,,,0.00403435765229945,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+ResNet50,mean_macro_f1,,,0.970304470157652,SUMMARY_ARITHMETIC_ONLY,Equal-weight four-run mean; positive class=Teflon; not grouped CV validation
+ResNet50,sample_sd_macro_f1,,,0.004038589703417682,SUMMARY_ARITHMETIC_ONLY,"ddof=1, four dependent runs"
+VGG16,fold_2_auc,,0.9986328125000001,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+VGG16,fold_3_auc,,0.9986328125,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+VGG16,fold_4_auc,,0.9973046875,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+VGG16,fold_5_auc,,0.9978125,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+VGG16,auc_mean_vs_statistics_json,,0.998075,0.9980957031250001,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+VGG16,auc_std_vs_statistics_json,,0.0006396613687465513,0.0006539323844837593,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+VGG16,auc_ci_margin_formula,,0.0010178439798002683,0.0010178439798002683,FORMULA_REPRODUCED_INFERENCE_UNJUSTIFIED,t(3)*saved SD/sqrt(4); repeated fixed-test results are not independent test samples
+VGG16,accuracy_mean_vs_statistics_json,,0.982,0.9820312499999999,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+VGG16,accuracy_std_vs_statistics_json,,0.0016000000000000458,0.0015625000000000222,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+VGG16,accuracy_ci_margin_formula,,0.0025459570442274834,0.0025459570442274834,FORMULA_REPRODUCED_INFERENCE_UNJUSTIFIED,t(3)*saved SD/sqrt(4); repeated fixed-test results are not independent test samples
+VGG16,mean_auc,0.9981,0.9980957031250001,0.9980957031250001,SUMMARY_ARITHMETIC_ONLY,Mean of four saved AUCs; original scores absent
+ResNet50,fold_2_auc,,0.9966015625,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+ResNet50,fold_3_auc,,0.9970312499999999,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+ResNet50,fold_4_auc,,0.9965234375,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+ResNet50,fold_5_auc,,0.9962109374999999,,BLOCKED_PREDICTIONS_MISSING,Cannot reconstruct ROC from AUC summary or raster curve
+ResNet50,auc_mean_vs_statistics_json,,0.996575,0.996591796875,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+ResNet50,auc_std_vs_statistics_json,,0.00033040379335998914,0.00033810318157809693,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+ResNet50,auc_ci_margin_formula,,0.0005257461657152012,0.0005257461657152012,FORMULA_REPRODUCED_INFERENCE_UNJUSTIFIED,t(3)*saved SD/sqrt(4); repeated fixed-test results are not independent test samples
+ResNet50,accuracy_mean_vs_statistics_json,,0.970325,0.9703125,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+ResNet50,accuracy_std_vs_statistics_json,,0.004040936360135674,0.004034357652299407,SUMMARY_COMPARISON,"Exact CSV AUCs / conditional report counts; sample SD, ddof=1"
+ResNet50,accuracy_ci_margin_formula,,0.006430031494601307,0.006430031494601307,FORMULA_REPRODUCED_INFERENCE_UNJUSTIFIED,t(3)*saved SD/sqrt(4); repeated fixed-test results are not independent test samples
+ResNet50,mean_auc,0.9966,0.996591796875,0.996591796875,SUMMARY_ARITHMETIC_ONLY,Mean of four saved AUCs; original scores absent
+VGG16_vs_ResNet50,accuracy_t_test_p,,0.009605098163200484,,NOT_INDEPENDENTLY_VERIFIED,Statistics-generating script and exact input arrays absent; shared test observations; Wilcoxon JSON p=0.125
+VGG16_vs_ResNet50,auc_t_test_p,,0.00944710391148035,,NOT_INDEPENDENTLY_VERIFIED,Statistics-generating script and exact input arrays absent; shared test observations; Wilcoxon JSON p=0.125
+VGG16_vs_ResNet50,accuracy_wilcoxon_p,,0.125,,NOT_INDEPENDENTLY_VERIFIED,Statistics-generating script and exact input arrays absent; shared test observations; Wilcoxon JSON p=0.125
+VGG16_vs_ResNet50,auc_wilcoxon_p,,0.125,,NOT_INDEPENDENTLY_VERIFIED,Statistics-generating script and exact input arrays absent; shared test observations; Wilcoxon JSON p=0.125
+dataset,original_recordings,400,,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository
+dataset,images,1600,,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository
+dataset,development,1280,,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository
+dataset,training,1024,dataset_size_report.txt,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository
+dataset,validation,256,dataset_size_report.txt,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository
+dataset,test,320,dataset_size_report.txt,,UNVERIFIED_FILE_COUNTS,Raw recordings and classified image partitions not present in audited repository

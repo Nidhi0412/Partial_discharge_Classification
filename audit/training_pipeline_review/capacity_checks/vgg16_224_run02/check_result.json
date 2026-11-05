@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "model": "vgg16",
+  "image_size": 224,
+  "batch_size": 2,
+  "fine_tuning": true,
+  "weights": "random: no download; not research accuracy",
+  "train_images": 2,
+  "validation_images": 2,
+  "holdout_images_trained_or_evaluated": 0,
+  "interrupted_after_epoch": 1,
+  "resumed_to_epoch": 2,
+  "note": "Split loading verifies hashes of all files; holdout tensors/predictions are never used.",
+  "optimizer_steps_before": 1,
+  "optimizer_steps_after": 2,
+  "seconds": 8.2,
+  "resources_before": {
+    "available_ram_gib": 3.246692657470703,
+    "free_disk_gib": 916.3167762756348,
+    "logical_cpus": 12
+  },
+  "resources_after": {
+    "available_ram_gib": 2.625934600830078,
+    "free_disk_gib": 916.1014099121094,
+    "logical_cpus": 12
+  },
+  "config": {
+    "image_size": 224,
+    "batch_size": 2,
+    "epochs": 2,
+    "learning_rate": 1e-05,
+    "dropout": 0.5,
+    "l2": 0.01,
+    "patience": 10,
+    "seed": 42,
+    "augment": true,
+    "time_shift": 0.03,
+    "fine_tuning": true,
+    "weights": null,
+    "cpu_threads": 4,
+    "data_threads": 1,
+    "prefetch_batches": 1,
+    "min_free_ram_gb": 1.5,
+    "min_free_disk_gb": 5.0
+  },
+  "limitation": "Tiny development subset; no guarantee of full-run completion or bitwise random-state replay."
+}

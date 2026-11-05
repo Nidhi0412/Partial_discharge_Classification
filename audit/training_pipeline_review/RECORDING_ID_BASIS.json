@@ -1,0 +1,12 @@
+{
+  "recording_count": 1600,
+  "image_count": 1600,
+  "basis": "User explicitly confirms every manually renamed PNG derives from a different CSV recording. One unique bookkeeping ID assigned per image.",
+  "raw_csv_filename_mapping": "Not recovered; assigned IDs are bookkeeping identifiers, not original CSV filenames.",
+  "material_labels": "Nomex/Teflon folder labels retained as confirmed by user.",
+  "image_names_changed": false,
+  "images_modified": false,
+  "split_created": false,
+  "training_started": false,
+  "note": "Distinct acquisition identity is user-confirmed, not inferred from filename numbering or image hashes. Content-overlap checks remain separate."
+}

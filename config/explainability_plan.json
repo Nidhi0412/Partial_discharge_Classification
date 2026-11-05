@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "bootstrap_draws": 1000,
+  "min_clusters": 10,
+  "mass_fraction": 0.8,
+  "mask_fraction": 0.1,
+  "random_masks": 10,
+  "shift_pixels": [-2, 2],
+  "mask_fill": "per_image_channel_mean",
+  "primary_metric": "faithfulness_margin",
+  "target": "true",
+  "scope": "Descriptive image-space diagnostics, conditional on a fitted model. No mechanistic, calibrated RF-band or confirmatory significance claim.",
+  "regions": [
+    {"name": "left_time_third", "x0": 0.0, "x1": 0.3333333333333333, "y0": 0.0, "y1": 1.0},
+    {"name": "middle_time_third", "x0": 0.3333333333333333, "x1": 0.6666666666666666, "y0": 0.0, "y1": 1.0},
+    {"name": "right_time_third", "x0": 0.6666666666666666, "x1": 1.0, "y0": 0.0, "y1": 1.0},
+    {"name": "upper_image_half", "x0": 0.0, "x1": 1.0, "y0": 0.0, "y1": 0.5},
+    {"name": "lower_image_half", "x0": 0.0, "x1": 1.0, "y0": 0.5, "y1": 1.0}
+  ]
+}

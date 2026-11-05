@@ -1,0 +1,5 @@
+{
+  "last_message": "Training paused for resources: vgg16_cv. Close memory-heavy applications; the queue will retry automatically.",
+  "notified_utc": "2026-11-03T09:33:01.733864+00:00",
+  "notification_exit_code": 0
+}

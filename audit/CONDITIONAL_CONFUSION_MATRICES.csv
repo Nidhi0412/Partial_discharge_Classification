@@ -1,0 +1,9 @@
+model,fold,TN,FP,FN,TP,basis
+VGG16,2,160,0,5,155,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,3,160,0,6,154,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,4,160,0,6,154,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+VGG16,5,160,0,6,154,Conditional reconstruction from support=160 per class and rounded recalls; original predictions absent
+ResNet50,2,156,4,5,155,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,3,152,8,3,157,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,4,158,2,6,154,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set
+ResNet50,5,159,1,9,151,Conditional reconstruction from saved precision/recall/accuracy and assumed balanced 320-image test set

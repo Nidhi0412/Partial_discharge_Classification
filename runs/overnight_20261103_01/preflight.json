@@ -1,0 +1,41 @@
+{
+  "weights": [
+    {
+      "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runtime_cache\\keras\\models\\vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5",
+      "md5": "6d6bbae143d832006294945121d1f1fc",
+      "bytes": 58889256,
+      "origin": "https://storage.googleapis.com/tensorflow/keras-applications/vgg16/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5"
+    },
+    {
+      "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runtime_cache\\keras\\models\\resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5",
+      "md5": "4d473c1dd8becc155b73f8504c6f6626",
+      "bytes": 94765736,
+      "origin": "https://storage.googleapis.com/tensorflow/keras-applications/resnet/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5"
+    }
+  ],
+  "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5",
+  "manifest_rows": 8000,
+  "settings": {
+    "epochs": 40,
+    "batch_size": 2,
+    "image_size": 224,
+    "learning_rate": 1e-05,
+    "dropout": 0.5,
+    "l2": 0.01,
+    "patience": 10,
+    "seed": 42,
+    "weights": "imagenet",
+    "cpu_threads": 4,
+    "data_threads": 1,
+    "prefetch_batches": 1,
+    "min_free_ram_gb": 1.5,
+    "min_free_disk_gb": 5.0,
+    "augment": false,
+    "fine_tuning": true
+  },
+  "resources": {
+    "available_ram_gib": 5.359355926513672,
+    "free_disk_gib": 915.2800064086914,
+    "logical_cpus": 12
+  }
+}

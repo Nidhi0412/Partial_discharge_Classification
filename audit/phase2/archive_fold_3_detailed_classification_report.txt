@@ -1,0 +1,24 @@
+=== Detailed Classification Report ===
+
+Model: fold_3
+Total samples: 320
+
+Per-class metrics:
+
+Nomex:
+  Precision: 0.9639
+  Recall:    1.0000
+  F1-score:  0.9816
+  Support:   160.0
+
+Teflon:
+  Precision: 1.0000
+  Recall:    0.9625
+  F1-score:  0.9809
+  Support:   160.0
+
+Overall metrics:
+  Accuracy:  0.9812
+  Precision: 1.0000
+  Recall:    0.9625
+  F1-score:  0.9809

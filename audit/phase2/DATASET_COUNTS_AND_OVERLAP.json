@@ -1,0 +1,65 @@
+{
+  "Full_4Class_Classifier": {
+    "images": 1600,
+    "unique_byte_hashes": 1284,
+    "partition_counts": {
+      "Test": 320,
+      "Train": 1280
+    },
+    "class_partition_counts": {
+      "Test/Nomex_Flat": 80,
+      "Test/Nomex_Pointed": 80,
+      "Test/Teflon_Flat": 80,
+      "Test/Teflon_Pointed": 80,
+      "Train/Nomex_Flat": 320,
+      "Train/Nomex_Pointed": 320,
+      "Train/Teflon_Flat": 320,
+      "Train/Teflon_Pointed": 320
+    },
+    "multiplicities": {
+      "2": 228,
+      "1": 1016,
+      "3": 32,
+      "4": 8
+    },
+    "cross_partition_hash_groups": 89,
+    "cross_partition_files": 206,
+    "test_images_with_train_identical_bytes": 96,
+    "test_images": 320,
+    "class_unique_hashes": {
+      "Nomex_Flat": 300,
+      "Nomex_Pointed": 188,
+      "Teflon_Flat": 396,
+      "Teflon_Pointed": 400
+    }
+  },
+  "Insulation_classifier": {
+    "images": 1600,
+    "unique_byte_hashes": 1284,
+    "partition_counts": {
+      "Test": 320,
+      "Train": 1280
+    },
+    "class_partition_counts": {
+      "Test/Nomex": 160,
+      "Test/Teflon": 160,
+      "Train/Nomex": 640,
+      "Train/Teflon": 640
+    },
+    "multiplicities": {
+      "2": 228,
+      "1": 1016,
+      "3": 32,
+      "4": 8
+    },
+    "cross_partition_hash_groups": 96,
+    "cross_partition_files": 217,
+    "test_images_with_train_identical_bytes": 105,
+    "test_images": 320,
+    "class_unique_hashes": {
+      "Nomex": 488,
+      "Teflon": 796
+    }
+  },
+  "cross_dataset_content_multisets_equal": true
+}

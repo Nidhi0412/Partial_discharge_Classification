@@ -1,0 +1,30 @@
+[
+  {
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_3/logs/train/events.out.tfevents.1749060029.nidhi.580721.2.v2",
+    "sha256": "98d8a00b9dabe51621c71760f7225e5a44192995d6925dfac6c5a0d9a49872f8",
+    "records": 2252,
+    "first_record_hex": "090000406f2210da411a0d627261696e2e4576656e743a3252240a2274656e736f72666c6f772e636f72652e7574696c2e6576656e74735f777269746572",
+    "filename_references": []
+  },
+  {
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_4/logs/train/events.out.tfevents.1749070433.nidhi.580721.4.v2",
+    "sha256": "0970655bc84cb7f4ce3685c63bb497f1e2d84556ee74c878c84d8b4964544034",
+    "records": 1937,
+    "first_record_hex": "09000040982c10da411a0d627261696e2e4576656e743a3252240a2274656e736f72666c6f772e636f72652e7574696c2e6576656e74735f777269746572",
+    "filename_references": []
+  },
+  {
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_5/logs/train/events.out.tfevents.1749079321.nidhi.580721.6.v2",
+    "sha256": "7b5bc2ad03272bd5502d40d3520f9ea067b6021e482c39c28ae2dca654ede203",
+    "records": 1712,
+    "first_record_hex": "09000040463510da411a0d627261696e2e4576656e743a3252240a2274656e736f72666c6f772e636f72652e7574696c2e6576656e74735f777269746572",
+    "filename_references": []
+  },
+  {
+    "member": "Insulation_classifier_VGG16_CV_Aug_20250604_205456/VGG16_CV_Aug_20250604_205459/VGG16/CV_Aug_20250604_205459/ResNet50/fold_2/logs/train/events.out.tfevents.1749050701.nidhi.580721.0.v2",
+    "sha256": "428ab829512c592885faeef1c68e7104f641b0d7c77150fdd193c94780a32b7e",
+    "records": 1937,
+    "first_record_hex": "09000040531910da411a0d627261696e2e4576656e743a3252240a2274656e736f72666c6f772e636f72652e7574696c2e6576656e74735f777269746572",
+    "filename_references": []
+  }
+]

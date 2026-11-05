@@ -1,0 +1,7 @@
+# Supported research pipeline; use an isolated Python environment.
+# Standalone keras is intentionally not pinned independently of TensorFlow.
+tensorflow>=2.15,<3
+numpy>=1.24
+matplotlib>=3.7
+pillow>=10
+PyWavelets>=1.4

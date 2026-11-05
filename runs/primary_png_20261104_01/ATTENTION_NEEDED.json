@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-11-04T09:46:17.739471+00:00",
+  "message": "Training monitor stopped updating for over 3 minutes. Check the queue and its logs before restarting anything.",
+  "queue_status": "RUNNING",
+  "job": "vgg16_cv",
+  "log": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\vgg16_cv_attempt_5_1793785287.log"
+}

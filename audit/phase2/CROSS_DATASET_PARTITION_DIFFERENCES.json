@@ -1,0 +1,4117 @@
+[
+  {
+    "sha256": "7749bd61fb49b2fa2004477740979bf2cd5b4e1315f9a7ad1b40389919f56778",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "b6a0679d64bdf025e836e2ce5229bd1d8affe82ba23bc87ace671b89554e89c2",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "91575878205f7fe07736e0366f703f85dcd5cd60153c998201824fb8a375d9a2",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cc0334884f2eded941cb7d589e575b9c8e15a2407eff52500bbc490aae28ce9c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7c156c58725e781b6826f6c3435a5fe3528b6abce4faaabc440a819fd9ad60c1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a0b1823379efc6d9174f625e30e52dd2a2bc1925936d61630ca1e236809edc3d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "26175b967b98c5dbe5c714e8a5cd29ddf1e7e7bdf18315a0083d9cd565e22c47",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5ef9e27cb94635ee4e03d371db2d51b6419ae679b31ef8ae132ef9e37940f3a7",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a4c1739dfabf0c52855138b22ece46001b9c3cbe796338808fb5f2ec1a1eff67",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5bc26946d9e2fe74ab2b5e75bd417fc7b650834726c54e3401d9a3c3b865bb5e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "204c6177bd8fedf787319dc06d366123bc5081594c44f4ecc5db767c1cba5ba3",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "17333d5c588ce33b0ecd8823bb606b27dd48170bb776391f9f22307b679b3db3",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "8a0fd68a95d91a2679d1f4e531ef94ad0cabad6e26589de3157cd1929ba07060",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7004be7be1c19b12b04b6f979a13a3b7bbca335fa822e53291e6f3f3eb6be0c0",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "058cf71eeecea952afc4b1470667375c2929dc1eb2ca19fc7dd4eaf878a6b3b1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5548369db190e650abebdfc9ea60683f8c6e8635143e730b229396a9757f4302",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "1e8f3770e0b7d85e855da2e58b6c4e8fe5306e5cdbb96e9ffefc4c3a2c4bdbae",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "20ad385c48f4e647d8dddf6ed718812bbf2a3fbdbb6abb8d3611575df2f32966",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "fc44d689fa7ab962dd5d20045aff9ae2c40ef9ca34abbe8f6d1ec064501526c4",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "29e443f4c6e8e009b13510e951ab5b4d6670419f882961fecac8d08d1406f07c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "19325f33ab86868e931c3501f19d24246f41c2f4cb2c03bf5d668b58d7bd003e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3c5fc7f2bd9ee92e2a3166fa480f65e555854ce21e815825e8259fdd3976f811",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "ac6e05e9a17633412facf9c346f1ff6a45c617db4b1c2b792361ebec02eb406e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "313a7f4c12cb547454fd478655938916cbd21208461a319b40589a255050da7d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "97347f098ce31bc9f2a3c5a3fe3ff211a53cd3ebe17fb63a64465f8e6499f0b6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "adc317b192c752883dffeebf0bff1bd0da5ad23660ee39c085339ba0bb6b9c0c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3c512f4c04ba1dca05ade0d1aa807f5c11ca8cf52f14bb0fb2ff01f7d49ac26d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bd4d4157f5efe70cc58c14d2211fdc577748a3f17f4d0e220da71bf2b199400e",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "098badbcb1fe0e26d11eda523ca22053cf265cf7550245d6d886efb0b4f72ef7",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "70086f803e4ffaf11f62722b8e47b6756e7a66802bf4daa4cc6592b8ba697a9d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fc6bc617d4bcb96075f8943273dc8803317de99ae011788d56e8ab0f22594494",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f2dc26b179d7db25f9e556543d01e6b8851c8dccbb2ac1ede3a00b06e53d2672",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fb93d7bf00ff881552288557328df3d26c8d6780886abe48fcba9f2f0d91646d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a722174038b5ab37a0bad491fbb4eb1c94c3a91c1700124f9258476c75375809",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "866e4614031e154b4164339602a37b66718e7426568e0e0180a56ef92e2f8e00",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a48060dc2112f8be732421b071238144c2595e91cef1e29d824fab16279e8c91",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "83bb41f54c0966cb9e04bc24c67fdac4dbbaf678e3627beaff0ed0d1e02c8b8e",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "51b865b82906fb7cba25fbd4e4eb934b9aa06449859375cd7fb19d0a7f862979",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "d273f7beffbc2fa83d269e75905eca28e8175c67487be53febf1dd70e3875e7a",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "d620c0d75ad6ede835ffcbb90807373e92aff30e2ae1eaa9ae407f63e9377487",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "2fed42ed81dca26ed5e24a96f26609889c620f8df1b0c77b407a9957ceb7eee2",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "c7ae90fd95de151e845e743eefb9ba7a3bb6907d6f0a675b059d5c8014ca63e6",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "22308d63a171cc5eb0a64e0832f4e4943b02f35700753e4b58c6d124f93a2f7a",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "e65f691a80e6c9303d41f673ff31100be6d9fa471a72eca530aa509d0fbbcf8c",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 2
+    }
+  },
+  {
+    "sha256": "4780e3617c730f25e6f36d987188bc4cc9416a94866a86273d5a9e3a86258366",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "d2a5c46dd7c2f311511a7ad3d3999af8affd1c43b94bb7b9e493cda8362ebdd2",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "2a7b4d789b70c0ca84639ceda1c8de557daef620990dabac6ea4a5991f7e1d93",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "623719069b5da7407dc6975d45497f91d74132f2aae5af8fd1a41f55a7fde12b",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "71a261bc9fcdb19cadd826d847baf400bc625e1943ac8ce9495338f50670d5bb",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "4ae1259f9bd30ec4261dc599f53fa38f3499f27e0d2f90a547ddd6aff61437f7",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7af71c1dabdc5f954f2ec2120655ea65f4f9badbc531d5db388fdf4e0c48a76b",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 2
+    }
+  },
+  {
+    "sha256": "c3895d36f6660fbda99cd8ae2ee5f55c2dbb33722e3d44d73e4dee67910189d6",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "860321b8c0e2ec9b6c6fb62fd4a6ed2e89892e6507ce7fbb50ef319e2a13e35e",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "a5b059af18cce29508769714ea634b7392dd1819069ac9da9951403e7af5c569",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "9cc3f7e2a3ada1063f28b8fbb1f97620cf2bef82fa747900c0e49f42dfa06663",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "98f836f2edb8cfe19e3eff8cc66deb9f2448619a93af6f33fd31ce9d2333ad17",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "81247da64bbe3b9c2c44936fd7d2ed6b13357589c321391d4402d74cb58a2fcf",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "5b0072632ff12d7319a95d3e60d14139026f4e1339d62c70998c362f3880db7b",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "906c9eda4fd061e42332b95104321c233a8f9861acf6484801a4ec68e618439e",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "e7fe227e513a38570368aa6ec129a142cf77267de3323b9772744bd6cb925a6d",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "73d2307d825a45b69d863024fda4525031843d886846b81d8b63afb7e7c1eb99",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "6bb7a6a732ff9e0bb5ccce45672607915f9f262c668056af96776a811273b5c6",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "0cbc2d1040e64c1d4054c13727aaf8177c849ae717a0fbb2440c473bf7cfddfd",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "b90e98c4135b8cfa40fe254da491431c11878fc317a07f58f68f23388a983e24",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "2e91e3cfb1181d2bb321a7693f32f81c9d94fdc6e13b723b1be8d4200690b666",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "38f3075af7e7328978fae607921d1f3e2b71c567bdcf2be1193a541b85c99191",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7107ee914d6aafd2f5e07d2525c2b2e7f2fa94cc30d8cb245c8f374ecef1b304",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 3,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "655c64e8f790b8d4f32130fcc491727712cce324d1244cc07a6c0f3ba8dfba8a",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "5bdeb17889ce6729f6b6a125da658da5042595d0ec76e0a074bef341cd19fa2e",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Train": 4
+    }
+  },
+  {
+    "sha256": "d57af29f5ab7278002440b5ac84f5a851a2ea81f445017ddcb7158768266aae0",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "18af4dcf72e102288fb4ebddde37fd0bfd93ca999411fb9d099478985e92b1fe",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "0568e59e69e468d1844e1616fea46e0b19ed6e3299a00ad3ef8c2da9017c54d1",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "51b65f6a93a68cf1cff78b54169fca5bf210a1bfe1f6bcdf2711596640c63727",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "020b69fab9565ad1f9336e9f285335cb010fbf68a4c6bed383e207ac94e4a91d",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "ddcf46715ca793bde9cb85b00a5f32267b568b9f373fd13ce8877040b158bd16",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "91a868be4e4aaa7860b1e7a1634c6670979c612190e818cff885f24e567d2f24",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5a816198d501f949e55cf238224317b28b87a804d6a64fbaec6101daa649a309",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5f399a7ef16ca3748816584d20fb0500a191eecca7ca1bd4253008083cb6adc7",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "908a8af4d7317057fc70e6b6712b36754b0bb2edf727bd73078d8c36bce0a4b5",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "e1d820a834722a1a1487c897f843ddf8cecd4b8be903ab494de309428ce277af",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "70c2d17574cc37b4d31b5baa6dcdcc0581bf18082f08d1ed6870020d52283309",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "adc9ec03208392ce013e60284915353f1b2231f30c2f6eb62aa13a50c1ca76da",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "3c454a65f8ffd1db2e7296546da92c3d381eb3f19f94a6e010932131d1472a57",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "25856907f2bd953c33266d7c3f925294afc5ff4f173c52baf2931961edc4a2ab",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c6c9aa5af2ae1eedcfb339dec13327274bde4af9abda98d485036afb7e456f0b",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "4480d09b249f1f3e8e6fdf57e47869b540233e53a43772ac89eb2ea1a78e201e",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 4
+    }
+  },
+  {
+    "sha256": "42d54b00811853202eae01a78b6dc61011d0b5bd867d3d9b319c850e09516329",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "3356b3dd73de29ad115464c449d6063aba930c4c4630d9b989880c008264f1c0",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "09608687ef3a022de2eccfe8fdc8160df664b52badb3d80f24f57012e75ef5be",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "0e08e430aac3ae17c685e0dbaad16c21057acbdca06cccc6c0da5b0331f6c053",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "cde4fc0a367c1422262ee52af1887f40aaba388be55436deddb36ab7316efd02",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "0ac438c47e35d8bf72f7439f90ab2e1136d94711da6ef4e05747fc9c06ff94bf",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "a378559e3d5d469c5d14a5752fb13f44a51c23fd17ab995388863a5f72808427",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "87878b063cca14c628ba7b77cb59bf0b7583ba46369c7264a977470345fb3ac8",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "b394d335cb2d641ff1a91b3a4eb79b01fc8025a0540b774c09dfcb92bda928c1",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "bc5652ffc3812e8e0fe3fcb5a16dc5a3cba13d822541d8e3a483057fcbb53557",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3cc26602c15f9c4fb55eab924e1a959399c10d76c6fc7b3047b6bcc2c81de196",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "84d5b8b35db6a37ffd410a796e4ecda829ede349a21e760dbdd017627c52adba",
+    "fourclass_partitions": {
+      "Test": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5db25e4d97a28db57fd56aa6f89c8461cfdac5de35f971f99f71f4ba46a7e7f8",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "db9d2bffb720e6a48294f6c527e5606c3a7515c279584e31b9065bf8bc1e620a",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "08ad2a4fc70885eddbe894a8b99e8b7fc5e9fa18056df15e1e533b9e80def5cb",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "68810f84e99afc1ee403e6e8c54f68d079122cf2b051326d5e25f60b4634d6f1",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "65650cc5fe76393ebafd95573751a7b701f37177b0fac9302a4aa38bcd816a94",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "569385afbd17697cd790459e6d994ddd4d6e0d53925a0dbdf38dc817c7369434",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c7374538c4263dca864dbe715e0b424735a9cbf1436ca4c4a6ec61f8c52c977c",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "d74b94a759d05985c118f455c1ffc539d089a317c2505f347843bab8817321da",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "aa8b53b25788bcce92b184677d8b4713ae9632acf18a488ca40f68ea75a9426e",
+    "fourclass_partitions": {
+      "Test": 2,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "6d83a1336f6f1dd556f147ee008c0b6c2986c924368d740383450b784397b50d",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Train": 4
+    }
+  },
+  {
+    "sha256": "7afad7a7f00f17d985e546b0ff8aa5c8bb95c04f91714ae9aeb3903952b17e4a",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f1bd5bc700b1dadc2312d76cd353cfaada40b6f008bdad60d8c8a32ff8c221f7",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f91f8be089551b9bfda33bdf4c8460762014ebbcccae40f94292b74e757469e0",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2e67c4f309cd55d10557cbcc6f48c973124974966a637f915ba3150ae2339892",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5761d8e3f8ed0af090d787e086b1f5b45aee940dcbadb317a45553ca31000be6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fd0c00345133a04a217b649411fb1d51f203181751ab1fefb11f7dc883d9f4ae",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c361e3ba964fdcdda37f1a9f2f5aecf9d673f0512e36c5603da99c3aaf4ff436",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "755a8e4a39a669286703930c62d0e9d90db8d6c8ad0bc835a272a80f8d33963d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "769f9f051dbfbaebad031a25d9055b26784ac2d5b48a5b6e2122fd73987f13e6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "859497936475b3f86d018f7c9118ad91726db61cea361cf416179b10c97c4e10",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f4f6b2a5f47f08ae2474353903c7d43ca548f48bbb4cbfa93ce1dd3f96824add",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d222a660630c062b82f81e7c9f1cea91b4de8f033701994653736e97739f1feb",
+    "fourclass_partitions": {
+      "Test": 1,
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "1ebf77b318f516cf9d3cd00fb54d06c6987183cfa461240e5293b9dd39b9d2a7",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "044ac21ee683b72f280a639496fe617cf0954f7d7aa102647a6d6e8985532f01",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "e33d453ebfc5475075370472d8f1fbe1f00c6f94833c60cfedcf555cffa2e178",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f3ffa16567da438ce39cf8b076a91a656119dd1ab25e06fe4fccb62a75f6b78d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9d371d591ebe9c60bf408eb16644d9c98d8feea0b99e04c20bebe3d83e3a9f80",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "243b6b8a50e85af3c23426e26b61552cd46a455e446c1cdd2a164828402861d5",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "936647904f3cda9e8d7e1e30b2f86f7977265157a2a73ce07899805e560d4e04",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5de94823c1c20c34366ae688d71db564883d1938c1e52f4760b12f2b12509c39",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "ecbfdd2e42670ea5513b9b78ea0aa715456c1b9b6dbdb7f689772c5161e7a301",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a503b23482ac0bc863270e9d98f710e195e5831f74c362db3c2f794caaeaec99",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "98d8552de23e76155242bd63e114c60e8dfe53b124b2d744137862347930076c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6a8aeb3c8bfb76081d08e97c3a94a807c704f36f9c95d49eb922226449e028e5",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "312e913c154ecd00934eebe11ba5966042258f043348c0f6a70a623d330a875e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "051d24acff77a062d75e376a8cb7fe018dc633dae30b9f684f9a50ae0970491c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4b07ff7cfc3e44e549259dc69e474deb4dfaf5d08608734c175a77f427ecec52",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "90cd8647b5e6901618371c0e2d549bd3641864dda9d9c583a618c806ff0f0539",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "22005fa9d2689245ac4e96b0df3bfbf77681442aca1ed14ac7ba96ab4d882bff",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fc9089a59f633e9fcb4e8883a07399028ad451310ca0bcc056b0adaeabe9f871",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "724fc194eea2f7d360116b2ac2f815321be3eabd1d465f24de134f4acde58de9",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9be5f6c3fc5744d500cd671b36e01443a81581566ac86d286ccbe7f525b76752",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "620911c8d5527b69568c84896737094f9eb5575e90e1c66ef1f2fc4ddcef4d7e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2243b6271ee1ef04e97cc239b802d2e0a1954ef2bb49e0fbe4693361a4beacdc",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a8671dadaee167ec3cdf369923b56eb84f3bb408a4427dc661ea29cc8db87988",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fbd4410f69bca79cea20e5e7297f123320a6c8541b275bc691d180d933c002fa",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6995e160c2907d792d7e960a247e2924f4c98b2f27537ad08dba531d46cb499f",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "43f0ba17759078a2bae65bd3a493263f5a83ca72cd06d600a4778a97d32b154f",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "36ed089db2e575db2bb7552fe14ef902d6b509030f5cde2eb27293935563dac5",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "939534096bfbf3c231ec4e2dd13e5799ebc11eaaa57f8bf077ce03e40d5a6e40",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cf335d2f3c20c72ffe6bb4c7e1f2fca061f304116c106fa4b9c90425fa76fcd9",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "85d3b54b3fe73cb46c60f8915812d373607380fab2475d31df28fa5b8fd00027",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6121bc6f3bf7eae18583981c6744734bc0a31523c6e0a53cf1cf882750226246",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "15358488690b0440380d71363d990e3ae72dd8f579a739f3dd8ecc9765211d77",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c90342d3c08d54c117087fea55d89201d85b64f04adf699776a81f44bd60ccb1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9199a2036214579f535834c4ef88a942021c7ce3aa21a3febce42bf33eb719e0",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fe257665ebf972d81132fbbbebaec1dc2f44a2d989ecb1b01e0906d1a8215cd3",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d1da4404547c31e1f694d84bb7ae1f5e0f4da168882d9c6b0d7c3a82036ce0dd",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bdddb30fa2ea28d5e3768cd8723a8645c2f60af2d677109b21ff057eb8e3182d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "601297f4644b14a7750fad58e3bf9aea0bce94df2477bc8b5be1560e5ae59955",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "8544f2be548e22b24c7e1c78d252cb61bcc694d1c27f1c0ef179f42a905ff752",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "35137734d50ee9b86ff8990208776833ff00faf09454e7a1c91d13dd0c16d63d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c24fe50ee99e907dc6bb857ed940abaa93ac16b6a1f7157eb8fa03116b34632a",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2f62a2e58f4bb28ce9416f29cdba628a641c0f63cbc02256627592c93987e7ab",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d14c754e90b4fc20aa0e53615d04a44a2ef1759ede85933a13ef9e1def6ad949",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "856b158d2eb838cf89b43148b07d3ca7c6fe6adb24e51f2fd2c3f31158005c59",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5babec48639c770a1f9291ff18fbb9d15fa6f7354dc548a6a6c3e1f38ef67909",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fa4ffb726ad626bc021335162720b763a4dc740fe3b613e7e0c261259e23b0ce",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7733539b30181440caa5234f00b0e315c84cbf14cc15d531de9c160cb72a45ac",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a8318c9026b95f6b58602359963f951fd41174e627205378cf31ce6750ead3c7",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5f12e53cbd3089af306666260177f2c952c3a8409bc192dd368733380c53f987",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6ef2b7bb7723f57c922c0a4ff33ffb9eddec3d16fd668ec14d885965e9b3dacd",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3241d663df0c07c78ab890faa12070789ed3786e20de6929e7ddf93e51d69466",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "163e03ce936006f381e583098c96893cc05c841a12858a37ed1c1a7f258945e8",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "15081ca8c8810a6dd117669c2c2f1aa13788c48ec7bb5deaec2c130406266f4c",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "05c6907624ea54b54472b683df6f27f31aaa3f32170cebeda673ec3f0a2db0db",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "18e22eae3e8c480085ce15b497135c5e0c11210c48231fb602b087eb63ce20e8",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "353be20d72b096f2cd169a79f0624d25dcbe553eee6f4d04c5d68f4d578a9338",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bad8b56ae59b06f90e494106ff9d7748cb97eb88d149f85abe5c970ece22995f",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "1e500ec86732b4343c584ba74c5697de23da4d62ca6a911b1d92cb546193b37e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "95ef5fe84c2b5e05f1a509f2b30d5c46f940a95ceeb8132229beb2173b2c6b34",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "36fe21b283c535c0d63f7703319c0636ac19df0f677a5077106551a2b82bffe6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7ff23a073e3b76112fc94028e1896fcb7ef9eac3dfa339bd19ec7c9136362099",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "b2bdffe19d48d59266bc98e3f9cbc7cbbf5f79ccdb9d9e78ade020a4ac4444e8",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "37ca03192a7225a0db70f66841c803f19ce3bf908bd02e3dca8113206b059dc3",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d526b3f112d864e0990527d740482d9f936eda08f7b673dab008158e52c27b63",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "15ae7a581c8d42de04bb98dc3238ad42869ca9ed92979d85443e6ad337fdce95",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "b30df80bee9419331fea4f121b45e919fb9ea44e3a29236d42fcf72ea12beaec",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bd625fbd61069c4d9226ac18f4681b49bfd8211f7a99706c7e317c86e9334a8a",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "57c39c9c2864cd6404b78195f1d64a7d92caa6dc90a5a0f0991ce26a5f4ab44e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cc7761f8857db328ebaf425ef1b82b528d9fe53dfe69001230c4d31bbc75a831",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fa0f78e433b467008d3e58d17bf39f200018077087e742ab1c7b69e3dc8d5534",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bcb040aa4cd5cca975ed431bc7bb6bd2fddae90f72b7861d795683f4cc0fed05",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9be26c97175bc891a35846633b7c1f86db3ce314e5c5868a3ee0e594b5b6ecd6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5e92613520b12c21f8d66d2be4143046a6b859106ecc3073814b698581553ec1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "8cbc8d06b92035bb5e725b91212712dc5c74c2a703104064c36a3bc29418b4c6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "304744cc8676619e05e28d9630fccf2f80b8cf8279621bb7b7e9ac3a07ba9e88",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7f39e7dc9a7a6e82e6c6a8576b867e55088320b4be816163474f4fa162e41e48",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a539434c85d6f2e2b68788e8303bd20f339ff95e852123f5d64d6a9493a1220f",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d89069f578e18fc980b198f8cda5a0ac6ecec20b2b59a58edcbe970c1e9dbfd6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4adf44a0104b51774472c6b12d439658047692baa071091575393349da0652cb",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "84d05a55b09713862ad39b4559bc213db4a8eeb16ae24755f73206398bdd33fa",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "40de0404fe406fb2b1df4b62782edd42f49f15a3f967afb2fdaeba8cab37c0bc",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "00cef804a2d9c40feb7534cfb7c03c8c325224d683b92f1405d899d70e387e0e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "1dbaf8d1138a82ed21ecb2c75f4466303713451cc1b21c6afe960873f526f6f8",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cbacc46ff1cb09568e3b9103c16f86cea64ee2e6e127ea8b4eb731da3efcf4f9",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d0c59a198f577f63116070b3a031d1e1d41b03810e1f0812802c14250299489e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f28f99fe5ee9c3d7379b25efdffdeca26bb56526bbac16000db7657a453d003a",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "98d671f32949aeaddccb2a35d4301e3cc85a98442e44a4a9014870efb909c6cd",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c0ab4270ede978448b12256e4357399319a0f89c0a5b7672997b616edc54ab80",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7ba458c05045b9ed5c6e707f0542557c3c5212640a16a7b19e279d83e653b7c1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "de8da1625fa2544b5e82f3534fbc126ac01a24b9fcc76936ddccb433df22ba81",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "46956d5e2821f78f07d0fbbe76e3b27977449e17e9a31ba4f1c330870764ae3a",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4f2795b1408a31ac04c1f2331f81d7f598bc86acbcf58d76e63420fd237c1e00",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "ebebc320fc2db3116ef9ea17943ad64cee1acd7acd70e003693c20501b603d7d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2ddf23fa2c37d5d56e1ecebf2892e1e81c3cef3864c831298768970d07f761f0",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "ae5220e076c707e2df761b0b341b9105de03695ac9fb55885289d13501b6d0d9",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "dbc7ee2b4bbb600d9b3cdb6851e41f41464058f525d97761cf0925152127cdf2",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4a50bb9d1af70ecf318a2bc6c6a378d6605841bad84d7d8bcdf10eff780b6a98",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d19d8085e4f0f6ec2058e0916823ebeea88c39c0e1434d68a54e8a95d502d74e",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c96e0d7c7338a972986d2056957872fd9a642551cc62c99baba0ca59310ac6f2",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "ecc45f6ed21cad90427cc0e0ab4fb4ba21bf7c9a03aaa0ad612d76bea8477588",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6b259e49ebfc46633d310e3b791cc989e44354f6c7c0029a6d55f9ced0f83f7b",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9c132ee8969fc633963569f080b0e58dc104568a76872ef7ab97995e7b309525",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "75c93dbaf9194c0a1d6fd59baa900ad072408205419735c092fb9ad04d30bfe6",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "200e7ddf2c603c75fdb65ce68bd8d6b6408a975dd07aeacca7378d8db62dec9d",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a8b88fb16dfcb04dc7eb8b7e830c55a6972b6de385ea4be6b9e5d294bfbaf362",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "0506cec66fdb76c093b29937325eeabbfbfcd2139c1799b1793ee10d089fe5c1",
+    "fourclass_partitions": {
+      "Test": 1
+    },
+    "insulation_partitions": {
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bf70bcf68c713a0c660b4a4a426e7067ea80e701fb8de67889d8e7f760a83896",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d35dd3da904db31e97fc196d426e83fcd7ed4fbcd99cbbbac14d89970659b43b",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f961c977acea4359d0df8b969f930360684c7515dba14e75ae7d8bb57795f269",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5110c066b5cb3c7e3b93c640bc804d13bf58b0b4577341657b9ba3b2b5cc2034",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "1fa76f651f6c135545611193fcbbf744db69ac95616543b31407653fd20645c0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "d61ddf12bade988fd2bb132cbdb382e84373c6b526552fdd7fd9b956eba578ae",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5f7d3990847a33bc8ed3bfaad2d80bd2ee59531ec136d8e366eda0c628336f8f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "9f2a3000633bd7e418499f13ba46913159618164b3e7f58c8a65348d2558f80b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "05ac69b19b2d2e8ee5cc6f388224d0bafcfe1c0746a766eb39ac0a4f2de6e145",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "9bc8a660871c876bcc2b52c19560dc1a72e45ec68aef16faac09dcdc79247bf5",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "e5cd2729996eeadb092255d7f2e5b7c61307016f3cca674d5c7c520b9b67ba4e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "e73f29e346584e540da613ad568980077cb3aeaa0a5aec3a6cd3e530af9ba6de",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "edfbc59e73bba6019bf34ae837627b429c1f206f134a6fe4225905c700913545",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "3f8151caa7d9bb7c6d3d1cdb7471479ab42e084d495951e81d9219e1f16b7710",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c489a209746b7f4f888bac91fe79aa6389c56207e2fb6860f0afd1ced0005477",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f85efee98bf62ec9e97384633c7bcfb1d79f13f942eae7ae869c5af554ddef47",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "6f6b8d1fcd26e23478cbe4bbe10614cab1497b217a38ef98dfb9035521658dec",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a86f81151a29384e8c4569410582b4fa64e6f1b8e133da7d5052f059b3147fa1",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "70568500cf7626f6c9b24846aa639fe95fd66e812ed459735407b5d19e44a5a0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "bb87c53368e55d0afa4cc94a6332fe967cfabb313c193dc429a7df75c1241094",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c52a0677fbcfb644364ea0e1bb2547e3dabcbc4d3e45ce18dbcc0d02a89bb3f2",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2cb4641b025fc18908c2fedaab377108b03defdeecd83b214fb758206d37b37e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "d753ed9f3612b6a5b7d61bef70ff4988c7918c51b44d2d6a781dc9bee5ce1787",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "b27afa1ef91503936b80b2a78926121a266a8a6a085c80ac25ffbb9abb8ae3b5",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0eccb6f00fca2efd1325e6e324f95170db04b251282876a219a42819047da572",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "d5e7b08601349d19c31a13a356a750a1642afe5ff1dc29171e1527c110dfb97f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f61e61cf7ca4a8895537d68c2260faa7f4cda7ddaebb97f87a7d1427f4ab313b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "30e867b63aeae317945d5c7929e419571337cba46e129812961e155dd50511df",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "19849c4fec1e5812770d7c475feb47c5fa53e54140cf8de88a4013fcf7a10f8d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "41f150c263f075e4491b4763590a0ca8599989322cab128d2a2ebbf977838126",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "016c89a178d169b6fdbabbd8f9fb6286f00fa92a6c02418c599a067a88e9f9e4",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "1624eecbd7bd07a63e8ea138f2c0aa1c7a2d71bd7ea20af3258805e24facd63d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7c94934f838ea8b982ddd49a1ef2b228d4c3f46e802a43dfa342b402a30f2edd",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "6eb4cc955259374ae0b3efe4e5bab40a21faad0e408175078c2ae89cbbcd7633",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5d891657efea9323314abc69eb6f69de0406a7ef53ee880c645729339702d4d2",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "11e88eb75e51532ff9e3c728e555b71f2021730881e3941cf0bd495d88ce41c4",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2ba525b4db2a45db7075b462a5ed122fffc42592288e0d4a3f505cd88db27c9f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8a539340e0ee0a90ab3b3c0964c2375d9186551463945b6398acdb15653c25e2",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "d6c1fff3cbbcf5dbd81d1e46d83842c69981aa245ccc05a3b909182faef956a8",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a63ac634e56ff34ab267bd9015161d63175087094fbe447160f30e433d01e175",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "89746ab8ae1af074cc657afea1ea84d9adcbc1b8c2f31f3d3ac79b34fbac65f1",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "b84b4a678a70e0803f8cb57c4eeb85c2f79b75b7b721f11401029d961e32fc10",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "f0a6325c2bfc80802a577d47d1c1097cdc7408cc47a1411ad00b137e0c0e0293",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c0f7586179fbe9d18ca295d752db0209f250c0ef31840a53af550087507bbd16",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fed8c6369276d0d7153660529f139a8e935c44c0cb92a7fba9272f27e186274f",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "c0f0c2658c7ee44988ebb1bc22be17e64b8e44e2dfc5e08aa49d5abe4d715c51",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cc4d8b21556dfc84c8ff0ae9c18ef3e200ab11d6c81ae9f5f1ddfe9456e945fd",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4e662bbacf4e2518a709de280efd2fc17cf6f7db1753f0ed4edef0cd0f86ce57",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7045a5dbd4a41a8cd7ce646c33453ad85dd1504f1ccde8e1cb98f5c4a8eccb0d",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "dd2c2dada4becd750cc7299efea65fec1fdcac915e34741f9732cceb1bdffb8d",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "2564e0550b8a35dfbd18cb600c4a21866e46fddca0587af1d6dd1c915ee126da",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "8040ea350fc1b8f6ac56d6e5d763d1a314d7b202323539d9e62b001560916d8b",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3a839849c7731dc398feb138df6fbeb23c0f21e0d65ddb05ed64c98ba4d8bdc2",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "475519faf6adab3d47f5ef1d00d45e6c466b83c230263b760eb65a75ba57b45a",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "29d7fde264dfba40ceba94ced9d91c82cae6dbd6c2f53ee4fa1ac1888f74d7fb",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "ddfabac2cb1a3ef5edfc7a385aa8514eb6616dbd08dfc1575960d74b52d0a6ca",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "7a12634ffed2edce69f6e28956ee68a673e0795a03bfd3c92ce52464a51f2aa3",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 2
+    }
+  },
+  {
+    "sha256": "47d8feb344249014e9f204e57b166e963570372fecbcc2e57d68dca1d9dc3f05",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "833d72b105280bdd17154662858fa49ee4cb0b1e389265db8696c790deeb3c00",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d92cf6475bda9827821312db6d0122baa58dc8fec514995a9f68caf6c0c7ec0e",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "24b2e98de31dae16b56ea1f2f24a2b4eee33cf9e956091d8bda61f1f2d344096",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3b6adf7e82462fb9a92e3f7aafabb8a604e70fb2901b09bd83caf3b9a7077776",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "fd7b14e2ff680b8f2d6bb9389f18d30e0d6351259a72b4a24d681917adcc7ed3",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "9cb144339a98cfa0bd3838b6587d36c9bb0e813e0592d70c9413a5861bc1cba8",
+    "fourclass_partitions": {
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3b1c1c62c6278b3d85a99770a6f921dfe166be2c224a14289616a67f2a44ac9a",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4c1547ceff6ea76e74e9b6d81bdb90eb93698d92c17db7cd3a08d4fa039e683a",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "420a508b7398eed0b2e1730a3e64f4fd304eec9b27d6dd5a25ff618fe604a094",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 2
+    }
+  },
+  {
+    "sha256": "592be7b57d44c4a2973e66eba948ff4e7427c6503fc4451afd8600b38e9ab7e7",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a981af751147f22c7bdfb659ef02dbc1ad375e73c4208b2d691cd0304c337918",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "a6530587df3b22e37597bcc11e13cf394171d8fb1288181221db2a708b09e94f",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "e725428315415e3de087f6c982ca37d0011aa116bc9fc8c4a184cf5be0a97754",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9ffc48a3e8407d74e9f58f6a02bf21a612a2332a6636ddff53a608ca40aa6be3",
+    "fourclass_partitions": {
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "488fb661c8ccfa34d6b5abf106c21f28ff0a9256947d78ad9a3066a54b26fb87",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "023a5ef65b55cbd238fa4a26b08402f1c7ef4f97f20ec8a163c8b7c041444202",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "be40524e83b6e1e0f10bcea44608939ac15668dcebf06da0689f24f50e6a98d4",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8c86a0cf44ff1b08cfa9e034f53759f9bb601e54aeb63ec689ef77f3c92781d4",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "8daca03e4fb663de0aca7af0405ee045a5a8cd41de8c328e4dafa685b14f637f",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bf786b36b74d7a9746a87eb0db7446c29f6bf7f8dde115bcfa12ded299e5b5b0",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "0c1679bd488472788c01ccb30b10bcdc620784725c8c3ff7001dab69d8d32c2a",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "9e524e92d57623603fa2780119dc259ab9c54cebbefce93fcfbe47f37aac69c8",
+    "fourclass_partitions": {
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "24c068a1be2320a026909ba749bffe2af02a47c6f168f991422407203d55e10e",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "3a915fa13201531c4506e46295377cac4a7fa23f84eaa7c99d12dcd1a7f5d02f",
+    "fourclass_partitions": {
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4e9425d16625d41c7b4cd6be170588735fb01820652d9a30bac28beaadecef1c",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "364fe98ab411b4693b5aec4b4130a1c4a0ad8052b2b88a2328f44c6ec50cc033",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "dd882c0f0e79095b01dfcc7125fb0651b65b11b0a7fc512a404506f286abf70a",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "92402de459accf811f78d9c6c5fdcc07fb0ed10dfc91bab430bfb43369b87971",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a1d082a3776bf7ffd294d06859a707ff1bf615662e8bcde1b15f3b7907ecf023",
+    "fourclass_partitions": {
+      "Train": 3
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "d41eb2081be007af834fc2ab4d8755d263254ec3accae242811a19dc9d2eaa9a",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "4ebf48c331441fc64064306de89d5e4e6de3c94d2730361785c24c8a16869441",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "5dcf085ec3ed1e8a0142f6415e57bd7235fe3d37f260c30c3cfe1d6a1323654f",
+    "fourclass_partitions": {
+      "Train": 4
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "54659ae0104ae34655ef1cbcd78672ea2d744a304a16687605c61eaf05b798a1",
+    "fourclass_partitions": {
+      "Train": 4
+    },
+    "insulation_partitions": {
+      "Test": 2,
+      "Train": 2
+    }
+  },
+  {
+    "sha256": "590b00ade3ece0371d1be20441b2192664bb1df374b8683fbece3b33f497db39",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "35eb50cb80ab142e13616da6c58c622213f337ff32f2e58aae08c6cea0088efb",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "60773017026f97d3556ee699a448668a313c2f3d4234082d143c32498a6be4db",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "d816e244be9ddb4a8956959f30b500d337013269589d7371daf5cd86cc2ff130",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "6f72027cd50995bc9028117b6dd5f817fd8f70e7bcd4830f131d920204f29595",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "bb551579c38915831e9e003c94aec217a1e8661c8a1b52c39fb34544fd61cb77",
+    "fourclass_partitions": {
+      "Train": 4
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 3
+    }
+  },
+  {
+    "sha256": "f8b7a3a8a728c3ba4e107f3e2fea67f73d2a1a9ec2656ad56291aab92bab4236",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "909f943dfd18a25850b417eff37336814833c9ad5b841ae09647324d183eaaaf",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a8f14b61ee9f9ffc39ba43b79a9a54894574c1adb3f5fcd354f539b63bd26428",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8b869215f2f6b9a4429272181f357b222dcaaf0d3ca386719532d680728b65f2",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4db7746307e4facd6ab2e021eeb22d82200719dd5ae406b62064fad9a3f15e76",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ed984fa5cd1d1b729b09302f9325e8ecd41597072eaebb10f1e892d94510c4fd",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f7fc86eed47f6f695b59152a4c098f10304b6f430e64bd883559295ea84072bc",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "1e59d559742107314dba42160fb1e54dc297c9ba8b983b3bffa5a23bfb1c21ac",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "481de18353f15e613fa34acc8e79ab4f35e199350ba8179b9c5e69d0e024ceaf",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a091dc3aea257ed9f7a364622a54d6ee35a4d696655cb9cb32aa09395d5eb5b5",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "dcd9d73bd70dfaad700ff6612bb49dd267117a5b52a6c9d471ebb498dd32add7",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "155bea81ee5e2625502c15d43f6ae64dbf8cb567093dc5a3f11ed405e377cc50",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "babd52e330270f0df183539da47eca9f88c6fc53472897bfae68da1baf3b2fd6",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "51a47b0c81d709c1b4d4fc31ae7f4fe4fc5a44d012986f69fe37dfb855263902",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0242493013e2f98c39a4a5dedcf96273dde4a2b21e4b496102287232d8c72084",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0e728617ab45291583190425693c6eb0cda954e45ccba4e1291756dc2864c398",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8255a43eff7a86ab49dfef35cf11e2726e03de5c74348e252103fbfce7e31dd6",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "deedda7d5714d4694968c68855da1ac0aea8f6ae34b8e426533e842842da0733",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "d6e589f05437f7dae7a76cd504f111f01ba16af66d401ec9c1c78ae2dc11b40b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4a33d45b6caf93f09d769c7885c3e92f6b0391852b1e81754c7c18840cb704a9",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f56d207e83dfeaf82c1acc5973b197cb596ca9f6d70e1a27730d2fc71f2f7813",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5d94108d909a8f59aa6d6177856249784ba97cdace10d4e61b74fbe94aa197c1",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c71c4112eb61dbc46a1390fff5ed78b34b3cb363ef29875f0623215e260b1715",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "975962fc767e8c482c63a108d8430b3d1d34e4299accd568cc9dc9771398b70c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "cdfe59f5d17c105628ce1deeb9b9504a9ca3a229f34d80739837383eb03ae68d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7cae89b5452bd1cc8e64f39bab38e0e55600b6ce8539ece7740962aa21934cbc",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "52739bd2ef7129d67899a7ebf8d244f6018f7a8b8adb43dff7ac23dc57b7ba10",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "151ff657e44360d9476d1fd43d15ef5b92a0eb6e46232e52e982eb1ea16e4a62",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a0672c11c9556d38e964d4191f3eea97c4cc8811cc0ae4b6fe69e10226cf0dc9",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "887093160d6f0e5f32c1c0e8551ba9d18385fbf1f08602e955a6603abded4f6d",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "cae38c0c40c93f6dca5906346eef70e7de655bf970ac42a318b425ab791351ed",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "411712c896d42f7736f393216542e648b58819eb4ff7317ff2ec07ec0e888a34",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "24fdc271a445f09570479e7841d422d4ab7b27664cc645bc87d13dac4bbf6c43",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0f2ff70d728b3879d9da4d3aee82ab37da7a794a5a86b2da6401fe7cc2a27d3b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "686fd4877fcae150df90dfb9e5eb20e0c3d469691de46f3ff686cfc4fb3b18d8",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ad48583a5b8e1127621b67dc6fbef0f35ba5a0fbe33711133137111b0afd5e8d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "36b1552c4bf3eadd2da1a47f28739f4f1e550c6bb5518a480d0972cd4add734b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4b5e8e5cc121e172ab2ab85561f9f9ae82589b8367e601ab0fe189eaf38c431c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "3edb63c8ffac199cde4069aa56b3296549b3d5ad08a6013b77e45ee0b4dd1d30",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "bda226702e888a50b2aa29966e66fa37f5c76997ceb9b6f41710329b4c3498a0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "dbb2bb6df9fda362a46524260f38c4673a20f43eb03f32e7ec22254fb4634a87",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "1e2691f603ee53c51d0a7de787cc0a6e179ab024d28c13ac3587eb7263d115d1",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "3f822dda86aa201fb5bd8216b8532b45ac2bfc3b39bf6c7f8d99313d7c008efa",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "29398e397d845c7282674c92b527155d4da13cdfbfa60cb01479becc04f4cad5",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "33d51780a8ed86b4e28887b9f79e2c2b5953602b1fb333a29df2e39259e6a05c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "84ef75e45d75da6abc47763285ec3a5921ee56579345488b1d00e2e0f60ec65e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ff03a279b6df8a0bd8b46138d17d942469f17814b09ec76f9dd28908e5e47633",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7fb443067ca1d60ba4784c9fcd334340f2dd8e611de142064b45342c8c33187e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a4119e0c1d08e4fa4dd123bd599e261f0cfd0481e71ae7e8a29a090ce17cb4d4",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "68b838250cc3e89ede855dcd7c1bc01191fad928921b207cf122732726f12e23",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7a243b74cc0e2bf8ec8f87df6235ffef621438e620770cbc954a8bf5a090f51f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7fb668de48f0acb94ac83366efe76fcba6dc8bf0879b989d9cb94b1504551ee6",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a44e968dc1a41a126fdf0d51833fd916d96d192797fccc206916587da851ce59",
+    "fourclass_partitions": {
+      "Train": 2
+    },
+    "insulation_partitions": {
+      "Test": 1,
+      "Train": 1
+    }
+  },
+  {
+    "sha256": "56ad25cd79a5c6fd20f9aaf929ac1dae99ca99b9bf5a33a1048a11977cb9e513",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ea2948764aed267af168e1509ff196e0c5d6c1b271daa73d69ee221b6d68c1b0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "eacc41f2eda72b570f6952b996994f1bb22104ab5125a4b3b1740f62b1de17c3",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "3bd162ef09b7b7cdf7c4f39c13d76ca54e95ebb661b755f066a85b2946fd8a76",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f6ddb554e8ba5a316c6e184bb8fdaf5a8e3ac96ca5c434d691c50629a283876f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "64b52def08cc99ec3235f0579e435017c41791b401fd3615a19211e73dd07f0d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7ffc5fbc4f7a8b8fd929d27a09c8c5535fd54b702291fa89b576b5e9985990c4",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4dd873a26d5e5927bef827d2403c59c1b7c74d749df73985aa3527bb88c65ed4",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0c5ea9da45fb64ff37c06acde0adfd9376a6fb3be79407f1d78fae888c2d84b5",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "feb5787350a6c13584d302668017b88b133661f288d2abe792cb1a76abf53a0c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c60ddd72e567ae9f3850ca7ae1d9cec201e4b892d9b690dd4abe14d97063f6b2",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "1dacf2d968eeea3082156eb605fd2116015c5042712d99ae00a68a5800e99323",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "52bcaada0401316cab061c42cbba02eee6e2e1f9535526c84f09c41de8ed58df",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8ca181b425320bbdaf005c98b88f88de6a9bd04bb11c06260b48110b682faed6",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7bb7443619d8f3f299ea56ef9468415c7f8930812d24f68b2ac447ecbf562ace",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ffd3f5e898ca322c1441705a37ba2dd8d9d3eeafd7b93d13137aeaa733753123",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c941e3819480f976360f6dd447c9af210af597cb188bc90ad66af7b3bf99f178",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "56aa2ba1a0ddc354d778e43690396926145e2d65c970d257a4530ea096b6ba5e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "cf9233a685eb0bbf0d4d4489f4c3fe81b975e6eb0522db9494d13c275c7d05c7",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "844bd40fdd60804f51ca9f8dd82e38eaf7ec1ffbd7fe885b8e10e0c1a02d4def",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "b65c7ecccc91b73a560c178f45e11b80408dbcdebf4dceb95cd436cea923ba90",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "3fc392ef91a09999c5bbf12df558662012f8ddb64aa6947335ebff66e84e599e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5f6832880a95a4bb751d1fee96c2986733afdf466fc8097369dd4bdb5ef2b89b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "b2c3f2e8fc81b65db779e758a466de69189183392893a97f6f3cc982e1431346",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f2670ec6b2c65089cbe087622c8c0d891c8f78af368688acdbf88ca5e6e3abac",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "60c7edf03caf93b4ea56cd19b04f4153421c83160ad19375c4cf7e7fe3d94ba3",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "66c0b48b11c61458d6faaeb56d28125dc134457357834e7b35841a4dd734b079",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4ba9d7f1de9a4ac272d9b13f9696de61849c6a04eb03dfefd67ac29f1df6dce3",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "309512a61b16135fc1163ea2fb97d28e1e477262707732edc2576b0f5253cb7b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "199ea847890fdd6ba681eb54a1f0a2430a784ba3240ea9756c7b682c8f299b8c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f1bad8ad64de187bceff3fad9f2fc7fd53eb35a03ae859e8beac230503ac4017",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "23da0a9c0e030f9a4e17b6a55da0c16e697107036e822ce205cf3cac26a55bf0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7e82846bb646453548fbb1672a23eaea498d5346720879539c81a8e98603e74f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8d4faa60a2a0cbc9043a8635bc663588a4aae7592ff42ef1765577b242e8aa9f",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a7c9b777914f0cb3e4171fceb222db2a7006aa9285ecbed3f54b24a4f1f235a0",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "07fd66d13535f1b9d3c0a0b632aada09d4ab81a76646770c29e37322fddaf38c",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5bea5007efede3bfa971b17a0326995242c892bed384be48023846748a1cf3bb",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "dd843ce9d2a830a2fc635b6b16044824cce8e810c0598c0e53735da01c98b7b4",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "5863e5cfa963bd6b3f6607524d887340a1b3cfbaac435fcc81f62b6c0b6da52b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "c04640031f466610b61e9d98b524111034b14057a612c239f01ab0296756ba28",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "ec2d9b2fe15c0c73ba24bd065293f3a5e8b0a0d214044971a879be4149dd0e16",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f1bf1e3925e3d8ec74706333fdb4a50b6ec37d82c765029b905e25b52af496b9",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "27ee9544ff3d4aa65ddf1c0c34a4187cb351e8bccd49433252f0d1987bb4330d",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "8a7fa2dafb1cae4c300c4f90f98dd171417f702769c6217c40353d2d30b69606",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4c2406e64167cda22404b9c6da93f0e3bf5a68d9d7af8c5199ffc313d4b82d2b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "9fd8a138d78fa7c2abecaa099d0d23d55064c7d79254bc02814b226e6fa783b8",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "919799578ef0b59a1d2dc40756faffa6a10b986e49a2ae10feb9419883105804",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0aa533dbe59be949286d6cf3b3ae0dd28c4e82f1c985bd7eb36cb31eee124017",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "61d8c9b16408d2193d42e73669d3bace7bed052caf0aa27bff8fa36b7cd86a54",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "4d0f04476b48334f01cf589a818bb8c4c7788f6bb382551a080d945828a6487b",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "93a02240a0998734eb7ccb4ca993eb9410dd992228b8944963cab4b026421ccc",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "41927c8569e9bcd86efe8943aa7a80c00e7a36f7e0b92c3173de1eb89c255012",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "fb12a607471d01087d5681f6e99473e9b6e74c951662a51066fd1f9a0d051bad",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "6002b33498fc6ff953e09d3c0edff752664da779ae483d8548ab369d84a9b85e",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "7e829f1ea3e0c035965d18eb3a935ec70b509ffb9410a45582d82b571e8af377",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "cfd01a8fa95da12e4adc708f7ba7d2ea53b8d72cae3e081b241cbfbaf8a0b5e1",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f9180cc55f64b7ad49d1461320a042ea53997150e8ac76aefce956acdf1cac89",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "6167b54b602bfdec7c4bb41432e0b1aec4667edbef2e0a5461bf80327e880adc",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "305b799b253cb9d9df73d6c1ac3d5c7fb8a571bc95ecca51d946eedc15335de6",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "2f87d2c2b953318e2c6efc4df36247958daba72ae9a811ce5c6af3c1cd9f32dc",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "91f2c09993d36e269f0c16b4a6fd6b7d8bd43189012dcc77269fce34d43efa45",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "a24971d743347c4fc1529dd13098fad00410816316a2c33ef26e57c11ec6e223",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "118dafe2fcbb01150c34e4f013211c217de0ed923557345c8211257e3c36c948",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "2cc92782af34ab4da266a7789a7dce16d6f06cf0b711755c718778ee5f845ea3",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "f8a9b5868fd7477f552cfe409a1c1a686a8f51d2192b2b4c44d692c1ad9f56dd",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  },
+  {
+    "sha256": "0dc6a1d85e3c172fd00b082e9cd9e95052fe0ce6ab434267d876e403f8148b15",
+    "fourclass_partitions": {
+      "Train": 1
+    },
+    "insulation_partitions": {
+      "Test": 1
+    }
+  }
+]

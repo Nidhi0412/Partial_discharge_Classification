@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "model": "resnet50",
+  "actual_backbone_weight_changed": true,
+  "changed_layer": "conv5_block3_3_conv",
+  "frozen_layer_unchanged": "conv1_conv",
+  "head_weight_changed": true,
+  "batch_normalization_frozen": true,
+  "backbone_max_abs_update": 9.94466245174408e-06,
+  "trainable_backbone_convolutions": [
+    "conv5_block2_3_conv",
+    "conv5_block3_1_conv",
+    "conv5_block3_2_conv",
+    "conv5_block3_3_conv"
+  ],
+  "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5",
+  "split_and_file_hash_checks": "PASS",
+  "mapped_images": 1600,
+  "images_with_source_csv_link": 0,
+  "limitation": "Checks code-level mapping and actual weight updates; acquisition/session independence requires source evidence."
+}

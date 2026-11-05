@@ -1,0 +1,76 @@
+{
+  "VGG16": {
+    "source": "Manuscript Table III",
+    "counts": [
+      [
+        160,
+        0,
+        5,
+        155
+      ],
+      [
+        160,
+        0,
+        6,
+        154
+      ],
+      [
+        159,
+        1,
+        5,
+        155
+      ],
+      [
+        160,
+        0,
+        6,
+        154
+      ]
+    ],
+    "accuracy_by_row": [
+      0.984375,
+      0.98125,
+      0.98125,
+      0.98125
+    ],
+    "mean_accuracy": 0.9820312499999999,
+    "scope": "Arithmetic check of supplied table, not reproduction of historical predictions"
+  },
+  "ResNet50": {
+    "source": "Manuscript Table III",
+    "counts": [
+      [
+        156,
+        4,
+        5,
+        155
+      ],
+      [
+        152,
+        8,
+        3,
+        157
+      ],
+      [
+        158,
+        2,
+        6,
+        154
+      ],
+      [
+        159,
+        1,
+        9,
+        151
+      ]
+    ],
+    "accuracy_by_row": [
+      0.971875,
+      0.965625,
+      0.975,
+      0.96875
+    ],
+    "mean_accuracy": 0.9703125,
+    "scope": "Arithmetic check of supplied table, not reproduction of historical predictions"
+  }
+}

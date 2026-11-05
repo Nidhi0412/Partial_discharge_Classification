@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-11-04T06:16:32.642730+00:00",
+  "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5",
+  "folds": [
+    {
+      "fold": "1",
+      "counts": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "overlaps": {
+        "image_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_path": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "recording_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "group_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_sha256": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        }
+      }
+    },
+    {
+      "fold": "2",
+      "counts": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "overlaps": {
+        "image_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_path": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "recording_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "group_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_sha256": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        }
+      }
+    },
+    {
+      "fold": "3",
+      "counts": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "overlaps": {
+        "image_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_path": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "recording_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "group_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_sha256": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        }
+      }
+    },
+    {
+      "fold": "4",
+      "counts": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "overlaps": {
+        "image_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_path": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "recording_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "group_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_sha256": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        }
+      }
+    },
+    {
+      "fold": "5",
+      "counts": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "overlaps": {
+        "image_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_path": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "recording_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "group_id": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        },
+        "image_sha256": {
+          "train_vs_validation": 0,
+          "train_vs_test": 0,
+          "validation_vs_test": 0
+        }
+      }
+    }
+  ],
+  "engineering_ledgers": [
+    {
+      "model": "vgg16",
+      "status": "PASS",
+      "generated_inputs": 4,
+      "distinct_parent_images": 2,
+      "all_parents_in_correct_train_partition": true
+    },
+    {
+      "model": "resnet50",
+      "status": "PASS",
+      "generated_inputs": 4,
+      "distinct_parent_images": 2,
+      "all_parents_in_correct_train_partition": true
+    }
+  ],
+  "scope": "Recorded image/recording/group/content identities; no invented acquisition/session provenance."
+}

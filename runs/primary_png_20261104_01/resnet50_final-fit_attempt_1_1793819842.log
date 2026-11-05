@@ -1,0 +1,35 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793819846.380858    3112 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793819853.475948    3112 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+WARNING:tensorflow:From D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+I0000 00:00:1793819855.414695    3112 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/50
+512/512 - 103s - 200ms/step - accuracy: 0.5332 - loss: 0.7916 - val_accuracy: 0.7148 - val_loss: 0.6322
+Epoch 2/50
+512/512 - 99s - 194ms/step - accuracy: 0.6553 - loss: 0.6676 - val_accuracy: 0.7422 - val_loss: 0.6462
+Epoch 3/50
+512/512 - 95s - 186ms/step - accuracy: 0.7285 - loss: 0.7061 - val_accuracy: 0.7305 - val_loss: 0.7509
+Epoch 4/50
+512/512 - 97s - 189ms/step - accuracy: 0.7363 - loss: 0.7715 - val_accuracy: 0.7031 - val_loss: 1.3376
+Epoch 5/50
+512/512 - 96s - 187ms/step - accuracy: 0.7695 - loss: 0.7524 - val_accuracy: 0.7344 - val_loss: 1.1616
+Epoch 6/50
+512/512 - 94s - 185ms/step - accuracy: 0.7773 - loss: 0.7731 - val_accuracy: 0.7227 - val_loss: 1.2885
+Epoch 7/50
+512/512 - 94s - 184ms/step - accuracy: 0.7773 - loss: 0.8026 - val_accuracy: 0.7500 - val_loss: 0.8751
+Epoch 8/50
+512/512 - 95s - 185ms/step - accuracy: 0.7881 - loss: 0.7180 - val_accuracy: 0.7422 - val_loss: 1.0891
+Epoch 9/50
+512/512 - 94s - 184ms/step - accuracy: 0.7803 - loss: 0.7490 - val_accuracy: 0.7539 - val_loss: 0.9636
+Epoch 10/50
+512/512 - 95s - 185ms/step - accuracy: 0.7842 - loss: 0.7178 - val_accuracy: 0.7500 - val_loss: 0.9875
+Epoch 11/50
+512/512 - 95s - 186ms/step - accuracy: 0.7969 - loss: 0.7242 - val_accuracy: 0.7383 - val_loss: 1.2264
+WARNING:tensorflow:From D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

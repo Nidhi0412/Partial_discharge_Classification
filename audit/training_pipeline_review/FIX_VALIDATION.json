@@ -1,0 +1,120 @@
+{
+  "python": "C:\\Users\\snidhi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "checks": [
+    {
+      "check": "syntax:crossval_aggregate_evaluation.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:dataset_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:eval_roc_auc.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:evaluation.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:evaluation_tools.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:explain_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:generate_clean_scalograms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:generate_scalograms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:generate_vgg_gradcam_for_dashboard.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:gradcam_visualization.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:main.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:main_clean_scalograms.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:make_foldwise_roc.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:model_training.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:model_training_vgg16.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:run_gradcam.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:run_parallel_training.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:run_parallel_training_vgg16.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:scalogram_utils.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:split_dataset.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:training_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "check": "syntax:wavelet_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "check": "dependency:tensorflow",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "dependency:numpy",
+      "status": "PASS"
+    },
+    {
+      "check": "dependency:PIL",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "dependency:matplotlib",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "dependency:pywt",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "pipeline-contract-tests",
+      "status": "PASS",
+      "detail": "test_all_groups_remain_disjoint_and_coverage_complete (test_pipeline.PipelineTests.test_all_groups_remain_disjoint_and_coverage_complete) ... ok\ntest_auc_ties_and_perfect_order (test_pipeline.PipelineTests.test_auc_ties_and_perfect_order) ... ok\ntest_binary_gradcam_targets (test_pipeline.PipelineTests.test_binary_gradcam_targets) ... ok\ntest_changed_image_rejected_before_training (test_pipeline.PipelineTests.test_changed_image_rejected_before_training) ... ok\ntest_changed_manifest_rejected (test_pipeline.PipelineTests.test_changed_manifest_rejected) ... ok\ntest_cli_help_does_not_import_tensorflow (test_pipeline.PipelineTests.test_cli_help_does_not_import_tensorflow) ... ok\ntest_conflicting_recording_labels_rejected (test_pipeline.PipelineTests.test_conflicting_recording_labels_rejected) ... ok\ntest_cross_partition_identical_content_rejected (test_pipeline.PipelineTests.test_cross_partition_identical_content_rejected) ... ok\ntest_cross_partition_recording_rejected (test_pipeline.PipelineTests.test_cross_partition_recording_rejected) ... ok\ntest_duplicate_image_id_rejected (test_pipeline.PipelineTests.test_duplicate_image_id_rejected) ... ok\ntest_factory_calls_requested_backbone (test_pipeline.PipelineTests.test_factory_calls_requested_backbone) ... ok\ntest_image_id_cannot_be_a_path (test_pipeline.PipelineTests.test_image_id_cannot_be_a_path) ... ok\ntest_inventory_does_not_invent_recording_ids (test_pipeline.PipelineTests.test_inventory_does_not_invent_recording_ids) ... ok\ntest_missing_fold_assignment_rejected (test_pipeline.PipelineTests.test_missing_fold_assignment_rejected) ... ok\ntest_missing_recording_id_is_rejected (test_pipeline.PipelineTests.test_missing_recording_id_is_rejected) ... ok\ntest_model_selection_is_case_normalized (test_pipeline.PipelineTests.test_model_selection_is_case_normalized) ... ok\ntest_nonfinite_scores_rejected (test_pipeline.PipelineTests.test_nonfinite_scores_rejected) ... ok\ntest_original_files_not_moved_or_modified (test_pipeline.PipelineTests.test_original_files_not_moved_or_modified) ... ok\ntest_output_directory_never_overwritten (test_pipeline.PipelineTests.test_output_directory_never_overwritten) ... ok\ntest_recording_endpoint_and_bootstrap (test_pipeline.PipelineTests.test_recording_endpoint_and_bootstrap) ... ok\ntest_repeated_recording_oof_predictions_rejected (test_pipeline.PipelineTests.test_repeated_recording_oof_predictions_rejected) ... ok\ntest_roc_ties_have_one_threshold (test_pipeline.PipelineTests.test_roc_ties_have_one_threshold) ... ok\ntest_sessions_can_group_multiple_materials (test_pipeline.PipelineTests.test_sessions_can_group_multiple_materials) ... ok\ntest_sigmoid_threshold_and_metrics (test_pipeline.PipelineTests.test_sigmoid_threshold_and_metrics) ... ok\ntest_split_is_deterministic (test_pipeline.PipelineTests.test_split_is_deterministic) ... ok\ntest_actual_backbones_fit_save_reload (test_pipeline.TensorFlowSmokeTest.test_actual_backbones_fit_save_reload) ... skipped 'Actual TensorFlow training smoke test is opt-in; run the explicit smoke-test command'\n\n----------------------------------------------------------------------\nRan 26 tests in 9.399s\n\nOK (skipped=1)\n"
+    }
+  ],
+  "verdict": "STATIC_CHECKS_PASS_RUNTIME_ENVIRONMENT_BLOCKED",
+  "limitation": "No guarantee of full-training runtime correctness or acquisition independence. Run python code/model_training_vgg16.py smoke-test in the configured environment."
+}

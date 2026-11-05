@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "model": "vgg16",
+  "actual_backbone_weight_changed": true,
+  "changed_layer": "block5_conv3",
+  "frozen_layer_unchanged": "block1_conv1",
+  "head_weight_changed": true,
+  "batch_normalization_frozen": true,
+  "backbone_max_abs_update": 9.847339242696762e-06,
+  "trainable_backbone_convolutions": [
+    "block5_conv1",
+    "block5_conv2",
+    "block5_conv3"
+  ],
+  "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5",
+  "split_and_file_hash_checks": "PASS",
+  "mapped_images": 1600,
+  "images_with_source_csv_link": 0,
+  "limitation": "Checks code-level mapping and actual weight updates; acquisition/session independence requires source evidence."
+}

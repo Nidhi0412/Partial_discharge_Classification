@@ -1,0 +1,4 @@
+Engineering validation only
+Class	Precision	Recall	F1	Support
+Nomex	0.000000	0.000000	0.000000	1
+Teflon	0.500000	1.000000	0.666667	1

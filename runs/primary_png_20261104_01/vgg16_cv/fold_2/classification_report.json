@@ -1,0 +1,36 @@
+{
+  "samples": 256,
+  "confusion_matrix": [
+    [
+      128,
+      0
+    ],
+    [
+      0,
+      128
+    ]
+  ],
+  "accuracy": 1.0,
+  "auc": 1.0,
+  "specificity": 1.0,
+  "positive_class": "Teflon",
+  "per_class": {
+    "Nomex": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Teflon": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "macro": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "scope": "Development validation fold 2",
+  "threshold": 0.5
+}

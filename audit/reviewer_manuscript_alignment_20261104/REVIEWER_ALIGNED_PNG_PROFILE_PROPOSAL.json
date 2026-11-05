@@ -1,0 +1,31 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_APPLIED_NOT_STARTED",
+  "reason": "Reviewer 5 IX explicitly challenges horizontal flip and rotation; do not repeat them in the primary reviewer-aligned PNG experiment.",
+  "current_launcher_profile": "combined-image",
+  "proposed_overrides": {
+    "augmentation_profile": "scalogram-image",
+    "image_stretch_fraction": 0.0,
+    "image_shift_fraction": 0.03,
+    "row_mask_fraction": 0.15,
+    "column_mask_fraction": 0.15,
+    "pixel_noise_std": 0.05
+  },
+  "omitted_from_primary": [
+    "historical rotation",
+    "horizontal flip",
+    "image zoom/vertical shift",
+    "vertical stretching"
+  ],
+  "retained_as_separate_ablation_profiles": [
+    "historical-image",
+    "combined-image"
+  ],
+  "interpretation": "Bounded PNG image-space perturbations. No waveform phase, calibrated frequency-shift or laboratory-noise robustness claim.",
+  "requires_before_primary_training": [
+    "Make image provenance and dataset-count description consistent with source evidence/current user-confirmed recording account",
+    "Resolve or explicitly disclose whether reused PNG generation depended on true material labels",
+    "Freeze an augmentation/development evaluation plan",
+    "Apply and verify the chosen configuration; do not resume stopped no-augmentation checkpoints"
+  ],
+  "note": "This proposal does not change code, manuscript, reviewer document or current training state."
+}

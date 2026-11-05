@@ -1,0 +1,15 @@
+VERIFIED: vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+VERIFIED: resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+2026-11-04T10:29:50.627050+00:00 Starting vgg16_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_cv_attempt_1_1793788190.log
+2026-11-04T15:57:24.513960+00:00 Completed vgg16_cv
+2026-11-04T15:57:24.535472+00:00 Starting resnet50_cv; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\resnet50_cv_attempt_1_1793807844.log
+2026-11-04T17:56:46.966392+00:00 Completed resnet50_cv
+2026-11-04T17:56:46.991114+00:00 Starting vgg16_final-fit; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_final-fit_attempt_1_1793815006.log
+2026-11-04T19:17:22.729345+00:00 Completed vgg16_final-fit
+2026-11-04T19:17:22.732343+00:00 Starting resnet50_final-fit; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\resnet50_final-fit_attempt_1_1793819842.log
+2026-11-04T19:35:23.025397+00:00 Completed resnet50_final-fit
+2026-11-04T19:35:23.028494+00:00 Starting vgg16_evaluate; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\vgg16_evaluate_attempt_1_1793820923.log
+2026-11-04T19:35:48.186900+00:00 Completed vgg16_evaluate
+2026-11-04T19:35:48.190436+00:00 Starting resnet50_evaluate; log D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\runs\primary_png_20261104_01\resnet50_evaluate_attempt_1_1793820948.log
+2026-11-04T19:36:13.333294+00:00 Completed resnet50_evaluate
+2026-11-04T19:36:13.390978+00:00 BOTH MODELS COMPLETE

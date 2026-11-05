@@ -1,0 +1,5 @@
+{
+  "error_type": "KeyboardInterrupt",
+  "message": "Deliberate recovery check after completed epoch 1",
+  "recovery": "Resume from last committed epoch; unfinished epoch is repeated."
+}

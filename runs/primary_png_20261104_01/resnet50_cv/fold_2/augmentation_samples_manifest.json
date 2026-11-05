@@ -1,0 +1,962 @@
+[
+  {
+    "image_id": "001ff4e6a74c60a15125f498",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Nomex\\Nomex_226.png",
+    "recording_id": "recording_001ff4e6a74c60a15125f498",
+    "material": "Nomex",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "24abb1fb1a1c50eb63ed8c6b8cd9bc3c2d28be5f359c066783c48b75b1a7d383",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_001ff4e6a74c60a15125f498",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "cfca6641a4b4e50d4a43ba9359aa7efff2ae417eb39f6b745330ffbc01969db2",
+    "augmentation_seed": 214541727,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_augmented.npy",
+    "tensor_sha256": "dd6cb984c601c17afdf54fc0b033631a5bc0afe5633bd63fe0490bfd106473c0",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 1,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "8bd25ef209282583ebe083e773a6380b1f7ea9034261c175f4d92a033e42d021",
+        "output_sha256": "738a7e6c838615ee10c12b6ae4d9c2b727cbfcadcdfe035f0a6b13cf1c405412",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 5,
+          "width_pixels": 22,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "738a7e6c838615ee10c12b6ae4d9c2b727cbfcadcdfe035f0a6b13cf1c405412",
+        "output_sha256": "c3284c91009260d2e657b449bd02d312b2223b28fae4848fe9553f6b643e7203",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 164,
+          "width_pixels": 8,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "c3284c91009260d2e657b449bd02d312b2223b28fae4848fe9553f6b643e7203",
+        "output_sha256": "3114693985c59e22399566d4e5a027dbfee48676f8b0b2438c8272a023481904",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "3114693985c59e22399566d4e5a027dbfee48676f8b0b2438c8272a023481904",
+        "output_sha256": "b2d1053e580db1537580e369c37778591338baf817958e34de9bb8ad9dc11338",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\001ff4e6a74c60a15125f498_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "002942d2840eb9b705a2e098",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Nomex\\Nomex_527.png",
+    "recording_id": "recording_002942d2840eb9b705a2e098",
+    "material": "Nomex",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "79e551fee0c9368e879510cc882286e3fab48354af367f5c73c42863641b3810",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "content_group_716765d7c460911a0f7f5848",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "4834d326736971de5dcb6a7ae7c50048e621d86066d784e5132b77a0cd1aecc6",
+    "augmentation_seed": 1936425035,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_augmented.npy",
+    "tensor_sha256": "d3dd1313fd50dd94e828f597f4cd30e3acd41b187763ca41ef14ec6fe8e917ec",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 6,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "6df981614a5d4fb214ccde2bb34e4936b5cf22dd388b2b42cc977adc5a76d8dc",
+        "output_sha256": "e62eabbeb5e6e3c209da386aa365ee74bb96224fba7ec7ad4bc30c077edcaffc",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 50,
+          "width_pixels": 32,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "e62eabbeb5e6e3c209da386aa365ee74bb96224fba7ec7ad4bc30c077edcaffc",
+        "output_sha256": "3944f9ee85815c20e7530c7921b07a53639c2034e06215b111af2d38c7dbab87",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 153,
+          "width_pixels": 28,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "3944f9ee85815c20e7530c7921b07a53639c2034e06215b111af2d38c7dbab87",
+        "output_sha256": "f3b52dceb750cd478a3aebc59e8ab382f8440777a20b7a9b9bc9d9a1d0803a8a",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "f3b52dceb750cd478a3aebc59e8ab382f8440777a20b7a9b9bc9d9a1d0803a8a",
+        "output_sha256": "cd84fc5d2dcc38c4468f701c96749875c827ff9ab64d0695475d7fca8d2f9fb8",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\002942d2840eb9b705a2e098_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "00313167f1172cf9326a6f1c",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Nomex\\Nomex_627.png",
+    "recording_id": "recording_00313167f1172cf9326a6f1c",
+    "material": "Nomex",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "53a4a212140f299c352e873ada9846bdfdcae80365dfbd7641e7b91ccf649c10",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "content_group_ba88b174f75366bb03e4395c",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "5013aab96a3b30516208f5d9da3a12f1faf486106b8f79877b197ceeeff7eec6",
+    "augmentation_seed": 37587887,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_augmented.npy",
+    "tensor_sha256": "c4a8b1cbc897126689d4b544f3db916125c3800fe51193a7f8cef0ba88b687a5",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 6,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "1fab123b996a148712452741dcd0c227aa0f1e1e2503db2daf9096482f2bf6ad",
+        "output_sha256": "654e725746f9a21ab7f7390f6c9d3c8b8d92c86ac2818dcc1f74d4986f829af3",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 104,
+          "width_pixels": 17,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "654e725746f9a21ab7f7390f6c9d3c8b8d92c86ac2818dcc1f74d4986f829af3",
+        "output_sha256": "f5b20ccc1b90a9a4e4706314b1699d1be6f9979447c2aa129f1639b56bbc3eea",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 99,
+          "width_pixels": 9,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "f5b20ccc1b90a9a4e4706314b1699d1be6f9979447c2aa129f1639b56bbc3eea",
+        "output_sha256": "6168844c2aa719e0aa1a4360b92b8701bc0e8c44fa8554e40ea51ade479296f7",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "6168844c2aa719e0aa1a4360b92b8701bc0e8c44fa8554e40ea51ade479296f7",
+        "output_sha256": "4fd015f9d7e190eff9aa607333593c241713be8ba51fc69a4c050dd4abcded37",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\00313167f1172cf9326a6f1c_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "028db45e06af2a8163a988f0",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Nomex\\Nomex_739.png",
+    "recording_id": "recording_028db45e06af2a8163a988f0",
+    "material": "Nomex",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "7c7102fb87cb3437e5a6fd5d48e4e2c162960468b2dd6fd98a3f4fb686ae949c",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "content_group_7a825e87610149ef4977218f",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "8e8a58376362a154e0fdda0a0f47a5123427c97bb8eaa1aaaeb760711a1da489",
+    "augmentation_seed": 1407233296,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_augmented.npy",
+    "tensor_sha256": "d35babfeb2a79a82d507b7ef633f0542d369f796c225fd1520e010fb41945257",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": -3,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "2d62eda000fef46e3903cbf1cb914e35a646a4084d691844a1aeff5b24a20805",
+        "output_sha256": "afcbd46bef759f18bb008463fa6dff734d0ffdabac7e829c48f8cc77afd27e95",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 98,
+          "width_pixels": 7,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "afcbd46bef759f18bb008463fa6dff734d0ffdabac7e829c48f8cc77afd27e95",
+        "output_sha256": "4e2b2b622a34f2ab567d54140c49a1d82bb1875b1961bdea6e0b5f87d829c91c",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 116,
+          "width_pixels": 6,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "4e2b2b622a34f2ab567d54140c49a1d82bb1875b1961bdea6e0b5f87d829c91c",
+        "output_sha256": "1342b7d571c9aa2c25268c763f62248d000a338e27ead9b66348e2c937cc9602",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "1342b7d571c9aa2c25268c763f62248d000a338e27ead9b66348e2c937cc9602",
+        "output_sha256": "4e95a77e2560fc185bb8a0dcefe27e06882063e9f53113e3ed094ac58a3cef48",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\028db45e06af2a8163a988f0_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "03244d12feffc73e8bee2c1c",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Nomex\\Nomex_351.png",
+    "recording_id": "recording_03244d12feffc73e8bee2c1c",
+    "material": "Nomex",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "3cdccd0cf12cd6db2f9b0b75e5e5e6a1613e2bd8c83ac8647a6466867df62df7",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "content_group_78491e4249ac9eec937d88c9",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "63adadb0e6e7ee2f41a773665af191c840b09341af1dbe0a26dd8277a5d09edc",
+    "augmentation_seed": 360481472,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_augmented.npy",
+    "tensor_sha256": "1df3af57f5033e254d840445a0216b64fee3a347c2211fe49ae1172f24748cba",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": -5,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "aa0e1fe02807c0b28c99d732c5b6eb0e742b8625fe8e20a2a4adb4089c195c83",
+        "output_sha256": "c710b002b21a5380e7b02a9bc7314dfffee22d3aab38a00c7c95af776675fcd7",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 147,
+          "width_pixels": 14,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "c710b002b21a5380e7b02a9bc7314dfffee22d3aab38a00c7c95af776675fcd7",
+        "output_sha256": "8f6e556a6255eca6ff7e81b6898ea93491401a8adc37c812d4b0ede897bec5e4",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 99,
+          "width_pixels": 20,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "8f6e556a6255eca6ff7e81b6898ea93491401a8adc37c812d4b0ede897bec5e4",
+        "output_sha256": "64e6584060ca9685994f63553761c8fcddbd46d6442bd014122ca59ed81d7326",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "64e6584060ca9685994f63553761c8fcddbd46d6442bd014122ca59ed81d7326",
+        "output_sha256": "e6b54276f04cc4be6ac4eaa664170c5ba6ebc42096c4c9dc2444db41216507ae",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Nomex\\03244d12feffc73e8bee2c1c_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "0081f6d0c40139ffdd4443ea",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Teflon\\Teflon_663.png",
+    "recording_id": "recording_0081f6d0c40139ffdd4443ea",
+    "material": "Teflon",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "c7023bbe5e4a9b86c7e0482808b9a0ec2ed8779b608fa12ceb81e3839bb2b1e1",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_0081f6d0c40139ffdd4443ea",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "cd239f4bc075aa248980eb05ef3f19af08dcc2dd40f55c59cdbc79f2ae5f3d26",
+    "augmentation_seed": 461565257,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_augmented.npy",
+    "tensor_sha256": "292c9fc6870ce25fa186ee19429513a1e48640b1b70b43909379a3177f6c3c86",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": -3,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "903f4170de7d970e89a876a13689ca0e7e67d9d485b68612e31c3dfacfa71a5e",
+        "output_sha256": "617121042b37120897e575e5ef35ef15177b6ef5710f9adf49b1084b2d6d8a86",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 167,
+          "width_pixels": 22,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "617121042b37120897e575e5ef35ef15177b6ef5710f9adf49b1084b2d6d8a86",
+        "output_sha256": "636abae940ad1852f04b61ccbce6116fbe501a8983147cea667cabb4019381a5",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 94,
+          "width_pixels": 18,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "636abae940ad1852f04b61ccbce6116fbe501a8983147cea667cabb4019381a5",
+        "output_sha256": "4d21d13d19cf612d45dd55abdea0915816d6fc9e192ecadbffa5576d4ebb43bf",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "4d21d13d19cf612d45dd55abdea0915816d6fc9e192ecadbffa5576d4ebb43bf",
+        "output_sha256": "c7591b0ac679ead144b86a5fa4f9b48189f26c269b705411ccb2f684cbefdf55",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0081f6d0c40139ffdd4443ea_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "00aa241fcce7419acb69e10f",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Teflon\\Teflon_386.png",
+    "recording_id": "recording_00aa241fcce7419acb69e10f",
+    "material": "Teflon",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "36b2dc5d0fa947476d17d8415ebae2c002b643b4217feef40385c8a4e19a3aa7",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_00aa241fcce7419acb69e10f",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "965e21c7016cfee5b99c0d548aa71d84c19874ca33610bfdee20086c8ec9fceb",
+    "augmentation_seed": 1823463656,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_augmented.npy",
+    "tensor_sha256": "beb2e8e455bad9982ae2de8c4fc0dfd4c2e88c9009b3727c6cdc8c580bc746ae",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 3,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "e8d866354eddaf464d3b979548701e8f31fed0a32a5b77f2ee14bbf1a698efdc",
+        "output_sha256": "7824e9497cae30842519d6a27e01ce5175c42810ccd70ed787563f4ae39d83f8",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 88,
+          "width_pixels": 1,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "7824e9497cae30842519d6a27e01ce5175c42810ccd70ed787563f4ae39d83f8",
+        "output_sha256": "8fda7c65b6bacd53b88baf0f321948dec5922da5b5347313491f369389363b92",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 117,
+          "width_pixels": 15,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "8fda7c65b6bacd53b88baf0f321948dec5922da5b5347313491f369389363b92",
+        "output_sha256": "72258e8bb8ccf235ae27b4e3c0dd14430d510a459f858b2e36148ea6c2baa159",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "72258e8bb8ccf235ae27b4e3c0dd14430d510a459f858b2e36148ea6c2baa159",
+        "output_sha256": "aff990a68590798bcb38e635860f99ba20b5276b6b396e984bb16ca28d6b924b",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\00aa241fcce7419acb69e10f_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "01216aa06262f20de3660dc1",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Teflon\\Teflon_679.png",
+    "recording_id": "recording_01216aa06262f20de3660dc1",
+    "material": "Teflon",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "2ddf23fa2c37d5d56e1ecebf2892e1e81c3cef3864c831298768970d07f761f0",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_01216aa06262f20de3660dc1",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "72d978ddacbc1930d1112917cb12d9e1e1dd48c6356103bc7d654714c7205797",
+    "augmentation_seed": 1093022614,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_augmented.npy",
+    "tensor_sha256": "7e6eed9a6b39690a0324c7aa2d882b2988ec2cca46cb2118ef9662f73195e8c2",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": -6,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "1052cae2e86a3cc0890486a4f449e7a5aa966fbd3b900de6b90786f00b5b70ed",
+        "output_sha256": "10d25f7e2ad7e6e147a8002a59ac6e482545e4fdf942d86933246e281dd0acff",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 187,
+          "width_pixels": 2,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "10d25f7e2ad7e6e147a8002a59ac6e482545e4fdf942d86933246e281dd0acff",
+        "output_sha256": "314bb1cdce5203662686ca7f839c02f5ea310ed9aee5de27e28820a7f8590392",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 35,
+          "width_pixels": 25,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "314bb1cdce5203662686ca7f839c02f5ea310ed9aee5de27e28820a7f8590392",
+        "output_sha256": "0178aa6905f5099c1b04ad729eef66fae6bfe37fa1beb0c22575a3147ddd15a6",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "0178aa6905f5099c1b04ad729eef66fae6bfe37fa1beb0c22575a3147ddd15a6",
+        "output_sha256": "b5ef6f86e04f597a0c7f9296e5ce96810ddc939daf1909e34885e71daa6e5333",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\01216aa06262f20de3660dc1_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "016124e69e1dfb2878d9ac08",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Teflon\\Teflon_693.png",
+    "recording_id": "recording_016124e69e1dfb2878d9ac08",
+    "material": "Teflon",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "6f93284d032f7f433671911d09f19caf314055e334b3d16c2c1c0e57c1913d71",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_016124e69e1dfb2878d9ac08",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "8bb196dd4d691e195472993afc02d0756fd4cb00da2ddda00723400ef71a604d",
+    "augmentation_seed": 1657118363,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_augmented.npy",
+    "tensor_sha256": "03cb486e831e056578cdca7f0b9e6dad62625a9b3883ef94977e59e426539ad4",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 4,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "c04c6dc8d1d735b276b5b5a347b002ab2cc78f775452bab4241181c25a20a8d6",
+        "output_sha256": "838435d27becc2f293501d0679f1735c2fb2d9b657596e66b6e2c6cdd7ebfdaa",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 99,
+          "width_pixels": 5,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "838435d27becc2f293501d0679f1735c2fb2d9b657596e66b6e2c6cdd7ebfdaa",
+        "output_sha256": "b4057b58e0129513e8c630a8ab5776fefd83019f08d6eede4d0f9e677b2e95b6",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 41,
+          "width_pixels": 25,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "b4057b58e0129513e8c630a8ab5776fefd83019f08d6eede4d0f9e677b2e95b6",
+        "output_sha256": "5018dbd00034a042945915a22834c24ca49d7a1c9589ee06dab4bb353ac72cf9",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "5018dbd00034a042945915a22834c24ca49d7a1c9589ee06dab4bb353ac72cf9",
+        "output_sha256": "e5c9420580dd249a50bf82f7cbc345c0d3b67c7d0fb49c2f562ebb7ee3925e89",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\016124e69e1dfb2878d9ac08_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  },
+  {
+    "image_id": "0330dd9049941412750a2094",
+    "image_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Insulation_classifier\\Train\\Teflon\\Teflon_653.png",
+    "recording_id": "recording_0330dd9049941412750a2094",
+    "material": "Teflon",
+    "electrode": "",
+    "session_id": "",
+    "image_sha256": "a31b57fd39ed188cd34d89c43ee22d1d6ece5d6b7796deb90ac5719564366613",
+    "source_csv_path": "",
+    "source_csv_sha256": "",
+    "wavelet": "",
+    "true_dwt_level": "",
+    "generation_config_sha256": "",
+    "group_id": "recording_0330dd9049941412750a2094",
+    "fold": "2",
+    "partition": "train",
+    "augmentation_id": "f9892bf1eb4a000a85710c7d09e5e2ae4b8f41debc551d8bdd8f2fdfc1d63aac",
+    "augmentation_seed": 986985603,
+    "profile": "scalogram-image",
+    "parameters": {
+      "row_mask_fraction": 0.15,
+      "column_mask_fraction": 0.15,
+      "image_shift_fraction": 0.03,
+      "image_stretch_fraction": 0.0,
+      "pixel_noise_std": 0.05
+    },
+    "original_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_original.png",
+    "augmented_preview": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_augmented.png",
+    "exact_generated_tensor": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_augmented.npy",
+    "tensor_sha256": "24b8b17d696e44304d49b54ab0e6115b04c9100314101726511099b57a399837",
+    "stages": [
+      {
+        "operation": "horizontal_image_shift",
+        "parameters": {
+          "pixels": 5,
+          "border": "nearest",
+          "wrap": false,
+          "interpretation": "Image-column shift, not waveform phase manipulation"
+        },
+        "input_sha256": "ff61980591ffbdcef641f3f9aa2d96e85c0dbacac84dd9fc585b6fc8e971989e",
+        "output_sha256": "1fdd8689a823c746c90e288fed737c196c09dd3cd8c68d571cea86a2ebd5e9dd",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s00.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s00.png"
+      },
+      {
+        "operation": "row_band_mask",
+        "parameters": {
+          "axis": 0,
+          "start_pixel": 149,
+          "width_pixels": 17,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "1fdd8689a823c746c90e288fed737c196c09dd3cd8c68d571cea86a2ebd5e9dd",
+        "output_sha256": "ee130fdef11918abfeef9b42307e29741ba03a0bdf713c17c5c2b93ae4e8b5f2",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s01.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s01.png"
+      },
+      {
+        "operation": "column_band_mask",
+        "parameters": {
+          "axis": 1,
+          "start_pixel": 122,
+          "width_pixels": 22,
+          "fill_rgb": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interpretation": "Image occlusion; rows/columns do not supply MHz/seconds calibration"
+        },
+        "input_sha256": "ee130fdef11918abfeef9b42307e29741ba03a0bdf713c17c5c2b93ae4e8b5f2",
+        "output_sha256": "1c3756a5463f20c46afa3690d60085fe22a58ec2b6a43073dc00d7b7126b9c75",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s02.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s02.png"
+      },
+      {
+        "operation": "scaled_pixel_noise",
+        "parameters": {
+          "stddev": 0.05,
+          "scaled_by": "absolute current RGB intensity",
+          "interpretation": "Pixel perturbation, not laboratory waveform AWGN"
+        },
+        "input_sha256": "1c3756a5463f20c46afa3690d60085fe22a58ec2b6a43073dc00d7b7126b9c75",
+        "output_sha256": "7a784b975cbc3b94842c9dcca103568abb188b4145664ebc7e1b4ac21ae32173",
+        "tensor_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s03.npy",
+        "preview_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\fold_2\\augmented_samples\\Teflon\\0330dd9049941412750a2094_s03.png"
+      }
+    ],
+    "interpretation": "PNG image-space augmentation, not additional independent recordings.",
+    "note": "Exact float32 examples from the training input pipeline; prefetch does not prove optimizer consumption. PNG previews are quantized."
+  }
+]

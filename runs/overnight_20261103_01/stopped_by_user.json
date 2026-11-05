@@ -1,0 +1,22 @@
+{
+  "stopped_utc": "2026-11-04T05:31:33.761402+00:00",
+  "reason": "User requested stopping incorrect no-augmentation protocol; preserve all artifacts",
+  "previous_status": {
+    "status": "RUNNING",
+    "updated_utc": "2026-11-04T05:31:32.507889+00:00",
+    "supervisor_pid": 20020,
+    "job": "vgg16_cv",
+    "attempt": 1,
+    "child_pid": 10776,
+    "log": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\vgg16_cv_attempt_1_1793765521.log",
+    "command": [
+      "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\.venv\\Scripts\\python.exe",
+      "-u",
+      "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\code\\training_pipeline.py",
+      "resume",
+      "--run-dir",
+      "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\vgg16_cv"
+    ],
+    "available_ram_gib": 3.1931190490722656
+  }
+}

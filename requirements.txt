@@ -1,8 +1,9 @@
-tensorflow>=2.15.0
-keras>=2.15.0
-numpy>=1.24.0
-pandas>=2.0.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-scikit-learn>=1.3.0
-pillow>=10.0.0
+# Supported research pipeline; use an isolated Python environment.
+# Standalone keras is intentionally not pinned independently of TensorFlow.
+tensorflow>=2.15,<3
+numpy>=1.24
+matplotlib>=3.7
+pillow>=10
+PyWavelets>=1.4
+scipy>=1.10,<2  # Historical ImageDataGenerator affine augmentation backend
+tensorboard>=2.15,<3  # Historical per-fold event logs

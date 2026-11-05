@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-11-03T09:09:10.951474+00:00",
+  "settings": {
+    "epochs": 40,
+    "batch_size": 2,
+    "image_size": 224,
+    "learning_rate": 1e-05,
+    "dropout": 0.5,
+    "l2": 0.01,
+    "patience": 10,
+    "seed": 42,
+    "weights": "imagenet",
+    "cpu_threads": 4,
+    "data_threads": 1,
+    "prefetch_batches": 1,
+    "min_free_ram_gb": 1.5,
+    "min_free_disk_gb": 5.0,
+    "augment": false,
+    "fine_tuning": true
+  },
+  "splits": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\splits\\run01\\splits.csv",
+  "jobs": [
+    {
+      "name": "vgg16_cv",
+      "command": "cv",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\vgg16_cv"
+    },
+    {
+      "name": "resnet50_cv",
+      "command": "cv",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\resnet50_cv"
+    },
+    {
+      "name": "vgg16_final-fit",
+      "command": "final-fit",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\vgg16_final"
+    },
+    {
+      "name": "resnet50_final-fit",
+      "command": "final-fit",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\resnet50_final"
+    },
+    {
+      "name": "vgg16_evaluate",
+      "command": "evaluate",
+      "model": "vgg16",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\vgg16_final"
+    },
+    {
+      "name": "resnet50_evaluate",
+      "command": "evaluate",
+      "model": "resnet50",
+      "run_dir": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\overnight_20261103_01\\resnet50_final"
+    }
+  ],
+  "policy": "Fixed settings; all development CV precedes final fits; holdout evaluated once per model.",
+  "source_hashes": {
+    "training_pipeline.py": "7f68e13d4ed3159d9e4e2718c2282aad1a23c3d7333267b6d31e7b5d09ab5602",
+    "training_safety.py": "4188824c080a6cd1f12e1601694d5a7c300ac508f356d9804e45144416894ef4",
+    "dataset_manifest.py": "34806516ff5738f15ef7ce184a98fce29c355a36b41b10e6f54b58c682105da6",
+    "train_overnight.py": "613d3fa74768702e5576c93d095cd172705efcd80408dfd1123f921013b6167c",
+    "prepare_imagenet_weights.py": "11bf604d5b1f36166f760d72df0febf8004c68320adf7f9db51a5e2601a4d184"
+  }
+}

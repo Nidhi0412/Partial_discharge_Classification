@@ -1,0 +1,315 @@
+{
+  "source_path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\Reviewers_comments.docx",
+  "sha256": "208eea210b87938c939fdba7e94c23d90240a6c6e7e9c8b6084ef5b478ed0795",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "text": "Dear Ms NIDHI SINGH,\n\nThe reviews of your manuscript Manuscript Number:\nEAAI-26-7103, entitled: \"Wavelet Transform-Based Feature Extraction and VGG16 Convolutional Neural Network for Ultra-High-Frequency Partial Discharge Classification\" by Ms NIDHI SINGH, Prasanta Kundu; Anandita Chowdhury, which you submitted to the International Scientific Journal Engineering Applications of Artificial Intelligence have now been received.\n\nI regret to have to inform you that the referees recommended against acceptance of the paper for publication in the journal Engineering Applications of Artificial Intelligence. Please see below a copy of the various reviewer's remarks.\n\nWe sincerely appreciate having been given the opportunity to consider this manuscript; I hope that you will find the reviewer's remarks pertinent and helpful.\n\nWith very best wishes -\n\nPatrick Siarry\nEditor In Chief.\n\nEditor-in-Chief\nEngineering Applications of Artificial Intelligence\n\nReviewers' comments:\n\n\n\nReviewer #1: The topic of PD in the paper is an important technical issue with the measured signals strongly depend on the objects and the measuring device and conditions. However, the approach performed in the paper has a number of issues as follows.\n- The combination of wavelet decomposition and deep networks is not \"unique\" as mentioned in the Abstract.\n- It's not clearly proven that the coefficients, used as features, are \"most informative\".\n- It's not clear what the meaning of \"A major drawback of feature extraction is that it is performed manually by experts, which takes longer\".\n- The author(s) mentioned the limit size of data sets, but still used deep networks (despite the application of transfer learning techniques) as classification tools (more details follow).\n- The schematic in Fig. 1 shows that the measurements were performed with fix dimensions, but the authors didn't show some examples to demonstrate what variations could appear in the signals and what variations were added to the 100 samples of each type. From results shown in Fig. 4, it could be deduced that the original signals were very different from each other, i.e. it would be an easy task using classical methods.\n- I am very skeptical and concerned with the idea of using the same sample with different mother-wavelets to create more data samples. The main purpose should be the finding of a set of features and a classifier to recognize well the pattern, not the finding of a classifier recognizing different set of features.\n- I am also very concerned why a maximum of H is corresponded to the best classifier? Maximum of H is achieved when the probabilities are equal, meaning that the energy is spread equally along the level. That fact is very loosely related to the quality of the decomposition components in classifying tasks.\n- In subsection 3.2, it's not clear either how the optimal level of decomposition was selected. The main conclusion was that the authors selected the level with maximum energy, contradicting the idea of using to make selection.\n- The author(s) used the transfer learning technique, i.e. only 19 out of 178 layers of Resnet or 8 out of 22 layers of VGG were trained with the data of this paper. However, even with 1600 data samples (using questionable idea of using different wavelets) and data augmentation, the total number of samples are still far less than the number of trainable parameters of the deep networks. That would easily cause the overfit of the data.\n- No comparison with other methods/models were performed.\n- The reference list contains mostly articles about PD, but lack of good positions about transfer learning, wavelet decomposition,...\n- The language and presentation of the paper should be greatly revised.\n\n\n\n\n\nReviewer #2: The paper is well structured and can be published; however, it requires a significant edition and experimentation before its publication.\n\n1. The introduction section is too short and must be expanded. In particular, a more extensive of state-of-the-art works that deal with the Partial Discharge Classification topic must be done. Moreover, the contributions must be clearly expressed.\n2. It is not clear how the scalogram are obtained, as the authors mention two possible strategies. If they employ both, a comparison must be done.\n3. It is not clear how do the authors test if the wavelet mother employed does not generate a modulation phenomena in the decomposition. Why not use a higher order point Daubechies wavelet?\n4. How many decomposition levels are employed?\n5 It is not clear what are the augmentation techniques employed.\n6. Can the resulting algorithm deal withi noise-corrupted scalograms?\n7. Do the UHF signal require a preprocessing stage? If so, it must be included.\n8. An explicability section must be included.\n9. The conclusion section must be updated.\n\n\nReviewer #4: I admire the authors' efforts in the preparation of this work and thank them for submitting this article to this journal. This paper seems to be an interesting concept. I recommend this paper for publication if the requested items are modified.\n\nThe Introduction must be revised.\nThe authors must present the general research area to unfamiliar readers and at most to present the current state-of-the-art in order to show the contribution/novelty of their work. The contribution/novelty of the paper must be clear in Abstract and Introduction.\nAdd a section dedicated to the limitations of existing studies and the justification for the proposed recommendations.\nDespite being up-to-date, the literature review in this research shows a lack of attention to the theoretical foundations of uncertainty. Integrating insights from pioneering studies such as the following can address this gap: (1) Statistical techniques in power systems fault diagnostic: Classifications, challenges, and strategic recommendations‏; (2) Innovative diagnosis of transformer winding defects using fuzzy and neutrosophic cross entropy measures; (3) Energy cost optimization in distribution network considering hybrid electric vehicle and photovoltaic using modified whale optimization algorithm‏; (4) Innovative Load Frequency Control: Integrating Adaptive Backstepping and Disturbance Observers.\nAll variables and parameters used in equations must be defined, even though they are listed in the nomenclature that defines all variables, parameters and abbreviations\nThe conclusion should be revised to reflect the finding of the proposed research work\nEnsure that all references are recent and from prestigious journals.\n\n\n\nReviewer #5: The paper converts UHF partial-discharge signals from Nomex and Teflon insulation into wavelet scalograms and classifies them using fine-tuned VGG16 and ResNet50 models. The authors select wavelet coefficients using Shannon entropy and energy, apply image augmentation, and report that VGG16 achieves about 98.2% accuracy. The main claimed contribution is the combination of wavelet-based feature extraction with transfer learning for insulation-material classification.\nHowever, I have serious concerns regarding the novelties of the paper and also other issues that need to be comprehensively justified and addressed.\nI. The combination of wavelet scalograms, transfer learning, VGG16, and ResNet50 has already appeared in related PD studies. I encourage the authors to explain more directly what is new here compared with the closest existing methods.\nII. The paper appears to select different wavelet coefficients for different material classes. Since the class of a new signal is unknown during prediction, it is not clear how this rule would be applied in practice. This point may also create unintended label leakage.\nIII. The manuscript begins with 400 original signals. It then mentions both four and eight scalograms per signal, while the final dataset is reported as 1,600 samples. These numbers should be carefully checked and explained.\nIV. The paper refers to five-fold cross-validation, but Fold 1 is missing. Later, the analysis is described as four-fold cross-validation, while an 80-20 train-test split is also mentioned. A single, clearly defined evaluation protocol would make the results easier to trust.\nV. The reported confidence intervals are based on only four folds. Since cross-validation folds are not fully independent, narrow intervals alone may not be enough to establish strong statistical reliability.\nVI. The model classifies Nomex versus Teflon from PD signals. It does not directly detect the presence of PD, classify different defect types, or estimate PD severity. The practical claims should therefore be stated more precisely.\nVII. The model may partly learn differences related to electrode geometry, voltage level, recording session, signal magnitude, or sensor position rather than only material properties. Additional tests would help show what the model is actually learning.\nVIII. Comparing only VGG16 and ResNet50 makes it difficult to judge the value of the full proposed pipeline. Including simpler and more recent baselines would strengthen the paper.\nIX. Horizontal flipping reverses the time axis, and image rotation changes the relation between time and frequency. These transformations may not always represent realistic PD signals.\nX. The paper does not yet show that the wavelet with the highest Shannon entropy produces the best classification result. Some wavelet descriptions, formulas, reported accuracies, and confusion-matrix explanations also appear inconsistent.\n\n "
+    },
+    {
+      "paragraph": 2,
+      "text": "“Manuscripts resubmitted within one year of its rejection decision will not be considered for review.”"
+    },
+    {
+      "paragraph": 3,
+      "text": "\nFor further assistance, please visit our customer support site at http://help.elsevier.com/app/answers/list/p/7923. Here you can search for solutions on a range of topics, find answers to frequently asked questions and learn more about EM via interactive tutorials. You will also find our 24/7 support contact details should you need any further assistance from one of our customer support representatives\n\n\nAt Elsevier, we want to help all our authors to stay safe when publishing. Please be aware of fraudulent messages requesting money in return for the publication of your paper. If you are publishing open access with Elsevier, bear in mind that we will never request payment before the paper has been accepted. We have prepared some guidelines (https://www.elsevier.com/connect/authors-update/seven-top-tips-on-stopping-apc-scams ) that you may find helpful, including a short video on Identifying fake acceptance letters (https://www.youtube.com/watch?v=o5l8thD9XtE ). Please remember that you can contact Elsevier s Researcher Support team (https://service.elsevier.com/app/home/supporthub/publishing/) at any time if you have questions about your manuscript, and you can log into Editorial Manager to check the status of your manuscript (https://service.elsevier.com/app/answers/detail/a_id/29155/c/10530/supporthub/publishing/kw/status/).\n\n#AU_EAAI#\n\nTo ensure this email reaches the intended recipient, please do not delete the above code"
+    }
+  ],
+  "lines": [
+    {
+      "paragraph": 1,
+      "line": 1,
+      "text": "Dear Ms NIDHI SINGH,"
+    },
+    {
+      "paragraph": 1,
+      "line": 3,
+      "text": "The reviews of your manuscript Manuscript Number:"
+    },
+    {
+      "paragraph": 1,
+      "line": 4,
+      "text": "EAAI-26-7103, entitled: \"Wavelet Transform-Based Feature Extraction and VGG16 Convolutional Neural Network for Ultra-High-Frequency Partial Discharge Classification\" by Ms NIDHI SINGH, Prasanta Kundu; Anandita Chowdhury, which you submitted to the International Scientific Journal Engineering Applications of Artificial Intelligence have now been received."
+    },
+    {
+      "paragraph": 1,
+      "line": 6,
+      "text": "I regret to have to inform you that the referees recommended against acceptance of the paper for publication in the journal Engineering Applications of Artificial Intelligence. Please see below a copy of the various reviewer's remarks."
+    },
+    {
+      "paragraph": 1,
+      "line": 8,
+      "text": "We sincerely appreciate having been given the opportunity to consider this manuscript; I hope that you will find the reviewer's remarks pertinent and helpful."
+    },
+    {
+      "paragraph": 1,
+      "line": 10,
+      "text": "With very best wishes -"
+    },
+    {
+      "paragraph": 1,
+      "line": 12,
+      "text": "Patrick Siarry"
+    },
+    {
+      "paragraph": 1,
+      "line": 13,
+      "text": "Editor In Chief."
+    },
+    {
+      "paragraph": 1,
+      "line": 15,
+      "text": "Editor-in-Chief"
+    },
+    {
+      "paragraph": 1,
+      "line": 16,
+      "text": "Engineering Applications of Artificial Intelligence"
+    },
+    {
+      "paragraph": 1,
+      "line": 18,
+      "text": "Reviewers' comments:"
+    },
+    {
+      "paragraph": 1,
+      "line": 22,
+      "text": "Reviewer #1: The topic of PD in the paper is an important technical issue with the measured signals strongly depend on the objects and the measuring device and conditions. However, the approach performed in the paper has a number of issues as follows."
+    },
+    {
+      "paragraph": 1,
+      "line": 23,
+      "text": "- The combination of wavelet decomposition and deep networks is not \"unique\" as mentioned in the Abstract."
+    },
+    {
+      "paragraph": 1,
+      "line": 24,
+      "text": "- It's not clearly proven that the coefficients, used as features, are \"most informative\"."
+    },
+    {
+      "paragraph": 1,
+      "line": 25,
+      "text": "- It's not clear what the meaning of \"A major drawback of feature extraction is that it is performed manually by experts, which takes longer\"."
+    },
+    {
+      "paragraph": 1,
+      "line": 26,
+      "text": "- The author(s) mentioned the limit size of data sets, but still used deep networks (despite the application of transfer learning techniques) as classification tools (more details follow)."
+    },
+    {
+      "paragraph": 1,
+      "line": 27,
+      "text": "- The schematic in Fig. 1 shows that the measurements were performed with fix dimensions, but the authors didn't show some examples to demonstrate what variations could appear in the signals and what variations were added to the 100 samples of each type. From results shown in Fig. 4, it could be deduced that the original signals were very different from each other, i.e. it would be an easy task using classical methods."
+    },
+    {
+      "paragraph": 1,
+      "line": 28,
+      "text": "- I am very skeptical and concerned with the idea of using the same sample with different mother-wavelets to create more data samples. The main purpose should be the finding of a set of features and a classifier to recognize well the pattern, not the finding of a classifier recognizing different set of features."
+    },
+    {
+      "paragraph": 1,
+      "line": 29,
+      "text": "- I am also very concerned why a maximum of H is corresponded to the best classifier? Maximum of H is achieved when the probabilities are equal, meaning that the energy is spread equally along the level. That fact is very loosely related to the quality of the decomposition components in classifying tasks."
+    },
+    {
+      "paragraph": 1,
+      "line": 30,
+      "text": "- In subsection 3.2, it's not clear either how the optimal level of decomposition was selected. The main conclusion was that the authors selected the level with maximum energy, contradicting the idea of using to make selection."
+    },
+    {
+      "paragraph": 1,
+      "line": 31,
+      "text": "- The author(s) used the transfer learning technique, i.e. only 19 out of 178 layers of Resnet or 8 out of 22 layers of VGG were trained with the data of this paper. However, even with 1600 data samples (using questionable idea of using different wavelets) and data augmentation, the total number of samples are still far less than the number of trainable parameters of the deep networks. That would easily cause the overfit of the data."
+    },
+    {
+      "paragraph": 1,
+      "line": 32,
+      "text": "- No comparison with other methods/models were performed."
+    },
+    {
+      "paragraph": 1,
+      "line": 33,
+      "text": "- The reference list contains mostly articles about PD, but lack of good positions about transfer learning, wavelet decomposition,..."
+    },
+    {
+      "paragraph": 1,
+      "line": 34,
+      "text": "- The language and presentation of the paper should be greatly revised."
+    },
+    {
+      "paragraph": 1,
+      "line": 40,
+      "text": "Reviewer #2: The paper is well structured and can be published; however, it requires a significant edition and experimentation before its publication."
+    },
+    {
+      "paragraph": 1,
+      "line": 42,
+      "text": "1. The introduction section is too short and must be expanded. In particular, a more extensive of state-of-the-art works that deal with the Partial Discharge Classification topic must be done. Moreover, the contributions must be clearly expressed."
+    },
+    {
+      "paragraph": 1,
+      "line": 43,
+      "text": "2. It is not clear how the scalogram are obtained, as the authors mention two possible strategies. If they employ both, a comparison must be done."
+    },
+    {
+      "paragraph": 1,
+      "line": 44,
+      "text": "3. It is not clear how do the authors test if the wavelet mother employed does not generate a modulation phenomena in the decomposition. Why not use a higher order point Daubechies wavelet?"
+    },
+    {
+      "paragraph": 1,
+      "line": 45,
+      "text": "4. How many decomposition levels are employed?"
+    },
+    {
+      "paragraph": 1,
+      "line": 46,
+      "text": "5 It is not clear what are the augmentation techniques employed."
+    },
+    {
+      "paragraph": 1,
+      "line": 47,
+      "text": "6. Can the resulting algorithm deal withi noise-corrupted scalograms?"
+    },
+    {
+      "paragraph": 1,
+      "line": 48,
+      "text": "7. Do the UHF signal require a preprocessing stage? If so, it must be included."
+    },
+    {
+      "paragraph": 1,
+      "line": 49,
+      "text": "8. An explicability section must be included."
+    },
+    {
+      "paragraph": 1,
+      "line": 50,
+      "text": "9. The conclusion section must be updated."
+    },
+    {
+      "paragraph": 1,
+      "line": 53,
+      "text": "Reviewer #4: I admire the authors' efforts in the preparation of this work and thank them for submitting this article to this journal. This paper seems to be an interesting concept. I recommend this paper for publication if the requested items are modified."
+    },
+    {
+      "paragraph": 1,
+      "line": 55,
+      "text": "The Introduction must be revised."
+    },
+    {
+      "paragraph": 1,
+      "line": 56,
+      "text": "The authors must present the general research area to unfamiliar readers and at most to present the current state-of-the-art in order to show the contribution/novelty of their work. The contribution/novelty of the paper must be clear in Abstract and Introduction."
+    },
+    {
+      "paragraph": 1,
+      "line": 57,
+      "text": "Add a section dedicated to the limitations of existing studies and the justification for the proposed recommendations."
+    },
+    {
+      "paragraph": 1,
+      "line": 58,
+      "text": "Despite being up-to-date, the literature review in this research shows a lack of attention to the theoretical foundations of uncertainty. Integrating insights from pioneering studies such as the following can address this gap: (1) Statistical techniques in power systems fault diagnostic: Classifications, challenges, and strategic recommendations‏; (2) Innovative diagnosis of transformer winding defects using fuzzy and neutrosophic cross entropy measures; (3) Energy cost optimization in distribution network considering hybrid electric vehicle and photovoltaic using modified whale optimization algorithm‏; (4) Innovative Load Frequency Control: Integrating Adaptive Backstepping and Disturbance Observers."
+    },
+    {
+      "paragraph": 1,
+      "line": 59,
+      "text": "All variables and parameters used in equations must be defined, even though they are listed in the nomenclature that defines all variables, parameters and abbreviations"
+    },
+    {
+      "paragraph": 1,
+      "line": 60,
+      "text": "The conclusion should be revised to reflect the finding of the proposed research work"
+    },
+    {
+      "paragraph": 1,
+      "line": 61,
+      "text": "Ensure that all references are recent and from prestigious journals."
+    },
+    {
+      "paragraph": 1,
+      "line": 65,
+      "text": "Reviewer #5: The paper converts UHF partial-discharge signals from Nomex and Teflon insulation into wavelet scalograms and classifies them using fine-tuned VGG16 and ResNet50 models. The authors select wavelet coefficients using Shannon entropy and energy, apply image augmentation, and report that VGG16 achieves about 98.2% accuracy. The main claimed contribution is the combination of wavelet-based feature extraction with transfer learning for insulation-material classification."
+    },
+    {
+      "paragraph": 1,
+      "line": 66,
+      "text": "However, I have serious concerns regarding the novelties of the paper and also other issues that need to be comprehensively justified and addressed."
+    },
+    {
+      "paragraph": 1,
+      "line": 67,
+      "text": "I. The combination of wavelet scalograms, transfer learning, VGG16, and ResNet50 has already appeared in related PD studies. I encourage the authors to explain more directly what is new here compared with the closest existing methods."
+    },
+    {
+      "paragraph": 1,
+      "line": 68,
+      "text": "II. The paper appears to select different wavelet coefficients for different material classes. Since the class of a new signal is unknown during prediction, it is not clear how this rule would be applied in practice. This point may also create unintended label leakage."
+    },
+    {
+      "paragraph": 1,
+      "line": 69,
+      "text": "III. The manuscript begins with 400 original signals. It then mentions both four and eight scalograms per signal, while the final dataset is reported as 1,600 samples. These numbers should be carefully checked and explained."
+    },
+    {
+      "paragraph": 1,
+      "line": 70,
+      "text": "IV. The paper refers to five-fold cross-validation, but Fold 1 is missing. Later, the analysis is described as four-fold cross-validation, while an 80-20 train-test split is also mentioned. A single, clearly defined evaluation protocol would make the results easier to trust."
+    },
+    {
+      "paragraph": 1,
+      "line": 71,
+      "text": "V. The reported confidence intervals are based on only four folds. Since cross-validation folds are not fully independent, narrow intervals alone may not be enough to establish strong statistical reliability."
+    },
+    {
+      "paragraph": 1,
+      "line": 72,
+      "text": "VI. The model classifies Nomex versus Teflon from PD signals. It does not directly detect the presence of PD, classify different defect types, or estimate PD severity. The practical claims should therefore be stated more precisely."
+    },
+    {
+      "paragraph": 1,
+      "line": 73,
+      "text": "VII. The model may partly learn differences related to electrode geometry, voltage level, recording session, signal magnitude, or sensor position rather than only material properties. Additional tests would help show what the model is actually learning."
+    },
+    {
+      "paragraph": 1,
+      "line": 74,
+      "text": "VIII. Comparing only VGG16 and ResNet50 makes it difficult to judge the value of the full proposed pipeline. Including simpler and more recent baselines would strengthen the paper."
+    },
+    {
+      "paragraph": 1,
+      "line": 75,
+      "text": "IX. Horizontal flipping reverses the time axis, and image rotation changes the relation between time and frequency. These transformations may not always represent realistic PD signals."
+    },
+    {
+      "paragraph": 1,
+      "line": 76,
+      "text": "X. The paper does not yet show that the wavelet with the highest Shannon entropy produces the best classification result. Some wavelet descriptions, formulas, reported accuracies, and confusion-matrix explanations also appear inconsistent."
+    },
+    {
+      "paragraph": 2,
+      "line": 1,
+      "text": "“Manuscripts resubmitted within one year of its rejection decision will not be considered for review.”"
+    },
+    {
+      "paragraph": 3,
+      "line": 2,
+      "text": "For further assistance, please visit our customer support site at http://help.elsevier.com/app/answers/list/p/7923. Here you can search for solutions on a range of topics, find answers to frequently asked questions and learn more about EM via interactive tutorials. You will also find our 24/7 support contact details should you need any further assistance from one of our customer support representatives"
+    },
+    {
+      "paragraph": 3,
+      "line": 5,
+      "text": "At Elsevier, we want to help all our authors to stay safe when publishing. Please be aware of fraudulent messages requesting money in return for the publication of your paper. If you are publishing open access with Elsevier, bear in mind that we will never request payment before the paper has been accepted. We have prepared some guidelines (https://www.elsevier.com/connect/authors-update/seven-top-tips-on-stopping-apc-scams ) that you may find helpful, including a short video on Identifying fake acceptance letters (https://www.youtube.com/watch?v=o5l8thD9XtE ). Please remember that you can contact Elsevier s Researcher Support team (https://service.elsevier.com/app/home/supporthub/publishing/) at any time if you have questions about your manuscript, and you can log into Editorial Manager to check the status of your manuscript (https://service.elsevier.com/app/answers/detail/a_id/29155/c/10530/supporthub/publishing/kw/status/)."
+    },
+    {
+      "paragraph": 3,
+      "line": 7,
+      "text": "#AU_EAAI#"
+    },
+    {
+      "paragraph": 3,
+      "line": 9,
+      "text": "To ensure this email reaches the intended recipient, please do not delete the above code"
+    }
+  ]
+}

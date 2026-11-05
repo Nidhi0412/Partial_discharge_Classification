@@ -1,0 +1,32 @@
+[
+  {
+    "name": "scalogram",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "mobilenet_preprocess",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "MobileNetV3Small",
+    "trainable": true,
+    "weights": 206
+  },
+  {
+    "name": "global_average_pooling2d",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "dropout",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "p_teflon",
+    "trainable": true,
+    "weights": 2
+  }
+]

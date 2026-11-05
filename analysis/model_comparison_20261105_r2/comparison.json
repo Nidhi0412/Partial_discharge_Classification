@@ -1,0 +1,617 @@
+{
+  "scope": "development OOF only",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261105,
+    "cluster": "group_id"
+  },
+  "models": [
+    {
+      "model": "VGG16",
+      "samples": 1280,
+      "groups": 1028,
+      "accuracy": 0.990625,
+      "auc": 0.9995166015625,
+      "macro_f1": 0.9906247940018214,
+      "macro_precision": 0.990668125128185,
+      "macro_recall": 0.9906250000000001,
+      "sensitivity_teflon": 0.9859375,
+      "specificity_nomex": 0.9953125,
+      "brier": 0.007702063045637203,
+      "log_loss": 0.027805511987519092,
+      "ece_10": 0.006388641167340442,
+      "accuracy_ci_low": 0.9845314968342317,
+      "accuracy_ci_high": 0.9960350499138853,
+      "auc_ci_low": 0.9990119148923737,
+      "auc_ci_high": 0.9998763214282267,
+      "macro_f1_ci_low": 0.9845039816492914,
+      "macro_f1_ci_high": 0.9960318246706742,
+      "confusion_matrix": "[[637, 3], [9, 631]]"
+    },
+    {
+      "model": "ResNet50",
+      "samples": 1280,
+      "groups": 1028,
+      "accuracy": 0.7875,
+      "auc": 0.86328125,
+      "macro_f1": 0.7833095581297504,
+      "macro_precision": 0.8116036367870109,
+      "macro_recall": 0.7875,
+      "sensitivity_teflon": 0.6484375,
+      "specificity_nomex": 0.9265625,
+      "brier": 0.15225830576373395,
+      "log_loss": 0.46772862288971256,
+      "ece_10": 0.06482430473115525,
+      "accuracy_ci_low": 0.7622423219017054,
+      "accuracy_ci_high": 0.8109016200811527,
+      "auc_ci_low": 0.8414869396197635,
+      "auc_ci_high": 0.8838288951392266,
+      "macro_f1_ci_low": 0.7585029233528896,
+      "macro_f1_ci_high": 0.8069657202418498,
+      "confusion_matrix": "[[593, 47], [225, 415]]"
+    },
+    {
+      "model": "Small CNN",
+      "samples": 1280,
+      "groups": 1028,
+      "accuracy": 0.7828125,
+      "auc": 0.89144287109375,
+      "macro_f1": 0.7793650793650794,
+      "macro_precision": 0.8016666666666666,
+      "macro_recall": 0.7828125,
+      "sensitivity_teflon": 0.6578125,
+      "specificity_nomex": 0.9078125,
+      "brier": 0.1371836938539878,
+      "log_loss": 0.4111660945241476,
+      "ece_10": 0.04926509051259671,
+      "accuracy_ci_low": 0.758320637083183,
+      "accuracy_ci_high": 0.8066718534415777,
+      "auc_ci_low": 0.8722528079343217,
+      "auc_ci_high": 0.9088328767587492,
+      "macro_f1_ci_low": 0.7547204344689131,
+      "macro_f1_ci_high": 0.8023673674114012,
+      "confusion_matrix": "[[581, 59], [219, 421]]"
+    },
+    {
+      "model": "MobileNetV3-Small (frozen)",
+      "samples": 1280,
+      "groups": 1028,
+      "accuracy": 0.953125,
+      "auc": 0.9918798828125,
+      "macro_f1": 0.9531248855588026,
+      "macro_precision": 0.9531294250920419,
+      "macro_recall": 0.953125,
+      "sensitivity_teflon": 0.9515625,
+      "specificity_nomex": 0.9546875,
+      "brier": 0.03909676899997145,
+      "log_loss": 0.14348010871478065,
+      "ece_10": 0.04698444962702982,
+      "accuracy_ci_low": 0.9401737980283026,
+      "accuracy_ci_high": 0.9661306806654494,
+      "auc_ci_low": 0.9882847920978625,
+      "auc_ci_high": 0.9949380426494984,
+      "macro_f1_ci_low": 0.9400066238521136,
+      "macro_f1_ci_high": 0.9660342166145445,
+      "confusion_matrix": "[[611, 29], [31, 609]]"
+    },
+    {
+      "model": "MobileNetV3-Small (fine-tuned)",
+      "samples": 1280,
+      "groups": 1028,
+      "accuracy": 0.9671875,
+      "auc": 0.994697265625,
+      "macro_f1": 0.9671874198911619,
+      "macro_precision": 0.9671920624224846,
+      "macro_recall": 0.9671875,
+      "sensitivity_teflon": 0.965625,
+      "specificity_nomex": 0.96875,
+      "brier": 0.02562267681496282,
+      "log_loss": 0.0906300081495697,
+      "ece_10": 0.02017958071735072,
+      "accuracy_ci_low": 0.9559828539178887,
+      "accuracy_ci_high": 0.9777247872742137,
+      "auc_ci_low": 0.9916954981171937,
+      "auc_ci_high": 0.9971708692718418,
+      "macro_f1_ci_low": 0.9558805399787189,
+      "macro_f1_ci_high": 0.9776542711537596,
+      "confusion_matrix": "[[620, 20], [22, 618]]"
+    }
+  ],
+  "paired": [
+    {
+      "model_a": "VGG16",
+      "model_b": "ResNet50",
+      "accuracy_difference_a_minus_b": 0.203125,
+      "accuracy_difference_ci_low": 0.17805065234075212,
+      "accuracy_difference_ci_high": 0.22866729250596737,
+      "auc_difference_a_minus_b": 0.1362353515625,
+      "auc_difference_ci_low": 0.11560799806974574,
+      "auc_difference_ci_high": 0.15817096940343067,
+      "a_correct_b_wrong": 270,
+      "a_wrong_b_correct": 10,
+      "mcnemar_exact_p": 7.415008160698419e-67,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "VGG16",
+      "model_b": "Small CNN",
+      "accuracy_difference_a_minus_b": 0.20781249999999996,
+      "accuracy_difference_ci_low": 0.18424923849584798,
+      "accuracy_difference_ci_high": 0.23325453112687156,
+      "auc_difference_a_minus_b": 0.10807373046875002,
+      "auc_difference_ci_low": 0.09072315713923226,
+      "auc_difference_ci_high": 0.12714519002300953,
+      "a_correct_b_wrong": 271,
+      "a_wrong_b_correct": 5,
+      "mcnemar_exact_p": 2.1593389233889964e-73,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "VGG16",
+      "model_b": "MobileNetV3-Small (frozen)",
+      "accuracy_difference_a_minus_b": 0.03749999999999998,
+      "accuracy_difference_ci_low": 0.024880779668644604,
+      "accuracy_difference_ci_high": 0.05019706344076089,
+      "auc_difference_a_minus_b": 0.007636718750000049,
+      "auc_difference_ci_low": 0.00466210005807714,
+      "auc_difference_ci_high": 0.011102317432622352,
+      "a_correct_b_wrong": 53,
+      "a_wrong_b_correct": 5,
+      "mcnemar_exact_p": 3.496476719266895e-11,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "VGG16",
+      "model_b": "MobileNetV3-Small (fine-tuned)",
+      "accuracy_difference_a_minus_b": 0.0234375,
+      "accuracy_difference_ci_low": 0.01332210276445405,
+      "accuracy_difference_ci_high": 0.033849420849420844,
+      "auc_difference_a_minus_b": 0.004819335937499947,
+      "auc_difference_ci_low": 0.0024936260324039754,
+      "auc_difference_ci_high": 0.007621366069861154,
+      "a_correct_b_wrong": 35,
+      "a_wrong_b_correct": 5,
+      "mcnemar_exact_p": 1.382612026645802e-06,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "ResNet50",
+      "model_b": "Small CNN",
+      "accuracy_difference_a_minus_b": 0.004687499999999956,
+      "accuracy_difference_ci_low": -0.016369810381038553,
+      "accuracy_difference_ci_high": 0.024839868012422276,
+      "auc_difference_a_minus_b": -0.028161621093749978,
+      "auc_difference_ci_low": -0.050374054010369415,
+      "auc_difference_ci_high": -0.006456732523028397,
+      "a_correct_b_wrong": 77,
+      "a_wrong_b_correct": 71,
+      "mcnemar_exact_p": 0.6812170868939293,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "ResNet50",
+      "model_b": "MobileNetV3-Small (frozen)",
+      "accuracy_difference_a_minus_b": -0.16562500000000002,
+      "accuracy_difference_ci_low": -0.19124314430589326,
+      "accuracy_difference_ci_high": -0.1416320233165326,
+      "auc_difference_a_minus_b": -0.12859863281249995,
+      "auc_difference_ci_low": -0.15002010633095317,
+      "auc_difference_ci_high": -0.10769873161946703,
+      "a_correct_b_wrong": 25,
+      "a_wrong_b_correct": 237,
+      "mcnemar_exact_p": 1.707823303701257e-44,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "ResNet50",
+      "model_b": "MobileNetV3-Small (fine-tuned)",
+      "accuracy_difference_a_minus_b": -0.1796875,
+      "accuracy_difference_ci_low": -0.20527174060466513,
+      "accuracy_difference_ci_high": -0.15515871029710218,
+      "auc_difference_a_minus_b": -0.13141601562500005,
+      "auc_difference_ci_low": -0.15321614098375802,
+      "auc_difference_ci_high": -0.11031228243948772,
+      "a_correct_b_wrong": 22,
+      "a_wrong_b_correct": 252,
+      "mcnemar_exact_p": 1.1528272180048975e-50,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "Small CNN",
+      "model_b": "MobileNetV3-Small (frozen)",
+      "accuracy_difference_a_minus_b": -0.17031249999999998,
+      "accuracy_difference_ci_low": -0.19470580726796463,
+      "accuracy_difference_ci_high": -0.14634004757230237,
+      "auc_difference_a_minus_b": -0.10043701171874997,
+      "auc_difference_ci_low": -0.1182118491080778,
+      "auc_difference_ci_high": -0.0839918390818622,
+      "a_correct_b_wrong": 20,
+      "a_wrong_b_correct": 238,
+      "mcnemar_exact_p": 1.5527995419178568e-48,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "Small CNN",
+      "model_b": "MobileNetV3-Small (fine-tuned)",
+      "accuracy_difference_a_minus_b": -0.18437499999999996,
+      "accuracy_difference_ci_low": -0.21002618797767514,
+      "accuracy_difference_ci_high": -0.15910837817063805,
+      "auc_difference_a_minus_b": -0.10325439453125007,
+      "auc_difference_ci_low": -0.12174517622010811,
+      "auc_difference_ci_high": -0.08644570058984942,
+      "a_correct_b_wrong": 16,
+      "a_wrong_b_correct": 252,
+      "mcnemar_exact_p": 9.648268937686993e-56,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    },
+    {
+      "model_a": "MobileNetV3-Small (frozen)",
+      "model_b": "MobileNetV3-Small (fine-tuned)",
+      "accuracy_difference_a_minus_b": -0.014062499999999978,
+      "accuracy_difference_ci_low": -0.023623913124603567,
+      "accuracy_difference_ci_high": -0.004672715512855866,
+      "auc_difference_a_minus_b": -0.002817382812500102,
+      "auc_difference_ci_low": -0.004976042751501666,
+      "auc_difference_ci_high": -0.0006724472928768882,
+      "a_correct_b_wrong": 5,
+      "a_wrong_b_correct": 23,
+      "mcnemar_exact_p": 0.0009122341871261597,
+      "mcnemar_note": "Image-level exact test; dependence may remain within group_id clusters."
+    }
+  ],
+  "calibration_bins": {
+    "VGG16": [
+      {
+        "lower": 0.5,
+        "upper": 0.55,
+        "count": 1,
+        "accuracy": 1.0,
+        "confidence": 0.529181957244873
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.6,
+        "count": 4,
+        "accuracy": 0.5,
+        "confidence": 0.5780850499868393
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.7,
+        "count": 3,
+        "accuracy": 0.3333333333333333,
+        "confidence": 0.6666610141595205
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.75,
+        "count": 2,
+        "accuracy": 1.0,
+        "confidence": 0.7295296043157578
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.8,
+        "count": 6,
+        "accuracy": 1.0,
+        "confidence": 0.7677150443196297
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8500000000000001,
+        "count": 8,
+        "accuracy": 0.75,
+        "confidence": 0.8289957791566849
+      },
+      {
+        "lower": 0.8500000000000001,
+        "upper": 0.9,
+        "count": 3,
+        "accuracy": 1.0,
+        "confidence": 0.8785741701722145
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.95,
+        "count": 18,
+        "accuracy": 0.8333333333333334,
+        "confidence": 0.9291486574543847
+      },
+      {
+        "lower": 0.95,
+        "upper": 1.0,
+        "count": 1235,
+        "accuracy": 0.9975708502024292,
+        "confidence": 0.9989787443940472
+      }
+    ],
+    "ResNet50": [
+      {
+        "lower": 0.5,
+        "upper": 0.55,
+        "count": 53,
+        "accuracy": 0.5283018867924528,
+        "confidence": 0.5242542933742955
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.6,
+        "count": 48,
+        "accuracy": 0.5208333333333334,
+        "confidence": 0.5756182596087456
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.65,
+        "count": 43,
+        "accuracy": 0.5581395348837209,
+        "confidence": 0.6251162803450296
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.7,
+        "count": 70,
+        "accuracy": 0.6142857142857143,
+        "confidence": 0.6799269152539117
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.75,
+        "count": 93,
+        "accuracy": 0.6666666666666666,
+        "confidence": 0.7230659979645924
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.8,
+        "count": 64,
+        "accuracy": 0.65625,
+        "confidence": 0.7665056535042822
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8500000000000001,
+        "count": 111,
+        "accuracy": 0.7837837837837838,
+        "confidence": 0.8300109529817427
+      },
+      {
+        "lower": 0.8500000000000001,
+        "upper": 0.9,
+        "count": 170,
+        "accuracy": 0.7176470588235294,
+        "confidence": 0.8766839716802625
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.95,
+        "count": 232,
+        "accuracy": 0.8146551724137931,
+        "confidence": 0.9269507771743268
+      },
+      {
+        "lower": 0.95,
+        "upper": 1.0,
+        "count": 396,
+        "accuracy": 0.9747474747474747,
+        "confidence": 0.9801375154415239
+      }
+    ],
+    "Small CNN": [
+      {
+        "lower": 0.5,
+        "upper": 0.55,
+        "count": 64,
+        "accuracy": 0.546875,
+        "confidence": 0.5261869668029249
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.6,
+        "count": 113,
+        "accuracy": 0.46017699115044247,
+        "confidence": 0.5787210174366436
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.65,
+        "count": 139,
+        "accuracy": 0.539568345323741,
+        "confidence": 0.6253326906145905
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.7,
+        "count": 175,
+        "accuracy": 0.6514285714285715,
+        "confidence": 0.6759873284612383
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.75,
+        "count": 159,
+        "accuracy": 0.7861635220125787,
+        "confidence": 0.723020372900573
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.8,
+        "count": 87,
+        "accuracy": 0.8505747126436781,
+        "confidence": 0.7717964846169811
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8500000000000001,
+        "count": 87,
+        "accuracy": 0.9080459770114943,
+        "confidence": 0.8250058748941312
+      },
+      {
+        "lower": 0.8500000000000001,
+        "upper": 0.9,
+        "count": 62,
+        "accuracy": 0.9516129032258065,
+        "confidence": 0.8711295007697998
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.95,
+        "count": 67,
+        "accuracy": 0.9701492537313433,
+        "confidence": 0.9255819814418679
+      },
+      {
+        "lower": 0.95,
+        "upper": 1.0,
+        "count": 327,
+        "accuracy": 0.9908256880733946,
+        "confidence": 0.9909077879450033
+      }
+    ],
+    "MobileNetV3-Small (frozen)": [
+      {
+        "lower": 0.5,
+        "upper": 0.55,
+        "count": 13,
+        "accuracy": 0.6153846153846154,
+        "confidence": 0.5256233903077933
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.6,
+        "count": 34,
+        "accuracy": 0.6176470588235294,
+        "confidence": 0.5795437816311332
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.65,
+        "count": 40,
+        "accuracy": 0.65,
+        "confidence": 0.6259494155645371
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.7,
+        "count": 48,
+        "accuracy": 0.7708333333333334,
+        "confidence": 0.6726747024804354
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.75,
+        "count": 46,
+        "accuracy": 0.9347826086956522,
+        "confidence": 0.7262915379327276
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.8,
+        "count": 47,
+        "accuracy": 0.8936170212765957,
+        "confidence": 0.7763963671440773
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8500000000000001,
+        "count": 61,
+        "accuracy": 0.9180327868852459,
+        "confidence": 0.8259951174259186
+      },
+      {
+        "lower": 0.8500000000000001,
+        "upper": 0.9,
+        "count": 111,
+        "accuracy": 0.963963963963964,
+        "confidence": 0.8738888308137387
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.95,
+        "count": 153,
+        "accuracy": 1.0,
+        "confidence": 0.9250424362816452
+      },
+      {
+        "lower": 0.95,
+        "upper": 1.0,
+        "count": 727,
+        "accuracy": 1.0,
+        "confidence": 0.9864883828765127
+      }
+    ],
+    "MobileNetV3-Small (fine-tuned)": [
+      {
+        "lower": 0.5,
+        "upper": 0.55,
+        "count": 13,
+        "accuracy": 0.3076923076923077,
+        "confidence": 0.5301080988003657
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.6,
+        "count": 12,
+        "accuracy": 0.75,
+        "confidence": 0.5807354375720024
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.65,
+        "count": 18,
+        "accuracy": 0.9444444444444444,
+        "confidence": 0.6193631456957923
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.7,
+        "count": 28,
+        "accuracy": 0.6785714285714286,
+        "confidence": 0.6763714754155704
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.75,
+        "count": 21,
+        "accuracy": 0.8095238095238095,
+        "confidence": 0.720531824089232
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.8,
+        "count": 16,
+        "accuracy": 0.8125,
+        "confidence": 0.7766119539737701
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8500000000000001,
+        "count": 28,
+        "accuracy": 0.8214285714285714,
+        "confidence": 0.8319879802209991
+      },
+      {
+        "lower": 0.8500000000000001,
+        "upper": 0.9,
+        "count": 39,
+        "accuracy": 0.8974358974358975,
+        "confidence": 0.8760671285100472
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.95,
+        "count": 117,
+        "accuracy": 0.9829059829059829,
+        "confidence": 0.9296889370705328
+      },
+      {
+        "lower": 0.95,
+        "upper": 1.0,
+        "count": 988,
+        "accuracy": 0.9979757085020243,
+        "confidence": 0.9927168613449
+      }
+    ]
+  }
+}

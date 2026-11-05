@@ -1,0 +1,165 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793807847.302594   12424 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793807852.447497   12424 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+WARNING:tensorflow:From D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+I0000 00:00:1793807854.648392   12424 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/50
+512/512 - 103s - 200ms/step - accuracy: 0.5449 - loss: 0.7778 - val_accuracy: 0.7070 - val_loss: 0.6248
+Epoch 2/50
+512/512 - 100s - 195ms/step - accuracy: 0.6768 - loss: 0.6572 - val_accuracy: 0.6172 - val_loss: 0.9817
+Epoch 3/50
+512/512 - 96s - 187ms/step - accuracy: 0.7266 - loss: 0.6486 - val_accuracy: 0.7773 - val_loss: 0.5102
+Epoch 4/50
+512/512 - 95s - 186ms/step - accuracy: 0.7432 - loss: 0.7315 - val_accuracy: 0.7891 - val_loss: 0.5214
+Epoch 5/50
+512/512 - 96s - 187ms/step - accuracy: 0.7539 - loss: 0.7760 - val_accuracy: 0.7930 - val_loss: 0.6209
+Epoch 6/50
+512/512 - 95s - 186ms/step - accuracy: 0.7734 - loss: 0.7783 - val_accuracy: 0.7734 - val_loss: 0.7099
+Epoch 7/50
+512/512 - 95s - 186ms/step - accuracy: 0.7637 - loss: 0.8176 - val_accuracy: 0.7461 - val_loss: 0.9789
+Epoch 8/50
+512/512 - 95s - 186ms/step - accuracy: 0.7803 - loss: 0.7391 - val_accuracy: 0.7305 - val_loss: 0.9997
+Epoch 9/50
+512/512 - 95s - 185ms/step - accuracy: 0.7822 - loss: 0.6968 - val_accuracy: 0.7617 - val_loss: 0.8117
+Epoch 10/50
+512/512 - 95s - 185ms/step - accuracy: 0.7979 - loss: 0.6767 - val_accuracy: 0.7578 - val_loss: 0.8692
+Epoch 11/50
+512/512 - 95s - 186ms/step - accuracy: 0.8086 - loss: 0.6644 - val_accuracy: 0.7891 - val_loss: 0.7174
+Epoch 12/50
+512/512 - 95s - 186ms/step - accuracy: 0.7998 - loss: 0.7018 - val_accuracy: 0.7695 - val_loss: 0.8273
+Epoch 13/50
+512/512 - 95s - 186ms/step - accuracy: 0.7949 - loss: 0.7174 - val_accuracy: 0.7578 - val_loss: 0.8926
+WARNING:tensorflow:From D:\Nidhiiiiii\Partial_discharge_Classification_minimal\Partial_discharge_Classification_minimal\.venv\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Epoch 1/50
+512/512 - 105s - 205ms/step - accuracy: 0.5137 - loss: 0.7968 - val_accuracy: 0.6719 - val_loss: 0.6458
+Epoch 2/50
+512/512 - 99s - 192ms/step - accuracy: 0.6494 - loss: 0.6802 - val_accuracy: 0.7227 - val_loss: 0.7169
+Epoch 3/50
+512/512 - 98s - 192ms/step - accuracy: 0.7207 - loss: 0.7181 - val_accuracy: 0.7773 - val_loss: 0.4585
+Epoch 4/50
+512/512 - 97s - 190ms/step - accuracy: 0.7451 - loss: 0.7695 - val_accuracy: 0.7539 - val_loss: 0.7162
+Epoch 5/50
+512/512 - 97s - 190ms/step - accuracy: 0.7471 - loss: 0.7823 - val_accuracy: 0.7891 - val_loss: 0.5156
+Epoch 6/50
+512/512 - 98s - 191ms/step - accuracy: 0.7705 - loss: 0.7948 - val_accuracy: 0.7422 - val_loss: 1.1295
+Epoch 7/50
+512/512 - 97s - 190ms/step - accuracy: 0.7656 - loss: 0.7845 - val_accuracy: 0.7539 - val_loss: 0.9437
+Epoch 8/50
+512/512 - 97s - 190ms/step - accuracy: 0.7637 - loss: 0.7715 - val_accuracy: 0.8281 - val_loss: 0.4528
+Epoch 9/50
+512/512 - 97s - 190ms/step - accuracy: 0.7832 - loss: 0.7704 - val_accuracy: 0.7461 - val_loss: 1.0027
+Epoch 10/50
+512/512 - 97s - 190ms/step - accuracy: 0.7783 - loss: 0.7942 - val_accuracy: 0.7852 - val_loss: 0.7433
+Epoch 11/50
+512/512 - 97s - 190ms/step - accuracy: 0.7939 - loss: 0.7599 - val_accuracy: 0.8281 - val_loss: 0.4195
+Epoch 12/50
+512/512 - 98s - 192ms/step - accuracy: 0.8076 - loss: 0.7776 - val_accuracy: 0.8594 - val_loss: 0.3738
+Epoch 13/50
+512/512 - 97s - 190ms/step - accuracy: 0.7998 - loss: 0.7655 - val_accuracy: 0.8320 - val_loss: 0.4709
+Epoch 14/50
+512/512 - 97s - 189ms/step - accuracy: 0.8223 - loss: 0.6852 - val_accuracy: 0.7578 - val_loss: 1.0209
+Epoch 15/50
+512/512 - 97s - 190ms/step - accuracy: 0.7998 - loss: 0.6770 - val_accuracy: 0.8203 - val_loss: 0.7871
+Epoch 16/50
+512/512 - 97s - 189ms/step - accuracy: 0.8096 - loss: 0.7729 - val_accuracy: 0.8164 - val_loss: 0.7109
+Epoch 17/50
+512/512 - 97s - 189ms/step - accuracy: 0.8291 - loss: 0.6506 - val_accuracy: 0.7734 - val_loss: 1.0260
+Epoch 18/50
+512/512 - 97s - 190ms/step - accuracy: 0.8350 - loss: 0.6716 - val_accuracy: 0.8359 - val_loss: 0.6818
+Epoch 19/50
+512/512 - 96s - 188ms/step - accuracy: 0.8389 - loss: 0.6216 - val_accuracy: 0.8359 - val_loss: 0.6609
+Epoch 20/50
+512/512 - 96s - 188ms/step - accuracy: 0.8457 - loss: 0.5858 - val_accuracy: 0.8359 - val_loss: 0.6355
+Epoch 21/50
+512/512 - 96s - 188ms/step - accuracy: 0.8340 - loss: 0.6260 - val_accuracy: 0.8359 - val_loss: 0.6385
+Epoch 22/50
+512/512 - 96s - 187ms/step - accuracy: 0.8311 - loss: 0.6360 - val_accuracy: 0.8750 - val_loss: 0.4278
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Epoch 1/50
+512/512 - 104s - 203ms/step - accuracy: 0.5283 - loss: 0.7847 - val_accuracy: 0.7422 - val_loss: 0.6096
+Epoch 2/50
+512/512 - 98s - 191ms/step - accuracy: 0.6836 - loss: 0.6313 - val_accuracy: 0.7656 - val_loss: 0.5139
+Epoch 3/50
+512/512 - 98s - 191ms/step - accuracy: 0.7266 - loss: 0.7141 - val_accuracy: 0.6836 - val_loss: 1.1171
+Epoch 4/50
+512/512 - 98s - 190ms/step - accuracy: 0.7588 - loss: 0.7694 - val_accuracy: 0.7227 - val_loss: 1.0889
+Epoch 5/50
+512/512 - 98s - 190ms/step - accuracy: 0.7627 - loss: 0.7807 - val_accuracy: 0.7266 - val_loss: 1.1803
+Epoch 6/50
+512/512 - 97s - 190ms/step - accuracy: 0.7832 - loss: 0.8205 - val_accuracy: 0.7305 - val_loss: 1.0071
+Epoch 7/50
+512/512 - 98s - 191ms/step - accuracy: 0.7637 - loss: 0.8313 - val_accuracy: 0.7266 - val_loss: 1.0075
+Epoch 8/50
+512/512 - 104s - 203ms/step - accuracy: 0.8037 - loss: 0.6701 - val_accuracy: 0.7383 - val_loss: 0.9612
+Epoch 9/50
+512/512 - 98s - 192ms/step - accuracy: 0.7900 - loss: 0.7495 - val_accuracy: 0.7305 - val_loss: 1.0819
+Epoch 10/50
+512/512 - 98s - 191ms/step - accuracy: 0.7988 - loss: 0.7025 - val_accuracy: 0.7383 - val_loss: 1.0151
+Epoch 11/50
+512/512 - 97s - 190ms/step - accuracy: 0.7969 - loss: 0.7421 - val_accuracy: 0.7305 - val_loss: 1.1140
+Epoch 12/50
+512/512 - 97s - 190ms/step - accuracy: 0.7949 - loss: 0.7664 - val_accuracy: 0.7305 - val_loss: 1.0939
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Epoch 1/50
+512/512 - 104s - 203ms/step - accuracy: 0.5371 - loss: 0.7665 - val_accuracy: 0.6562 - val_loss: 0.6399
+Epoch 2/50
+512/512 - 98s - 191ms/step - accuracy: 0.6475 - loss: 0.6627 - val_accuracy: 0.5000 - val_loss: 0.7405
+Epoch 3/50
+512/512 - 98s - 191ms/step - accuracy: 0.7119 - loss: 0.7250 - val_accuracy: 0.7617 - val_loss: 0.5227
+Epoch 4/50
+512/512 - 98s - 192ms/step - accuracy: 0.7432 - loss: 0.7443 - val_accuracy: 0.7344 - val_loss: 1.1041
+Epoch 5/50
+512/512 - 98s - 191ms/step - accuracy: 0.7529 - loss: 0.7655 - val_accuracy: 0.7812 - val_loss: 0.6038
+Epoch 6/50
+512/512 - 98s - 191ms/step - accuracy: 0.7656 - loss: 0.7760 - val_accuracy: 0.7969 - val_loss: 0.5812
+Epoch 7/50
+512/512 - 98s - 191ms/step - accuracy: 0.7637 - loss: 0.7764 - val_accuracy: 0.7461 - val_loss: 0.9768
+Epoch 8/50
+512/512 - 98s - 191ms/step - accuracy: 0.7832 - loss: 0.7331 - val_accuracy: 0.8008 - val_loss: 0.6205
+Epoch 9/50
+512/512 - 97s - 190ms/step - accuracy: 0.7891 - loss: 0.7234 - val_accuracy: 0.7422 - val_loss: 1.1177
+Epoch 10/50
+512/512 - 98s - 191ms/step - accuracy: 0.7979 - loss: 0.7148 - val_accuracy: 0.7969 - val_loss: 0.7402
+Epoch 11/50
+512/512 - 98s - 191ms/step - accuracy: 0.8037 - loss: 0.7284 - val_accuracy: 0.7695 - val_loss: 0.8886
+Epoch 12/50
+512/512 - 97s - 190ms/step - accuracy: 0.7998 - loss: 0.7020 - val_accuracy: 0.7617 - val_loss: 0.9865
+Epoch 13/50
+512/512 - 97s - 190ms/step - accuracy: 0.8105 - loss: 0.7501 - val_accuracy: 0.7734 - val_loss: 0.8462
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Epoch 1/50
+512/512 - 105s - 206ms/step - accuracy: 0.5234 - loss: 0.7701 - val_accuracy: 0.7539 - val_loss: 0.6267
+Epoch 2/50
+512/512 - 99s - 194ms/step - accuracy: 0.6709 - loss: 0.6618 - val_accuracy: 0.7734 - val_loss: 0.4802
+Epoch 3/50
+512/512 - 100s - 196ms/step - accuracy: 0.7295 - loss: 0.6966 - val_accuracy: 0.7656 - val_loss: 0.6854
+Epoch 4/50
+512/512 - 100s - 196ms/step - accuracy: 0.7334 - loss: 0.7433 - val_accuracy: 0.7578 - val_loss: 1.0132
+Epoch 5/50
+512/512 - 99s - 194ms/step - accuracy: 0.7451 - loss: 0.7633 - val_accuracy: 0.7812 - val_loss: 0.6146
+Epoch 6/50
+512/512 - 99s - 194ms/step - accuracy: 0.7510 - loss: 0.7593 - val_accuracy: 0.7539 - val_loss: 1.1442
+Epoch 7/50
+512/512 - 100s - 196ms/step - accuracy: 0.7607 - loss: 0.7659 - val_accuracy: 0.8008 - val_loss: 0.5232
+Epoch 8/50
+512/512 - 99s - 194ms/step - accuracy: 0.7881 - loss: 0.6665 - val_accuracy: 0.8008 - val_loss: 0.6583
+Epoch 9/50
+512/512 - 99s - 194ms/step - accuracy: 0.7764 - loss: 0.7205 - val_accuracy: 0.7773 - val_loss: 0.7847
+Epoch 10/50
+512/512 - 100s - 195ms/step - accuracy: 0.7949 - loss: 0.7095 - val_accuracy: 0.8008 - val_loss: 0.6960
+Epoch 11/50
+512/512 - 100s - 195ms/step - accuracy: 0.7764 - loss: 0.7575 - val_accuracy: 0.7695 - val_loss: 0.9612
+Epoch 12/50
+512/512 - 99s - 193ms/step - accuracy: 0.7920 - loss: 0.7072 - val_accuracy: 0.7852 - val_loss: 0.7907
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

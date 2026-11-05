@@ -1,0 +1,109 @@
+{
+  "config": {
+    "schema_version": 2,
+    "source_manifest": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\image_mapping.csv",
+    "source_manifest_sha256": "2cb09f56786ebff6cd1aa9fe8e9d32cbf64a16dd1ef64f55e535609bbfd93a39",
+    "seed": 42,
+    "folds": 5,
+    "test_fraction": 0.2,
+    "group_by": "group_id",
+    "class_names": [
+      "Nomex",
+      "Teflon"
+    ],
+    "acquisition_group_by": "recording_id",
+    "keep_identical_together": true,
+    "effective_groups": 1284,
+    "grouping_note": "Equal-content files co-located only for split/uncertainty; recording IDs unchanged",
+    "split_method": "deterministic greedy stratification of recording counts by material/electrode",
+    "partitions": {
+      "train": 1280,
+      "validation": 1280,
+      "test": 320
+    },
+    "split_sha256": "8a3105f2efbe4b237f9c9c9f926c5b7cd26dbf73ffbf7b3369958dc71ba397f5"
+  },
+  "folds": [
+    {
+      "fold": "1",
+      "images": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "class_counts": {
+        "train/Nomex": 512,
+        "validation/Nomex": 128,
+        "test/Nomex": 160,
+        "train/Teflon": 512,
+        "validation/Teflon": 128,
+        "test/Teflon": 160
+      }
+    },
+    {
+      "fold": "2",
+      "images": {
+        "train": 1024,
+        "test": 320,
+        "validation": 256
+      },
+      "class_counts": {
+        "train/Nomex": 512,
+        "test/Nomex": 160,
+        "validation/Nomex": 128,
+        "train/Teflon": 512,
+        "validation/Teflon": 128,
+        "test/Teflon": 160
+      }
+    },
+    {
+      "fold": "3",
+      "images": {
+        "train": 1024,
+        "validation": 256,
+        "test": 320
+      },
+      "class_counts": {
+        "train/Nomex": 512,
+        "validation/Nomex": 128,
+        "test/Nomex": 160,
+        "validation/Teflon": 128,
+        "train/Teflon": 512,
+        "test/Teflon": 160
+      }
+    },
+    {
+      "fold": "4",
+      "images": {
+        "train": 1024,
+        "test": 320,
+        "validation": 256
+      },
+      "class_counts": {
+        "train/Nomex": 512,
+        "test/Nomex": 160,
+        "validation/Nomex": 128,
+        "train/Teflon": 512,
+        "validation/Teflon": 128,
+        "test/Teflon": 160
+      }
+    },
+    {
+      "fold": "5",
+      "images": {
+        "validation": 256,
+        "train": 1024,
+        "test": 320
+      },
+      "class_counts": {
+        "validation/Nomex": 128,
+        "train/Nomex": 512,
+        "test/Nomex": 160,
+        "train/Teflon": 512,
+        "validation/Teflon": 128,
+        "test/Teflon": 160
+      }
+    }
+  ],
+  "validation": "PASS: full coverage, one validation fold per development image, fixed holdout, pairwise recording/group/path/content disjointness, unchanged content hashes"
+}

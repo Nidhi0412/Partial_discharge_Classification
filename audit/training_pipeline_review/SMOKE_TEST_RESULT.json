@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "command": ".venv/Scripts/python.exe code/model_training_vgg16.py smoke-test",
+  "exit_code": 0,
+  "models": {
+    "vgg16": "PASS",
+    "resnet50": "PASS"
+  },
+  "checks": [
+    "one-epoch fit through actual training loader",
+    "training-only augmentation through fit",
+    "validation evaluation",
+    "best-val-loss checkpoint save",
+    "checkpoint reload",
+    "prediction count/order",
+    "save/reload numerical agreement"
+  ],
+  "inputs": "Eight temporary synthetic 32x32 RGB images; four training, four validation",
+  "configuration": "Frozen randomly initialized backbone, trainable binary head, no ImageNet download",
+  "research_dataset_used": false,
+  "research_results_generated": false,
+  "limitations": [
+    "Does not validate recording mapping or real-data split",
+    "Does not benchmark accuracy or full-size/fine-tuned training",
+    "CPU runtime; nonfatal TensorFlow/Keras warnings were emitted"
+  ]
+}
