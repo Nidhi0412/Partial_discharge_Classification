@@ -17,7 +17,6 @@ training_history.json
 **/Classifications_data/
 **/Data for Classification/
 **/Scalograms/
-
 # Local project interpreter and virtual environment
 .venv/
 .python-runtime/
@@ -33,3 +32,9 @@ runtime_cache/
 **/augmented_samples/
 **/augmentation_preview_*.png
 runs/_smoke*/
+
+# Locally exported inference models and archives
+VGG16_insulation/
+ResNet50_insulation/
+*.zip
+**/Classifications_data-20260715T120415Z-1-001.zip
