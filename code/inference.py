@@ -1,128 +1,123 @@
-"""Load trained VGG16 insulation classifier and run inference on scalogram images."""
+"""Inference helpers for the final Nomex/Teflon scalogram classifiers."""
 
+from __future__ import annotations
+
+import hashlib
 from pathlib import Path
-from typing import Optional, Union
+from typing import Mapping
 
 import numpy as np
-from tensorflow.keras.applications import VGG16
-from tensorflow.keras.layers import Dense, Dropout, GlobalAveragePooling2D
-from tensorflow.keras.models import Model
+from PIL import Image, UnidentifiedImageError
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WEIGHTS = PROJECT_ROOT / "VGG16_insulation" / "fold_2" / "best_weights.h5"
-CLASS_NAMES = ["Nomex", "Teflon"]
+CLASS_NAMES = ("Nomex", "Teflon")
+IMAGE_SIZE = 224
 
-HIGH_CONFIDENCE = 0.85
-MODERATE_CONFIDENCE = 0.70
+MODEL_SPECS: Mapping[str, dict] = {
+    "VGG16": {
+        "path": PROJECT_ROOT / "runs" / "primary_png_20261104_01" / "vgg16_final" / "best.keras",
+        "sha256": "900b8714de627a9d7a01d4548fc7f97ca490862a704fa238ba7e16f4bd3c47b1",
+        "preprocessing": "unit_scale",
+    },
+    "ResNet50": {
+        "path": PROJECT_ROOT / "runs" / "resnet50_corrected_20261105_01" / "resnet50_finetune_final" / "best.keras",
+        "sha256": "733c050765c8ba4e619eace93ded7f1bbcd581016128d7175502e3cb95ebb6d0",
+        "preprocessing": "resnet50_imagenet",
+    },
+}
 
 
-def build_vgg16_model() -> Model:
-    base_model = VGG16(weights=None, include_top=False, input_shape=(224, 224, 3))
-    x = base_model.output
-    x = GlobalAveragePooling2D()(x)
-    x = Dropout(0.5)(x)
-    predictions = Dense(1, activation="sigmoid")(x)
-    return Model(inputs=base_model.input, outputs=predictions)
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
-def load_insulation_model(weights_path: Optional[Union[Path, str]] = None) -> Model:
-    weights_path = Path(weights_path or DEFAULT_WEIGHTS)
-    if not weights_path.exists():
-        raise FileNotFoundError(f"Model weights not found: {weights_path}")
+def validate_checkpoint(model_name: str) -> Path:
+    if model_name not in MODEL_SPECS:
+        raise ValueError(f"Unknown model: {model_name}")
+    spec = MODEL_SPECS[model_name]
+    path = Path(spec["path"])
+    if not path.is_file():
+        raise FileNotFoundError(f"{model_name} checkpoint is unavailable. Expected: {path}")
+    if file_sha256(path) != spec["sha256"]:
+        raise RuntimeError(f"{model_name} checkpoint hash mismatch; refusing unverified inference.")
+    return path
 
-    model = build_vgg16_model()
-    model.load_weights(str(weights_path))
+
+def load_final_model(model_name: str):
+    """Load and validate one immutable final-fit checkpoint."""
+    import tensorflow as tf
+
+    model = tf.keras.models.load_model(validate_checkpoint(model_name), compile=False)
+    if tuple(model.input_shape[1:]) != (IMAGE_SIZE, IMAGE_SIZE, 3):
+        raise RuntimeError(f"Unexpected {model_name} input shape: {model.input_shape}")
+    if model.output_shape[-1] != 1 or "p_teflon" not in model.output_names:
+        raise RuntimeError(f"Unexpected {model_name} output contract")
     return model
 
 
-def predict_from_image(img_array: np.ndarray, model: Model) -> dict:
-    """Predict insulation class from a 224x224 RGB scalogram array."""
-    x = img_array.astype("float32") / 255.0
-    x = np.expand_dims(x, axis=0)
-    score = float(model.predict(x, verbose=0)[0][0])
-
-    if score >= 0.5:
-        predicted_class = "Teflon"
-        confidence = score
-    else:
-        predicted_class = "Nomex"
-        confidence = 1.0 - score
-
-    return {
-        "predicted_class": predicted_class,
-        "confidence": confidence,
-        "teflon_probability": score,
-        "nomex_probability": 1.0 - score,
-        "class_names": CLASS_NAMES,
+def decode_uploaded_image(uploaded_file) -> tuple[np.ndarray, dict]:
+    """Decode an uploaded scalogram as RGB and resize exactly as evaluation did."""
+    try:
+        uploaded_file.seek(0)
+        image = Image.open(uploaded_file)
+        image.load()
+    except (UnidentifiedImageError, OSError, ValueError) as exc:
+        raise ValueError("The uploaded file is not a readable PNG/JPEG image.") from exc
+    original_size, original_mode = image.size, image.mode
+    resized = image.convert("RGB").resize(
+        (IMAGE_SIZE, IMAGE_SIZE), resample=Image.Resampling.NEAREST
+    )
+    array = np.asarray(resized, dtype=np.uint8)
+    if array.shape != (IMAGE_SIZE, IMAGE_SIZE, 3):
+        raise ValueError(f"Unexpected decoded image shape: {array.shape}")
+    return array, {
+        "original_width": original_size[0],
+        "original_height": original_size[1],
+        "original_mode": original_mode,
+        "inference_width": IMAGE_SIZE,
+        "inference_height": IMAGE_SIZE,
+        "resize_interpolation": "nearest",
     }
 
 
-def interpret_prediction(prediction: dict) -> dict:
-    """
-    Turn model probabilities into user-facing explanations with confidence tiers.
-    """
-    predicted = prediction["predicted_class"]
-    confidence = prediction["confidence"]
-    other = "Teflon" if predicted == "Nomex" else "Nomex"
-    other_prob = prediction["teflon_probability"] if predicted == "Nomex" else prediction["nomex_probability"]
-    nomex_pct = prediction["nomex_probability"]
-    teflon_pct = prediction["teflon_probability"]
+def preprocess_image(image: np.ndarray, model_name: str) -> np.ndarray:
+    """Apply the architecture-specific preprocessing saved with training."""
+    if model_name not in MODEL_SPECS:
+        raise ValueError(f"Unknown model: {model_name}")
+    image = np.asarray(image, dtype=np.float32)
+    if image.shape != (IMAGE_SIZE, IMAGE_SIZE, 3) or not np.isfinite(image).all():
+        raise ValueError("Expected one finite 224x224 RGB scalogram")
+    profile = MODEL_SPECS[model_name]["preprocessing"]
+    if profile == "unit_scale":
+        transformed = image / 255.0
+    elif profile == "resnet50_imagenet":
+        from tensorflow.keras.applications.resnet50 import preprocess_input
 
-    if confidence >= HIGH_CONFIDENCE:
-        level = "high"
-        headline = f"High confidence — classified as {predicted}"
-        summary = (
-            f"The UHF partial discharge signal is **classified as {predicted}** "
-            f"with **{confidence:.1%}** model confidence. "
-            f"The generated scalogram closely matches the {predicted} patterns seen during training."
-        )
-        detail = (
-            f"**{predicted}:** {confidence:.1%} · **{other}:** {other_prob:.1%}. "
-            f"The model is strongly leaning toward {predicted}."
-        )
-        recommendation = "This result is reliable enough for reporting."
-    elif confidence >= MODERATE_CONFIDENCE:
-        level = "moderate"
-        headline = f"Moderate confidence — likely {predicted}"
-        summary = (
-            f"The material **appears to be {predicted}** ({confidence:.1%} confidence). "
-            f"It looks more like {predicted} than {other}, but some signal features overlap "
-            f"with both insulation types."
-        )
-        detail = (
-            f"**{predicted}:** {confidence:.1%} · **{other}:** {other_prob:.1%}. "
-            f"The signal resembles {predicted}, but not decisively."
-        )
-        recommendation = (
-            "Suitable for initial screening. If this result is critical, "
-            "upload another sample or verify manually."
-        )
+        transformed = preprocess_input(image.copy())
     else:
-        level = "low"
-        headline = f"Low confidence — uncertain, leans toward {predicted}"
-        summary = (
-            f"The material **looks like {predicted}** ({confidence:.1%} confidence), "
-            f"but the model is **not sure**. "
-            f"Nomex probability: **{nomex_pct:.1%}**, Teflon probability: **{teflon_pct:.1%}**. "
-            f"The signal may be noisy, mixed, or different from typical training samples."
-        )
-        detail = (
-            f"Because confidence is below {MODERATE_CONFIDENCE:.0%}, treat this as a weak indication "
-            f"toward {predicted}, not a final decision."
-        )
-        recommendation = (
-            "Manual review is recommended. Check CSV format, signal quality, "
-            "and try another measurement if possible."
-        )
+        raise RuntimeError(f"Unsupported preprocessing profile: {profile}")
+    return transformed[None, ...]
 
+
+def predict_scalogram(image: np.ndarray, model, model_name: str) -> dict:
+    score = float(model.predict(preprocess_image(image, model_name), verbose=0).reshape(-1)[0])
+    if not np.isfinite(score) or not 0.0 <= score <= 1.0:
+        raise RuntimeError(f"Invalid {model_name} prediction: {score}")
     return {
-        "level": level,
-        "headline": headline,
-        "summary": summary,
-        "detail": detail,
-        "recommendation": recommendation,
-        "predicted_class": predicted,
-        "confidence": confidence,
-        "nomex_probability": nomex_pct,
-        "teflon_probability": teflon_pct,
+        "model": model_name,
+        "predicted_class": "Teflon" if score >= 0.5 else "Nomex",
+        "p_teflon": score,
+        "p_nomex": 1.0 - score,
+        "decision_threshold": 0.5,
+        "checkpoint_sha256": MODEL_SPECS[model_name]["sha256"],
+        "preprocessing": MODEL_SPECS[model_name]["preprocessing"],
     }
+
+
+def agreement_label(predictions: list[dict]) -> str:
+    labels = {item["predicted_class"] for item in predictions}
+    return labels.pop() if len(labels) == 1 else "Disagreement"
