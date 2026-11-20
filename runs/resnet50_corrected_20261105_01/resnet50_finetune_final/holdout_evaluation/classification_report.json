@@ -1,0 +1,36 @@
+{
+  "samples": 320,
+  "confusion_matrix": [
+    [
+      160,
+      0
+    ],
+    [
+      2,
+      158
+    ]
+  ],
+  "accuracy": 0.99375,
+  "auc": 1.0,
+  "specificity": 1.0,
+  "positive_class": "Teflon",
+  "per_class": {
+    "Nomex": {
+      "precision": 0.9876543209876543,
+      "recall": 1.0,
+      "f1": 0.9937888198757764
+    },
+    "Teflon": {
+      "precision": 1.0,
+      "recall": 0.9875,
+      "f1": 0.9937106918238994
+    }
+  },
+  "macro": {
+    "precision": 0.9938271604938271,
+    "recall": 0.99375,
+    "f1": 0.9937497558498378
+  },
+  "scope": "Locked holdout",
+  "threshold": 0.5
+}

@@ -1,0 +1,3 @@
+Model,Historical reported accuracy (%),Corrected CV accuracy (%),Corrected holdout accuracy (%),Comparability
+VGG16,98.20,99.06,100.00,Historical predictions and true fold membership unavailable; descriptive only
+ResNet50,97.03,99.45,99.38,Historical prediction-level evidence unavailable; descriptive only

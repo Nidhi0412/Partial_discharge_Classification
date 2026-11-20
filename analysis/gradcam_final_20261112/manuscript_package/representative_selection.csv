@@ -1,0 +1,5 @@
+model,material,image_id,selection_rule
+VGG16,Nomex,11afb1499fd97a772ed3bca2,Closest to stratum medians of faithfulness margin and normalized entropy among non-flat maps
+VGG16,Teflon,2026368f039d9b3de2a10d13,Closest to stratum medians of faithfulness margin and normalized entropy among non-flat maps
+ResNet50 (corrected),Nomex,24d2e776e9d1a48c8b9c7d78,Closest to stratum medians of faithfulness margin and normalized entropy among non-flat maps
+ResNet50 (corrected),Teflon,41a94c662e62f0c3aa066d62,Closest to stratum medians of faithfulness margin and normalized entropy among non-flat maps

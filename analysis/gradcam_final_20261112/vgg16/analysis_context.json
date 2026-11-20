@@ -1,0 +1,10 @@
+{
+  "plan_file_sha256": "bb94d1d4bd8b77876f2ff77a1857e882a8bbc868be0b042cc034ca73f9ddd26b",
+  "target": "true",
+  "model_type": "vgg16",
+  "cluster_unit": "group_id",
+  "selection": "All rows in the hashed prediction cohort, not just correct predictions",
+  "checkpoint_sha256": "900b8714de627a9d7a01d4548fc7f97ca490862a704fa238ba7e16f4bd3c47b1",
+  "statistics_scope": "Descriptive conditional-model image-space diagnostics",
+  "limitation": "Masking/translation may be out of distribution; no physical energy or RF-band inference. Intervals exclude training/model-selection uncertainty."
+}

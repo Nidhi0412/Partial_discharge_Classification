@@ -13,7 +13,7 @@ from matplotlib.patches import FancyBboxPatch
 
 DISPLAY = {
     "VGG16": "VGG16",
-    "ResNet50": "ResNet50",
+    "ResNet50 (corrected fine-tuned)": "ResNet50\n(corrected fine-tuned)",
     "Small CNN": "Small CNN",
     "MobileNetV3-Small (frozen)": "MobileNetV3-Small\n(frozen)",
     "MobileNetV3-Small (fine-tuned)": "MobileNetV3-Small\n(fine-tuned)",
@@ -62,11 +62,11 @@ def main():
     metrics = read_csv(comparison / "model_metrics.csv")
     paired = read_csv(comparison / "paired_comparisons.csv")
     by_model = {row["model"]: row for row in metrics}
-    order = ["VGG16", "MobileNetV3-Small (fine-tuned)", "MobileNetV3-Small (frozen)",
-             "ResNet50", "Small CNN"]
+    order = ["ResNet50 (corrected fine-tuned)", "VGG16",
+             "MobileNetV3-Small (fine-tuned)", "MobileNetV3-Small (frozen)", "Small CNN"]
     prediction_paths = {
         "VGG16": root / "runs/primary_png_20261104_01/vgg16_cv/oof_predictions.csv",
-        "ResNet50": root / "runs/primary_png_20261104_01/resnet50_cv/oof_predictions.csv",
+        "ResNet50 (corrected fine-tuned)": root / "runs/resnet50_corrected_20261105_01/resnet50_finetune_cv/oof_predictions.csv",
         "Small CNN": root / "runs/baselines_20261105_01/small_cnn_cv/oof_predictions.csv",
         "MobileNetV3-Small (frozen)": root / "runs/baselines_20261105_01/mobilenet_v3_small_head_cv/oof_predictions.csv",
         "MobileNetV3-Small (fine-tuned)": root / "runs/baselines_20261105_01/mobilenet_v3_small_finetune_cv/oof_predictions.csv",
@@ -78,7 +78,7 @@ def main():
         cv_rows.append({
             "Model": name,
             "Accuracy (%)": f"{100*float(row['accuracy']):.2f}",
-            "Grouped 95% CI (%)": f"{100*float(row['accuracy_ci_low']):.2f}–{100*float(row['accuracy_ci_high']):.2f}",
+            "Grouped 95% CI (%)": f"{100*float(row['accuracy_ci_low']):.2f}-{100*float(row['accuracy_ci_high']):.2f}",
             "ROC-AUC": f"{float(row['auc']):.4f}",
             "Macro precision (%)": f"{100*float(row['macro_precision']):.2f}",
             "Macro recall (%)": f"{100*float(row['macro_recall']):.2f}",
@@ -91,13 +91,15 @@ def main():
     write_csv(tables / "table_1_development_cv.csv", cv_rows)
 
     holdout_summary = json.loads((root / "runs/primary_png_20261104_01/both_models_holdout_summary.json").read_text())
+    corrected_resnet_holdout = json.loads((root / "runs/resnet50_corrected_20261105_01/resnet50_finetune_final/holdout_evaluation/metrics.json").read_text())
     holdout_rows = []
-    for key, name in [("vgg16", "VGG16"), ("resnet50", "ResNet50")]:
-        item = holdout_summary[key]["image"]
-        interval = holdout_summary[key]["recording_accuracy_cluster_bootstrap_95_percentile"]
+    for name, source in [("VGG16", holdout_summary["vgg16"]),
+                         ("ResNet50 (corrected fine-tuned)", corrected_resnet_holdout)]:
+        item = source["image"]
+        interval = source["recording_accuracy_cluster_bootstrap_95_percentile"]
         holdout_rows.append({"Model": name, "Samples": item["samples"],
             "Accuracy (%)": f"{100*item['accuracy']:.2f}",
-            "Grouped 95% CI (%)": f"{100*interval['lower']:.2f}–{100*interval['upper']:.2f}",
+            "Grouped 95% CI (%)": f"{100*interval['lower']:.2f}-{100*interval['upper']:.2f}",
             "ROC-AUC": f"{item['auc']:.4f}", "Macro precision (%)": f"{100*item['macro']['precision']:.2f}",
             "Macro recall (%)": f"{100*item['macro']['recall']:.2f}",
             "Macro F1 (%)": f"{100*item['macro']['f1']:.2f}",
@@ -107,8 +109,8 @@ def main():
     historical_rows = [
         {"Model":"VGG16","Historical reported accuracy (%)":"98.20","Corrected CV accuracy (%)":"99.06",
          "Corrected holdout accuracy (%)":"100.00","Comparability":"Historical predictions and true fold membership unavailable; descriptive only"},
-        {"Model":"ResNet50","Historical reported accuracy (%)":"97.03","Corrected CV accuracy (%)":"78.75",
-         "Corrected holdout accuracy (%)":"77.81","Comparability":"Historical fixed-split/repeated-fold concern; descriptive only"},
+        {"Model":"ResNet50","Historical reported accuracy (%)":"97.03","Corrected CV accuracy (%)":"99.45",
+         "Corrected holdout accuracy (%)":"99.38","Comparability":"Historical prediction-level evidence unavailable; descriptive only"},
     ]
     write_csv(tables / "table_3_historical_vs_corrected_descriptive.csv", historical_rows)
 
@@ -206,7 +208,7 @@ def main():
     # Figure 7: fold learning curves, validation accuracy.
     run_dirs={
         "VGG16":root/"runs/primary_png_20261104_01/vgg16_cv",
-        "ResNet50":root/"runs/primary_png_20261104_01/resnet50_cv",
+        "ResNet50 corrected":root/"runs/resnet50_corrected_20261105_01/resnet50_finetune_cv",
         "Small CNN":root/"runs/baselines_20261105_01/small_cnn_cv",
         "MobileNet frozen":root/"runs/baselines_20261105_01/mobilenet_v3_small_head_cv",
         "MobileNet fine-tuned":root/"runs/baselines_20261105_01/mobilenet_v3_small_finetune_cv",
@@ -245,7 +247,7 @@ def main():
 
     # Figure 9: historical comparison, explicitly descriptive.
     fig,ax=plt.subplots(figsize=(8,5.2));x=np.arange(2);width=.24
-    old=np.array([98.20,97.03]);cv=np.array([99.0625,78.75]);hold=np.array([100,77.8125])
+    old=np.array([98.20,97.03]);cv=np.array([99.0625,99.453125]);hold=np.array([100,99.375])
     ax.bar(x-width,old,width,label="Historical reported",hatch="//",color="#BDBDBD")
     ax.bar(x,cv,width,label="Corrected development CV",color="#355C7D")
     ax.bar(x+width,hold,width,label="Corrected locked holdout",color="#4C956C")
@@ -265,7 +267,7 @@ def main():
 
     captions = """# Figure captions
 
-**Figure 1.** Development out-of-fold accuracy for five CNN configurations evaluated using identical grouped five-fold membership. Error bars represent 95% percentile intervals from 2,000 bootstrap draws clustered by `group_id`.
+**Figure 1.** Development out-of-fold accuracy for five CNN configurations evaluated using identical grouped five-fold membership. Error bars represent 95% percentile intervals from 5,000 bootstrap draws clustered by `group_id`.
 
 **Figure 2.** Receiver operating characteristic curves computed from the complete out-of-fold prediction probabilities of the common 1,280-image development set.
 
@@ -281,7 +283,7 @@ def main():
 
 **Figure 8.** Corrected experimental workflow. Grouped development folds were separated before augmentation; augmentation was restricted to training membership, and the locked holdout was reserved for final evaluation.
 
-**Figure 9.** Descriptive comparison of historical reported accuracies and corrected results. Historical and corrected values were obtained using different validation procedures and must not be interpreted as a controlled before–after experiment.
+**Figure 9.** Descriptive comparison of historical reported accuracies and corrected results. Historical and corrected values were obtained using different validation procedures and must not be interpreted as a controlled before-after experiment.
 """
     (out/"FIGURE_CAPTIONS.md").write_text(captions,encoding="utf-8")
 
@@ -289,29 +291,27 @@ def main():
 
 ## Comparative classification performance
 
-This section compares the classification performance of VGG16, ResNet50, a small CNN baseline, and MobileNetV3-Small under a common grouped five-fold development protocol. The comparison was performed using the same 1,280 development images and identical fold membership for every model. Data augmentation was restricted to the training membership of each fold, whereas validation images were evaluated without augmentation. Complete out-of-fold probabilities were retained to calculate the classification measures, ROC-AUC values, calibration measures, and paired model comparisons.
+VGG16, corrected fine-tuned ResNet50, a small CNN baseline and two MobileNetV3-Small configurations were compared under a common grouped five-fold development protocol. All models used the same 1,280 development images and identical fold membership. Augmentation was restricted to each fold's training membership, while validation images remained unaugmented. Complete out-of-fold probabilities were retained for classification, ROC-AUC, calibration and paired analyses.
 
-As listed in Table 1, VGG16 produced the highest development accuracy of 99.06% (grouped-bootstrap 95% CI: 98.45–99.60%), with a ROC-AUC of 0.9995 and a macro F1-score of 99.06%. The fine-tuned MobileNetV3-Small model achieved the second-highest accuracy of 96.72% (95% CI: 95.60–97.77%), together with a ROC-AUC of 0.9947 and a macro F1-score of 96.72%. When the MobileNetV3-Small backbone remained frozen, the model achieved 95.31% accuracy. Fine-tuning six late weighted layers therefore improved accuracy by 1.41 percentage points while all Batch Normalization layers remained frozen.
+Corrected fine-tuned ResNet50 produced the highest development point estimate: 99.45% accuracy (grouped-bootstrap 95% CI: 99.01-99.84%), ROC-AUC 1.0000 and macro F1 99.45%. VGG16 achieved 99.06% accuracy (95% CI: 98.44-99.60%), ROC-AUC 0.9995 and macro F1 99.06%. Fine-tuned and frozen MobileNetV3-Small achieved 96.72% and 95.31% accuracy, respectively. The small CNN achieved 78.28% accuracy and ROC-AUC 0.8914, showing that near-perfect classification was not obtained automatically from the supplied scalogram images.
 
-The small CNN baseline achieved 78.28% accuracy and a ROC-AUC of 0.8914. The current ResNet50 configuration obtained a similar accuracy of 78.75%, although its ROC-AUC was lower at 0.8633. These baseline findings show that strong classification performance was not obtained automatically from the scalogram PNG inputs. In particular, the substantial separation between VGG16 and the small CNN indicates that model architecture and transfer-learning behaviour materially affected classification performance.
-
-The aggregate confusion matrices further demonstrate the class-wise behaviour of the models. VGG16 correctly classified 637 of 640 Nomex images and 631 of 640 Teflon images. Fine-tuned MobileNetV3-Small correctly classified 620 Nomex and 618 Teflon images, producing balanced sensitivity and specificity. In contrast, ResNet50 and the small CNN showed lower Teflon sensitivity, with a greater number of Teflon images assigned to the Nomex class.
+Corrected ResNet50 correctly classified all 640 Nomex images and 633 of 640 Teflon images. VGG16 correctly classified 637 Nomex and 631 Teflon images. Fine-tuned MobileNetV3-Small correctly classified 620 Nomex and 618 Teflon images.
 
 ## Paired comparison and uncertainty
 
-Because all models generated predictions for the same development images, performance differences were evaluated using paired predictions. Uncertainty intervals were calculated using 2,000 bootstrap resamples clustered by `group_id`. VGG16 exceeded fine-tuned MobileNetV3-Small by {100*float(mobile_pair['accuracy_difference_a_minus_b']):.2f} percentage points, with a grouped 95% interval of {100*float(mobile_pair['accuracy_difference_ci_low']):.2f}–{100*float(mobile_pair['accuracy_difference_ci_high']):.2f} percentage points. VGG16 correctly classified 35 images that were misclassified by fine-tuned MobileNetV3-Small, whereas MobileNetV3-Small correctly classified five images that were misclassified by VGG16. The image-level exact McNemar result was p={float(mobile_pair['mcnemar_exact_p']):.3g}; however, the grouped bootstrap interval is treated as the primary uncertainty summary because observations within a `group_id` cluster may remain dependent.
+Uncertainty intervals used 5,000 bootstrap resamples clustered by `group_id`. Corrected ResNet50 exceeded VGG16 by 0.39 percentage points, but the grouped 95% accuracy-difference interval included zero (-0.23 to 1.03 percentage points for ResNet50 minus VGG16). The secondary exact image-level McNemar test gave p=0.302. The models are therefore described as having comparable accuracy, not statistically established accuracy superiority. VGG16 exceeded fine-tuned MobileNetV3-Small by {100*float(mobile_pair['accuracy_difference_a_minus_b']):.2f} percentage points (grouped 95% interval: {100*float(mobile_pair['accuracy_difference_ci_low']):.2f} to {100*float(mobile_pair['accuracy_difference_ci_high']):.2f}).
 
 ## Locked-holdout evaluation
 
-Following development, the selected VGG16 and ResNet50 configurations were fitted using the development data with an internal grouped validation subset. Each resulting checkpoint was then evaluated once on the locked 320-image holdout set. VGG16 correctly classified all 320 holdout images, resulting in 100% accuracy and a ROC-AUC of 1.0000. ResNet50 correctly classified 249 of 320 images and achieved 77.81% accuracy with a ROC-AUC of 0.8146. The perfect VGG16 result is restricted to the present holdout and does not establish perfect performance under a new acquisition session, sensor configuration, voltage condition, or laboratory environment.
+VGG16 and corrected fine-tuned ResNet50 were fitted using the development data with an internal grouped validation subset and evaluated once on the locked 320-image holdout. VGG16 classified all 320 images correctly (100% accuracy; ROC-AUC 1.0000). Corrected ResNet50 classified 318 of 320 images correctly (99.38% accuracy; ROC-AUC 1.0000). These internal-holdout results do not establish equivalent performance under a new acquisition session, sensor configuration, voltage condition or laboratory environment.
 
 ## Interpretation relative to the historical manuscript
 
-The historical manuscript reported accuracies of 98.20% for VGG16 and 97.03% for ResNet50. These values should be presented separately from the corrected experiments because the original prediction probabilities, exact fold membership and recording-independent evaluation cannot be reconstructed completely. The corrected results use explicit grouped membership, training-only augmentation, saved out-of-fold probabilities and a locked final holdout. Consequently, the historical and corrected values provide a descriptive comparison rather than a controlled estimate of improvement or deterioration.
+Historical accuracies of 98.20% for VGG16 and 97.03% for ResNet50 are reported separately because the original prediction probabilities, exact fold membership and recording-independent evaluation cannot be completely reconstructed. The corrected experiments used explicit grouped membership, training-only augmentation, saved OOF probabilities and a locked holdout. Historical-versus-corrected comparisons are descriptive rather than controlled estimates of improvement.
 
 ## Reporting limitation
 
-The present analysis verifies separation according to the supplied image mapping and recorded `group_id` values. Source CSV paths, acquisition-session identifiers, calibrated time/frequency axes and complete wavelet-generation provenance are not available for every PNG. Accordingly, model performance should be described as classification of Nomex and Teflon scalogram images within the supplied dataset. Broader claims concerning new laboratory sessions or specific physical discharge mechanisms require additional acquisition-independent measurements.
+Separation is verified according to the supplied image mapping and `group_id` values. Source CSV paths, acquisition-session identifiers, calibrated time/frequency axes and complete wavelet-generation provenance are unavailable for every PNG. Performance should therefore be described as Nomex-versus-Teflon scalogram classification within the supplied dataset. Broader claims require acquisition-independent measurements.
 """
     (out/"MANUSCRIPT_RESULTS_WRITEUP.md").write_text(writeup,encoding="utf-8")
     index = """# Manuscript results package

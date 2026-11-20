@@ -1,0 +1,892 @@
+[
+  {
+    "name": "input_layer",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv1_pad",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "pool1_pad",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "pool1_pool",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block1_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block1_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block1_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block1_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block1_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block1_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block1_0_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block1_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block1_0_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block1_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block1_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block1_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block2_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block2_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block2_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block2_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block2_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block2_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block2_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block2_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block2_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block2_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block3_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block3_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block3_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block3_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block3_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block3_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block3_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv2_block3_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv2_block3_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv2_block3_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block1_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block1_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block1_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block1_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block1_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block1_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block1_0_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block1_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block1_0_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block1_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block1_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block1_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block2_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block2_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block2_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block2_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block2_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block2_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block2_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block2_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block2_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block2_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block3_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block3_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block3_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block3_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block3_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block3_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block3_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block3_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block3_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block3_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block4_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block4_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block4_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block4_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block4_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block4_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block4_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv3_block4_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv3_block4_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv3_block4_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block1_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block1_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block1_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block1_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block1_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block1_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block1_0_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block1_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block1_0_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block1_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block1_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block1_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block2_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block2_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block2_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block2_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block2_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block2_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block2_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block2_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block2_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block2_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block3_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block3_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block3_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block3_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block3_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block3_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block3_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block3_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block3_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block3_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block4_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block4_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block4_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block4_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block4_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block4_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block4_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block4_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block4_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block4_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block5_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block5_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block5_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block5_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block5_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block5_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block5_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block5_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block5_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block5_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block6_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block6_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block6_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block6_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block6_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block6_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block6_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv4_block6_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv4_block6_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv4_block6_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block1_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block1_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block1_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block1_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block1_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block1_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block1_0_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block1_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block1_0_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block1_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block1_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block1_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block2_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block2_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block2_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block2_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block2_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block2_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block2_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block2_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block2_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block2_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block3_1_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block3_1_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block3_1_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block3_2_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block3_2_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block3_2_relu",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block3_3_conv",
+    "trainable": false,
+    "weights": 2
+  },
+  {
+    "name": "conv5_block3_3_bn",
+    "trainable": false,
+    "weights": 4
+  },
+  {
+    "name": "conv5_block3_add",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "conv5_block3_out",
+    "trainable": false,
+    "weights": 0
+  },
+  {
+    "name": "global_average_pooling2d",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "dropout",
+    "trainable": true,
+    "weights": 0
+  },
+  {
+    "name": "p_teflon",
+    "trainable": true,
+    "weights": 2
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "VGG16": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\vgg16_cv\\oof_predictions.csv",
+    "sha256": "f053b5c52ca4b09fd590fe7f763072397aff3927574d932908a191a9e0db84ef"
+  },
+  "ResNet50 (legacy preprocessing)": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\primary_png_20261104_01\\resnet50_cv\\oof_predictions.csv",
+    "sha256": "ecc1c84ae3424c2dda4724dbbf52263bd6f7dc0dfda0ba84624ef634e4ef3ecc"
+  },
+  "ResNet50 (corrected frozen head)": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\resnet50_corrected_20261105_01\\resnet50_head_cv\\oof_predictions.csv",
+    "sha256": "938015f8bcb804e50b30ff6800bf550901298e08302160eb6f2eb3cf340a7ac0"
+  },
+  "ResNet50 (corrected fine-tuned)": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\resnet50_corrected_20261105_01\\resnet50_finetune_cv\\oof_predictions.csv",
+    "sha256": "75e26528a9eb90f825457947439e821d641264da626bbe22e00a7e97c472b73b"
+  },
+  "Small CNN": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\baselines_20261105_01\\small_cnn_cv\\oof_predictions.csv",
+    "sha256": "f8c3acf0f90baf28ee2e9ae301c56cf41edef73b1af3c2dc7f4aba8233b7101e"
+  },
+  "MobileNetV3-Small (frozen)": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\baselines_20261105_01\\mobilenet_v3_small_head_cv\\oof_predictions.csv",
+    "sha256": "9d78eebf0d41c00114c4acc62bb45792197f2cfa9953c2f32f0f3d65fc52b0e0"
+  },
+  "MobileNetV3-Small (fine-tuned)": {
+    "path": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\runs\\baselines_20261105_01\\mobilenet_v3_small_finetune_cv\\oof_predictions.csv",
+    "sha256": "0ec867762216fa45f63ccc2a20719c2f02e7df883c166738c532282e11c95645"
+  }
+}

@@ -113,15 +113,24 @@ def build_model(name, config):
 
 def configure_loaded_backbone(tf, model, model_type, trainable_layers, learning_rate):
     """Enable only late weighted feature layers in a warm-started application model."""
-    if model_type != 'mobilenet_v3_small':
-        raise ValueError('Warm-start backbone configuration is currently supported only for MobileNetV3-Small')
-    base = model.get_layer('MobileNetV3Small')
-    base.trainable = True
-    for layer in base.layers:
+    if model_type == 'mobilenet_v3_small':
+        base = model.get_layer('MobileNetV3Small')
+        backbone_layers = base.layers
+        base.trainable = True
+    elif model_type == 'resnet50':
+        # ResNet50 is represented as flattened application layers in this model.
+        # Exclude the task head and pooling/dropout layers from backbone selection.
+        head = model.get_layer('p_teflon')
+        head_index = model.layers.index(head)
+        backbone_layers = model.layers[:head_index]
+        base = model
+    else:
+        raise ValueError('Warm-start fine-tuning is supported only for MobileNetV3-Small and ResNet50')
+    for layer in backbone_layers:
         layer.trainable = False
-    for layer in base.layers[-trainable_layers:]:
+    for layer in backbone_layers[-trainable_layers:]:
         layer.trainable = not isinstance(layer, tf.keras.layers.BatchNormalization)
-    if not any(layer.trainable and layer.weights for layer in base.layers):
+    if not any(layer.trainable and layer.weights for layer in backbone_layers):
         raise RuntimeError('Warm-start fine-tuning enabled no weighted backbone layer')
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate),
                   loss='binary_crossentropy',metrics=['accuracy'])
@@ -182,6 +191,19 @@ def make_dataset(rows, config, training=False):
             tf.debugging.assert_equal(tf.shape(images), tf.shape(transformed))
             return transformed, labels
         ds = ds.map(augment, num_parallel_calls=1)
+    preprocessing_profile = config.get('preprocessing_profile','unit_scale')
+    if preprocessing_profile == 'resnet50_imagenet':
+        if config.get('model_type') != 'resnet50':
+            raise ValueError('Native ResNet50 preprocessing may only be used with ResNet50')
+        def preprocess_resnet(images, labels):
+            # Decode/augmentation operates in [0,1]; the official application
+            # transform expects RGB values in [0,255] and produces BGR mean-centred input.
+            images = tf.keras.applications.resnet50.preprocess_input(images * 255.0)
+            tf.debugging.assert_all_finite(images, 'Nonfinite ResNet50 input')
+            return images, labels
+        ds = ds.map(preprocess_resnet, num_parallel_calls=1)
+    elif preprocessing_profile != 'unit_scale':
+        raise ValueError(f'Unknown preprocessing profile {preprocessing_profile}')
     return ds.prefetch(config.get('prefetch_batches', 1)), rows
 
 
@@ -334,11 +356,12 @@ def train_one(model_type, train_rows, validation_rows, config, out):
     if not (out/'architecture.json').exists():
         save_json(out/'architecture.json', json.loads(model.to_json()))
         save_json(out/'trainable_layers.json', [dict(name=l.name,trainable=l.trainable,weights=len(l.weights)) for l in model.layers])
-        if model_type=='mobilenet_v3_small':
-            base=model.get_layer('MobileNetV3Small')
+        if model_type in {'mobilenet_v3_small','resnet50'}:
+            base_layers=(model.get_layer('MobileNetV3Small').layers if model_type=='mobilenet_v3_small'
+                         else model.layers[:model.layers.index(model.get_layer('p_teflon'))])
             save_json(out/'backbone_trainable_layers.json',
                       [dict(name=l.name,trainable=l.trainable,weights=len(l.weights),
-                            layer_type=type(l).__name__) for l in base.layers])
+                            layer_type=type(l).__name__) for l in base_layers])
     checkpoint = out/'best.keras'
     callback = recovery_callback(tf, out, config, state)
     callbacks=[callback]
@@ -381,18 +404,28 @@ def run_training(args):
     from scalogram_augmentation import operation_order,parameters
     specialized=parameters(vars(args))
     initial_cv_run = str(Path(args.initial_cv_run).resolve()) if args.initial_cv_run else None
-    if initial_cv_run:
-        source_config=json.loads((Path(initial_cv_run)/'run_config.json').read_text())
-        source_status=json.loads((Path(initial_cv_run)/'status.json').read_text())
-        if (model_type!='mobilenet_v3_small' or source_config['model_type']!=model_type or
+    initial_final_run = str(Path(args.initial_final_run).resolve()) if args.initial_final_run else None
+    if initial_cv_run and initial_final_run:
+        raise ValueError('Choose only one warm-start source')
+    initial_run = initial_cv_run or initial_final_run
+    if initial_run:
+        source_config=json.loads((Path(initial_run)/'run_config.json').read_text())
+        source_status=json.loads((Path(initial_run)/'status.json').read_text())
+        expected_source_purpose='development_cv' if initial_cv_run else 'final_fit'
+        expected_command='cv' if initial_cv_run else 'final-fit'
+        if (model_type not in {'mobilenet_v3_small','resnet50'} or source_config['model_type']!=model_type or
                 source_config['split_sha256']!=split_config['split_sha256'] or
-                source_config['purpose']!='development_cv' or source_status.get('status')!='COMPLETE'):
+                source_config['purpose']!=expected_source_purpose or source_status.get('status')!='COMPLETE' or
+                args.command!=expected_command):
             raise ValueError('Warm-start CV run has incompatible model, split, purpose or completion status')
     config = dict(model_type=model_type,image_size=args.image_size,batch_size=args.batch_size,
                   epochs=args.epochs,learning_rate=args.learning_rate,dropout=args.dropout,l2=args.l2,
                   patience=args.patience,seed=args.seed,augment=args.augment,time_shift=args.time_shift,
                   fine_tuning=not args.freeze_backbone,weights=None if args.weights=='none' else 'imagenet',
-                   preprocessing=('RGB decode, resize, float32 / 255, then MobileNetV3 [-1,1] scaling'
+                  preprocessing_profile=args.preprocessing_profile,
+                   preprocessing=('RGB decode, resize and training-only augmentation in [0,1], then official ResNet50 preprocess_input'
+                                  if args.preprocessing_profile=='resnet50_imagenet' else
+                                  'RGB decode, resize, float32 / 255, then MobileNetV3 [-1,1] scaling'
                                   if model_type=='mobilenet_v3_small' else
                                   f'RGB decode, resize {args.resize_interpolation}, float32 / 255'),class_names=list(CLASS_NAMES),
                   resize_interpolation=args.resize_interpolation,training_profile=args.training_profile,
@@ -405,7 +438,8 @@ def run_training(args):
                   augmentation_samples_per_class=args.augmentation_samples_per_class,
                   legacy_h5_export=args.legacy_h5_export,
                   lr_reduce_factor=args.lr_reduce_factor,lr_min=args.lr_min,
-                   initial_cv_run=initial_cv_run,backbone_trainable_layers=args.backbone_trainable_layers,
+                  initial_cv_run=initial_cv_run,initial_final_run=initial_final_run,
+                  backbone_trainable_layers=args.backbone_trainable_layers,
                   purpose='development_cv' if args.command=='cv' else 'final_fit',
                   split_manifest=str(Path(args.splits).resolve()), split_sha256=split_config['split_sha256'],
                   group_by=split_config['group_by'],folds=split_config['folds'],python=sys.version,tensorflow=tf.__version__,platform=platform.platform(),
@@ -490,7 +524,14 @@ def run_training(args):
                 raise ValueError('Final grouped validation lacks a class')
             if {r['image_sha256'] for r in train} & {r['image_sha256'] for r in val}:
                 raise ValueError('Final training/validation contains identical cross-partition content; inspect mapping')
-            best, checkpoint = train_one(model_type,train,val,config,out)
+            final_config=dict(config)
+            if initial_final_run:
+                checkpoint_info=json.loads((Path(initial_final_run)/'final_checkpoint.json').read_text())
+                initial=Path(checkpoint_info['path'])
+                if checkpoint_info['sha256']!=digest(initial):
+                    raise ValueError('Warm-start final checkpoint is not the committed source model')
+                final_config.update(initial_checkpoint=str(initial),initial_checkpoint_sha256=digest(initial))
+            best, checkpoint = train_one(model_type,train,val,final_config,out)
             atomic_json(out/'final_checkpoint.json',dict(path=str(checkpoint),sha256=digest(checkpoint),
                                                        note='Not yet evaluated on locked holdout'))
         atomic_json(out/'status.json',dict(status='COMPLETE',purpose=config['purpose']))
@@ -578,12 +619,14 @@ def main(argv=None, default_model='vgg16'):
         from scalogram_augmentation import PRIMARY_DEFAULTS
         for key,value in PRIMARY_DEFAULTS.items():p.add_argument('--'+key.replace('_','-'),type=float,default=value)
         p.add_argument('--resize-interpolation',choices=['nearest','bilinear'],default='nearest')
+        p.add_argument('--preprocessing-profile',choices=['unit_scale','resnet50_imagenet'],default='unit_scale')
         p.add_argument('--augmentation-samples-per-class',type=int,default=5)
         p.add_argument('--legacy-h5-export',action=argparse.BooleanOptionalAction,default=True)
         p.add_argument('--lr-reduce-factor',type=float,default=.1)
         p.add_argument('--lr-min',type=float,default=1e-7)
         p.add_argument('--freeze-backbone',action='store_true')
         p.add_argument('--initial-cv-run')
+        p.add_argument('--initial-final-run')
         p.add_argument('--backbone-trainable-layers',type=int,default=20)
         p.add_argument('--weights',choices=['imagenet','none'],default='imagenet')
         p.add_argument('--cpu-threads',type=int,default=4)
@@ -614,6 +657,8 @@ def main(argv=None, default_model='vgg16'):
             parser.error('Thread and prefetch limits must be positive')
         if args.backbone_trainable_layers < 1:
             parser.error('Backbone trainable layer count must be positive')
+        if args.preprocessing_profile=='resnet50_imagenet' and args.model!='resnet50':
+            parser.error('resnet50_imagenet preprocessing requires --model resnet50')
         if not math.isfinite(args.min_free_ram_gb) or not math.isfinite(args.min_free_disk_gb) or min(args.min_free_ram_gb,args.min_free_disk_gb) <= 0:
             parser.error('RAM/disk reserves must be finite and positive')
         if args.augmentation_samples_per_class<1 or not 0<args.lr_reduce_factor<1 or not 0<=args.lr_min<=args.learning_rate:

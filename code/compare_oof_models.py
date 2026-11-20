@@ -14,7 +14,9 @@ from scipy.stats import binomtest, rankdata
 
 MODEL_FILES = {
     "VGG16": "runs/primary_png_20261104_01/vgg16_cv/oof_predictions.csv",
-    "ResNet50": "runs/primary_png_20261104_01/resnet50_cv/oof_predictions.csv",
+    "ResNet50 (legacy preprocessing)": "runs/primary_png_20261104_01/resnet50_cv/oof_predictions.csv",
+    "ResNet50 (corrected frozen head)": "runs/resnet50_corrected_20261105_01/resnet50_head_cv/oof_predictions.csv",
+    "ResNet50 (corrected fine-tuned)": "runs/resnet50_corrected_20261105_01/resnet50_finetune_cv/oof_predictions.csv",
     "Small CNN": "runs/baselines_20261105_01/small_cnn_cv/oof_predictions.csv",
     "MobileNetV3-Small (frozen)": "runs/baselines_20261105_01/mobilenet_v3_small_head_cv/oof_predictions.csv",
     "MobileNetV3-Small (fine-tuned)": "runs/baselines_20261105_01/mobilenet_v3_small_finetune_cv/oof_predictions.csv",

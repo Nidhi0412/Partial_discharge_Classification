@@ -1,0 +1,61 @@
+{
+  "config": {
+    "seed": 42,
+    "bootstrap_draws": 1000,
+    "min_clusters": 10,
+    "mass_fraction": 0.8,
+    "mask_fraction": 0.1,
+    "random_masks": 10,
+    "shift_pixels": [
+      -2,
+      2
+    ],
+    "mask_fill": "per_image_channel_mean",
+    "primary_metric": "faithfulness_margin",
+    "target": "true",
+    "scope": "Descriptive image-space diagnostics, conditional on a fitted model. No mechanistic, calibrated RF-band or confirmatory significance claim.",
+    "regions": [
+      {
+        "name": "left_time_third",
+        "x0": 0.0,
+        "x1": 0.3333333333333333,
+        "y0": 0.0,
+        "y1": 1.0
+      },
+      {
+        "name": "middle_time_third",
+        "x0": 0.3333333333333333,
+        "x1": 0.6666666666666666,
+        "y0": 0.0,
+        "y1": 1.0
+      },
+      {
+        "name": "right_time_third",
+        "x0": 0.6666666666666666,
+        "x1": 1.0,
+        "y0": 0.0,
+        "y1": 1.0
+      },
+      {
+        "name": "upper_image_half",
+        "x0": 0.0,
+        "x1": 1.0,
+        "y0": 0.0,
+        "y1": 0.5
+      },
+      {
+        "name": "lower_image_half",
+        "x0": 0.0,
+        "x1": 1.0,
+        "y0": 0.5,
+        "y1": 1.0
+      }
+    ]
+  },
+  "config_sha256": "56e2d35ec035898b76179594775d50e67b837387183ae152a97e01ea66cff52d",
+  "frozen_utc": "2026-11-12T09:17:08.123739+00:00",
+  "source_config": "D:\\Nidhiiiiii\\Partial_discharge_Classification_minimal\\Partial_discharge_Classification_minimal\\config\\explainability_plan.json",
+  "code_sha256": "f8be4e367f8eafc32f3ea82b3962c241a7c978aa005b402d198ae19bd0c3c705",
+  "pipeline_sha256": "f2a7449d4b8ef9cbf1a071c68eaa9056506d35b54d13ff87e4ce43e5829583af",
+  "note": "A local analysis specification, not external preregistration or proof of prospective intent"
+}

@@ -1,0 +1,4 @@
+Locked holdout
+Class	Precision	Recall	F1	Support
+Nomex	0.987654	1.000000	0.993789	160
+Teflon	1.000000	0.987500	0.993711	160

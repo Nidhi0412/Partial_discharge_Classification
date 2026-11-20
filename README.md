@@ -249,9 +249,12 @@ Quantitative post-training explainability is available with a frozen analysis pl
 See `audit/training_pipeline_review/EXPLAINABILITY_ANALYSIS_METHODS.md` for recording/
 session-bootstrap intervals, concentration/region statistics, aligned translation
 stability and masking-versus-random diagnostics, including their limitations and
-commands. Freeze the specification before inspecting final maps; no research
-explainability analysis has been run. These diagnostics do not prove physical
-mechanisms or supply calibrated RF-band labels.
+commands. The frozen analysis was subsequently completed for the full 320-image
+locked holdout using both final VGG16 and corrected ResNet50 checkpoints. Numerical
+diagnostics, selection manifests and manuscript figures are under
+`analysis/gradcam_final_20261112/`. These diagnostics do not prove physical
+mechanisms or supply calibrated RF-band labels; zero/flat maps are retained and
+reported rather than interpreted as localization evidence.
 
 ## Optional: approved raw-data reprocessing
 
@@ -280,12 +283,28 @@ not implicitly compatible with old positional dc labels or historical checkpoint
 
 ## Entry points and original artifacts
 
-After both corrected models are trained/evaluated, an old-versus-new comparison is
-required. See `audit/training_pipeline_review/REVIEWER_COVERAGE_AND_COMPARISON_PLAN.md`
-for reviewer-specific evidence requirements, metrics/artifact comparisons and the
-limits on comparing historical scores with the new grouped protocol. A successful
-training run alone does not resolve novelty, wavelet-selection, baseline, noise or
-acquisition-confound concerns.
+The corrected VGG16 and ResNet50 experiments, common-protocol model comparison,
+locked-holdout evaluation and holdout-wide Grad-CAM analysis are complete. The
+compact, publication-facing evidence is stored in:
+
+- `analysis/manuscript_results_package_20261112_corrected_resnet_final/`
+- `analysis/gradcam_final_20261112/manuscript_package/`
+- `analysis/model_comparison_20261112_corrected_resnet/`
+- `runs/resnet50_corrected_20261105_01/` (metrics, predictions and run metadata;
+  model checkpoint files remain excluded from Git)
+
+The corrected ResNet50 sequence can be reproduced with
+`code/train_corrected_resnet50.py`; the final manuscript result and Grad-CAM
+packages are produced by `code/create_manuscript_results_package.py` and
+`code/create_gradcam_manuscript_package.py`, respectively. Historical scores are
+reported descriptively because their original prediction-level evidence and exact
+fold membership cannot be completely reconstructed. Controlled image-space noise
+robustness, wavelet/level ablation and acquisition-independent validation remain
+separate unresolved experiments.
+
+See `audit/training_pipeline_review/REVIEWER_COVERAGE_AND_COMPARISON_PLAN.md` for
+reviewer-specific evidence requirements and the limits on comparing historical
+scores with the corrected grouped protocol.
 
 Both model_training*.py files, both run_parallel_training*.py files and main*.py
 now route to one training implementation; they no longer auto-delete data or launch
